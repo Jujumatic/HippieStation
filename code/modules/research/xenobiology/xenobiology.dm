@@ -570,7 +570,11 @@
 /obj/item/slime_extract/sepia/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
+<<<<<<< HEAD
 			var/obj/item/device/camera/O = new(null, 1)
+=======
+			var/obj/item/camera/O = new(null, 1)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 			if(!user.put_in_active_hand(O))
 				O.forceMove(user.drop_location())
 			playsound(user, 'sound/effects/splat.ogg', 50, 1)

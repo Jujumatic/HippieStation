@@ -300,6 +300,12 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/effect/turf_decal/bot,
+<<<<<<< HEAD
+=======
+/obj/item/radio/intercom{
+	pixel_x = -30
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel,
 /area/shuttle/arrival)
 "H" = (
@@ -376,14 +382,26 @@
 	},
 /area/shuttle/arrival)
 "U" = (
+<<<<<<< HEAD
 /obj/structure/frame/computer{
 	dir = 1
+=======
+/obj/machinery/computer{
+	dir = 1;
+	name = "Shuttle computer"
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	},
 /turf/open/floor/plasteel/blue,
 /area/shuttle/arrival)
 "V" = (
+<<<<<<< HEAD
 /obj/structure/frame/computer{
 	dir = 1
+=======
+/obj/machinery/computer{
+	dir = 1;
+	name = "Shuttle computer"
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	},
 /turf/open/floor/plasteel/blue/side,
 /area/shuttle/arrival)

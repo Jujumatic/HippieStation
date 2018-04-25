@@ -155,7 +155,10 @@
 #undef CLIMB_TIME
 
 #undef NO_HOLE
+<<<<<<< HEAD
 #undef SMALL_HOLE
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 #undef MEDIUM_HOLE
 #undef LARGE_HOLE
 #undef MAX_HOLE_SIZE

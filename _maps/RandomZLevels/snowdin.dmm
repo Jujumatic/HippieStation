@@ -102,7 +102,11 @@
 /area/awaymission/snowdin/post/research)
 "ay" = (
 /obj/structure/table,
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp,
+=======
+/obj/item/flashlight/lamp,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "az" = (
@@ -126,7 +130,11 @@
 /area/awaymission/snowdin/post/research)
 "aD" = (
 /obj/structure/table,
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp,
+=======
+/obj/item/flashlight/lamp,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/item/pen,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
@@ -304,7 +312,11 @@
 /area/awaymission/snowdin/post/research)
 "bd" = (
 /obj/structure/window,
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp,
+=======
+/obj/item/flashlight/lamp,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "be" = (
@@ -1017,6 +1029,7 @@
 "cK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4;
@@ -1024,6 +1037,15 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
+=======
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
 "cL" = (
@@ -1478,10 +1500,17 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12"
 	},
+=======
+	},
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post)
 "dM" = (
@@ -1523,6 +1552,7 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+<<<<<<< HEAD
 	},
 /obj/item/storage/box{
 	illustration = "donk_kit";
@@ -1546,6 +1576,31 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
+=======
+	},
+/obj/item/storage/box{
+	illustration = "donk_kit";
+	name = "box of donkpockets"
+	},
+/turf/open/floor/plasteel/floorgrime,
+/area/awaymission/snowdin/post/kitchen)
+"dT" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/condiment/enzyme,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/kitchen)
+"dU" = (
+/obj/structure/table,
+/obj/item/kitchen/knife,
+/turf/open/floor/plasteel/floorgrime,
+/area/awaymission/snowdin/post/kitchen)
+"dV" = (
+/obj/effect/decal/cleanable/egg_smudge,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /area/awaymission/snowdin/post/kitchen)
 "dW" = (
 /obj/structure/table,
@@ -1639,12 +1694,21 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/effect/landmark/awaystart,
 /obj/item/bedsheet/red,
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
+=======
+	},
+/obj/effect/landmark/awaystart,
+/obj/item/bedsheet/red,
+/turf/open/floor/wood{
+	icon_state = "wood-broken"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /area/awaymission/snowdin/post/dorm)
 "ei" = (
 /obj/effect/baseturf_helper/asteroid/snow,
@@ -1656,10 +1720,17 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+=======
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post)
 "ek" = (
@@ -1698,6 +1769,7 @@
 	name = "Research Center APC";
 	pixel_x = 1;
 	pixel_y = 25
+<<<<<<< HEAD
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -1705,6 +1777,15 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
+=======
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/research)
 "eo" = (
@@ -1978,11 +2059,19 @@
 /obj/item/clothing/neck/stethoscope,
 /obj/machinery/light{
 	dir = 1
+<<<<<<< HEAD
 	},
 /obj/machinery/firealarm{
 	dir = 2;
 	pixel_y = 24
 	},
+=======
+	},
+/obj/machinery/firealarm{
+	dir = 2;
+	pixel_y = 24
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/cmo,
 /area/awaymission/snowdin/post)
 "fa" = (
@@ -2168,7 +2257,11 @@
 /turf/open/floor/plasteel/cmo,
 /area/awaymission/snowdin/post)
 "fz" = (
+<<<<<<< HEAD
 /obj/item/device/flashlight/pen,
+=======
+/obj/item/flashlight/pen,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/cmo,
 /area/awaymission/snowdin/post)
 "fA" = (
@@ -2210,10 +2303,17 @@
 	dir = 4;
 	name = "Outpost Hallway APC";
 	pixel_x = 26
+<<<<<<< HEAD
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
+=======
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post)
@@ -2538,11 +2638,19 @@
 "gx" = (
 /obj/machinery/gateway/centeraway{
 	calibrated = 0
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/bot,
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
+=======
+	},
+/obj/effect/turf_decal/bot,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/floorgrime,
 /area/awaymission/snowdin/post/gateway)
 "gy" = (
@@ -2732,6 +2840,7 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/button/door{
 	id = "snowdindormcap";
@@ -2750,6 +2859,26 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
+=======
+	},
+/obj/machinery/button/door{
+	id = "snowdindormcap";
+	name = "Dorm Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = 25;
+	specialfunctions = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet,
+/area/awaymission/snowdin/post/dorm)
+"gZ" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 8;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
@@ -2797,6 +2926,7 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -2812,6 +2942,23 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/dorm)
+=======
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/dorm)
+"hd" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/dorm)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 "he" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9;
@@ -3058,6 +3205,7 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -3065,6 +3213,15 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+=======
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/dorm)
 "hM" = (
@@ -3411,6 +3568,7 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
+<<<<<<< HEAD
 	},
 /obj/structure/sign/departments/medbay{
 	pixel_y = 32
@@ -3418,6 +3576,15 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
+=======
+	},
+/obj/structure/sign/departments/medbay{
+	pixel_y = 32
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /area/awaymission/snowdin/post)
 "ix" = (
 /turf/open/floor/plasteel/neutral/side{
@@ -3517,10 +3684,17 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /turf/open/floor/plasteel/green/side{
 	dir = 4
 	},
+=======
+	},
+/turf/open/floor/plasteel/green/side{
+	dir = 4
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /area/awaymission/snowdin/post/hydro)
 "iM" = (
 /obj/structure/cable{
@@ -3551,6 +3725,7 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -3558,6 +3733,15 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
+=======
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/garage)
 "iP" = (
@@ -3583,10 +3767,17 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+=======
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/garage)
 "iR" = (
@@ -3634,10 +3825,17 @@
 "iU" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Garage"
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+=======
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4;
 	piping_layer = 3;
@@ -3771,6 +3969,7 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -3827,6 +4026,64 @@
 	pixel_x = 7;
 	pixel_y = -24
 	},
+=======
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/awaymission/snowdin/post)
+"jq" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post)
+"jr" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 9;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/floorgrime,
+/area/awaymission/snowdin/post)
+"js" = (
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post)
+"jt" = (
+/obj/structure/table,
+/obj/machinery/button/door{
+	id = "snowdin_gate";
+	pixel_x = 7;
+	pixel_y = -24
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/item/disk/holodisk/snowdin/welcometodie,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/gateway)
@@ -3841,11 +4098,19 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/effect/landmark/awaystart,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+=======
+	},
+/obj/effect/landmark/awaystart,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/floorgrime,
 /area/awaymission/snowdin/post/gateway)
@@ -3865,11 +4130,19 @@
 "jx" = (
 /obj/structure/chair{
 	dir = 4
+<<<<<<< HEAD
 	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -26
 	},
+=======
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -26
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/snowdin/post/messhall)
 "jy" = (
@@ -4150,10 +4423,17 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
+=======
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /area/awaymission/snowdin/post/garage)
 "kj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5581,10 +5861,17 @@
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
+<<<<<<< HEAD
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+=======
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/neutral/side,
 /area/awaymission/snowdin/post)
 "ng" = (
@@ -5660,10 +5947,17 @@
 "nn" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+<<<<<<< HEAD
 	},
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
+=======
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/yellow,
 /area/awaymission/snowdin/post/engineering)
 "no" = (
@@ -5795,12 +6089,21 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+<<<<<<< HEAD
 	},
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
 	req_access = null;
 	req_access_txt = "1"
 	},
+=======
+	},
+/obj/machinery/door/airlock/security{
+	name = "Security Checkpoint";
+	req_access = null;
+	req_access_txt = "1"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/red,
 /area/awaymission/snowdin/post/secpost)
 "nH" = (
@@ -5855,6 +6158,7 @@
 "nP" = (
 /obj/machinery/power/terminal{
 	dir = 8
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -5862,6 +6166,15 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+=======
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/engineering)
 "nQ" = (
@@ -5944,7 +6257,11 @@
 	req_access_txt = "201"
 	},
 /obj/item/restraints/handcuffs,
+<<<<<<< HEAD
 /obj/item/device/assembly/flash,
+=======
+/obj/item/assembly/flash,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/item/storage/box/rubbershot,
 /obj/structure/fireaxecabinet{
 	pixel_y = 32
@@ -6341,7 +6658,11 @@
 /area/awaymission/snowdin/post/cavern2)
 "pb" = (
 /obj/structure/table/wood,
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp{
+=======
+/obj/item/flashlight/lamp{
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	pixel_x = -5;
 	pixel_y = 5
 	},
@@ -9441,13 +9762,19 @@
 	width = 6
 	},
 /obj/docking_port/stationary{
+<<<<<<< HEAD
 	baseturf_type = /turf/open/floor/engine;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	dir = 4;
 	dwidth = 3;
 	height = 6;
 	id = "snowdin_excavation_top";
 	name = "snowdin excavation top";
+<<<<<<< HEAD
 	turf_type = /turf/open/floor/engine;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	width = 6
 	},
 /turf/open/floor/plating,
@@ -9478,13 +9805,19 @@
 /area/awaymission/snowdin/post/mining_dock)
 "xP" = (
 /obj/docking_port/stationary{
+<<<<<<< HEAD
 	baseturf_type = /turf/open/floor/plating/snowed;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	dir = 4;
 	dwidth = 3;
 	height = 6;
 	id = "snowdin_excavation_down";
 	name = "snowdin excavation down";
+<<<<<<< HEAD
 	turf_type = /turf/open/floor/plating/snowed;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	width = 6
 	},
 /turf/open/floor/plating,
@@ -10487,7 +10820,11 @@
 /area/awaymission/snowdin/post/minipost)
 "AF" = (
 /obj/structure/table,
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp,
+=======
+/obj/item/flashlight/lamp,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/neutral/side{
 	dir = 4
 	},
@@ -11273,7 +11610,11 @@
 	},
 /area/awaymission/snowdin/cave)
 "CY" = (
+<<<<<<< HEAD
 /obj/item/device/aicard,
+=======
+/obj/item/aicard,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
@@ -13821,13 +14162,19 @@
 	width = 5
 	},
 /obj/docking_port/stationary{
+<<<<<<< HEAD
 	baseturf_type = /turf/open/floor/engine;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	dir = 4;
 	dwidth = 2;
 	height = 5;
 	id = "snowdin_mining_top";
 	name = "snowdin mining top";
+<<<<<<< HEAD
 	turf_type = /turf/open/floor/engine;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	width = 5
 	},
 /turf/open/floor/plating,
@@ -13874,13 +14221,19 @@
 "Kt" = (
 /obj/docking_port/stationary{
 	area_type = /area/awaymission/snowdin/post/mining_dock;
+<<<<<<< HEAD
 	baseturf_type = /turf/open/floor/engine;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	dir = 4;
 	dwidth = 2;
 	height = 5;
 	id = "snowdin_mining_down";
 	name = "snowdin mining bottom";
+<<<<<<< HEAD
 	turf_type = /turf/open/floor/engine;
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	width = 5
 	},
 /turf/open/floor/plating,

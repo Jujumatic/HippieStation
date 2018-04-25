@@ -124,7 +124,11 @@ Industrial extracts:
 /obj/item/slimecross/industrial/sepia
 	colour = "sepia"
 	plasmarequired = 2
+<<<<<<< HEAD
 	itempath = /obj/item/device/camera
+=======
+	itempath = /obj/item/camera
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/slimecross/industrial/cerulean
 	colour = "cerulean"

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /obj/item/device/pipe_painter
+=======
+/obj/item/pipe_painter
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	name = "pipe painter"
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "labeler1"
@@ -8,7 +12,7 @@
 
 	materials = list(MAT_METAL=5000, MAT_GLASS=2000)
 
-/obj/item/device/pipe_painter/afterattack(atom/A, mob/user, proximity_flag)
+/obj/item/pipe_painter/afterattack(atom/A, mob/user, proximity_flag)
 	//Make sure we only paint adjacent items
 	if(!proximity_flag)
 		return
@@ -21,9 +25,9 @@
 		playsound(src, 'sound/machines/click.ogg', 50, 1)
 		user.visible_message("<span class='notice'>[user] paints \the [P] [paint_color].</span>","<span class='notice'>You paint \the [P] [paint_color].</span>")
 
-/obj/item/device/pipe_painter/attack_self(mob/user)
+/obj/item/pipe_painter/attack_self(mob/user)
 	paint_color = input("Which colour do you want to use?","Pipe painter") in GLOB.pipe_paint_colors
 
-/obj/item/device/pipe_painter/examine(mob/user)
+/obj/item/pipe_painter/examine(mob/user)
 	..()
 	to_chat(user, "<span class='notice'>It is set to [paint_color].</span>")

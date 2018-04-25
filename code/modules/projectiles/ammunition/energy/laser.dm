@@ -18,6 +18,10 @@
 /obj/item/ammo_casing/energy/laser/practice
 	projectile_type = /obj/item/projectile/beam/practice
 	select_name = "practice"
+<<<<<<< HEAD
+=======
+	harmful = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/ammo_casing/energy/laser/scatter
 	projectile_type = /obj/item/projectile/beam/scatter
@@ -29,6 +33,10 @@
 	projectile_type = /obj/item/projectile/beam/disabler
 	pellets = 3
 	variance = 15
+<<<<<<< HEAD
+=======
+	harmful = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/ammo_casing/energy/laser/heavy
 	projectile_type = /obj/item/projectile/beam/laser/heavylaser
@@ -44,6 +52,10 @@
 /obj/item/ammo_casing/energy/laser/bluetag
 	projectile_type = /obj/item/projectile/beam/lasertag/bluetag
 	select_name = "bluetag"
+<<<<<<< HEAD
+=======
+	harmful = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/ammo_casing/energy/laser/bluetag/hitscan
 	projectile_type = /obj/item/projectile/beam/lasertag/bluetag/hitscan
@@ -51,6 +63,10 @@
 /obj/item/ammo_casing/energy/laser/redtag
 	projectile_type = /obj/item/projectile/beam/lasertag/redtag
 	select_name = "redtag"
+<<<<<<< HEAD
+=======
+	harmful = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/ammo_casing/energy/laser/redtag/hitscan
 	projectile_type = /obj/item/projectile/beam/lasertag/redtag/hitscan

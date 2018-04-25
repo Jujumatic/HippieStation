@@ -54,7 +54,11 @@
 
 			if (sr)
 				temp += "<B>Beacon Signals:</B><BR>"
+<<<<<<< HEAD
 				for(var/obj/item/device/beacon/W in GLOB.teleportbeacons)
+=======
+				for(var/obj/item/beacon/W in GLOB.teleportbeacons)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					if (!W.renamed)
 						continue
 					var/turf/tr = get_turf(W)

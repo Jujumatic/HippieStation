@@ -13,13 +13,24 @@
 	var/list/previous = list() //For temporary name/ui/ue/blood_type modifications
 	var/mob/living/carbon/holder
 
+<<<<<<< HEAD
 /datum/dna/New(mob/living/carbon/new_holder)
+=======
+/datum/dna/New(mob/living/new_holder)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	if(istype(new_holder))
 		holder = new_holder
 
 /datum/dna/Destroy()
+<<<<<<< HEAD
 	if(holder.dna == src)
 		holder.dna = null
+=======
+	if(iscarbon(holder))
+		var/mob/living/carbon/cholder = holder
+		if(cholder.dna == src)
+			cholder.dna = null
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	holder = null
 	QDEL_NULL(species)
 

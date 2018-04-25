@@ -706,7 +706,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 			to_chat(user, "<span class='notice'>You close the cap on [src].</span>")
 			cut_overlays()
 
+<<<<<<< HEAD
 	if(istype(O, /obj/item/device/multitool))
+=======
+	if(istype(O, /obj/item/multitool))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		if(screw && !(obj_flags & EMAGGED))//also kinky
 			if(!super)
 				cut_overlays()

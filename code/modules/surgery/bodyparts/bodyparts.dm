@@ -347,6 +347,7 @@
 				limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"
 			else
 				limb.icon_state = "[species_id]_[body_zone]"
+<<<<<<< HEAD
 		
 		// Hippie Start
 		if(should_draw_hippie)
@@ -357,6 +358,8 @@
 				limb.icon_state = "[species_id]_[body_zone]"
 		// Hippie End
 
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		if(aux_zone)
 			aux = image(limb.icon, "[species_id]_[aux_zone]", -aux_layer, image_dir)
 			. += aux

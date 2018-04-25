@@ -10,7 +10,11 @@
 		            /obj/item/cartridge/security = 10,
 					/obj/item/cartridge/janitor = 10,
 					/obj/item/cartridge/signal/toxins = 10,
+<<<<<<< HEAD
 					/obj/item/device/pda/heads = 10,
+=======
+					/obj/item/pda/heads = 10,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					/obj/item/cartridge/captain = 3,
 					/obj/item/cartridge/quartermaster = 10)
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 50)

@@ -122,7 +122,11 @@ Charged extracts:
 	colour = "sepia"
 
 /obj/item/slimecross/charged/sepia/do_effect(mob/user)
+<<<<<<< HEAD
 	new /obj/item/device/camera/spooky(get_turf(user))
+=======
+	new /obj/item/camera/spooky(get_turf(user))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	user.visible_message("<span class='notice'>[src] flickers in a strange, ethereal manner, and produces a camera!</span>")
 	..()
 

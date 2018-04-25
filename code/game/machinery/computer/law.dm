@@ -35,11 +35,15 @@
 	desc = "Used to upload laws to the AI."
 	circuit = /obj/item/circuitboard/computer/aiupload
 
+<<<<<<< HEAD
 /obj/machinery/computer/upload/ai/attack_hand(mob/user)
 	. = ..()
 	if(.)
 		return
 
+=======
+/obj/machinery/computer/upload/ai/interact(mob/user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	src.current = select_active_ai(user)
 
 	if (!src.current)
@@ -60,11 +64,15 @@
 	desc = "Used to upload laws to Cyborgs."
 	circuit = /obj/item/circuitboard/computer/borgupload
 
+<<<<<<< HEAD
 /obj/machinery/computer/upload/borg/attack_hand(mob/user)
 	. = ..()
 	if(.)
 		return
 
+=======
+/obj/machinery/computer/upload/borg/interact(mob/user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	src.current = select_active_free_borg(user)
 
 	if(!src.current)

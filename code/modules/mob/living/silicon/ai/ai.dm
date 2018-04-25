@@ -39,8 +39,13 @@
 	var/obj/mecha/controlled_mech //For controlled_mech a mech, to determine whether to relaymove or use the AI eye.
 	var/radio_enabled = TRUE //Determins if a carded AI can speak with its built in radio or not.
 	radiomod = ";" //AIs will, by default, state their laws on the internal radio.
+<<<<<<< HEAD
 	var/obj/item/device/pda/ai/aiPDA
 	var/obj/item/device/multitool/aiMulti
+=======
+	var/obj/item/pda/ai/aiPDA
+	var/obj/item/multitool/aiMulti
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/mob/living/simple_animal/bot/Bot
 	var/tracking = FALSE //this is 1 if the AI is currently tracking somebody, but the track has not yet been completed.
 	var/datum/effect_system/spark_spread/spark_system//So they can initialize sparks whenever/N
@@ -128,14 +133,14 @@
 
 	verbs += /mob/living/silicon/ai/proc/show_laws_verb
 
-	aiPDA = new/obj/item/device/pda/ai(src)
+	aiPDA = new/obj/item/pda/ai(src)
 	aiPDA.owner = name
 	aiPDA.ownjob = "AI"
 	aiPDA.name = name + " (" + aiPDA.ownjob + ")"
 
 	aiMulti = new(src)
-	radio = new /obj/item/device/radio/headset/ai(src)
-	aicamera = new/obj/item/device/camera/siliconcam/ai_camera(src)
+	radio = new /obj/item/radio/headset/ai(src)
+	aicamera = new/obj/item/camera/siliconcam/ai_camera(src)
 
 	deploy_action.Grant(src)
 
@@ -321,7 +326,11 @@
 
 /mob/living/silicon/ai/can_interact_with(atom/A)
 	. = ..()
+<<<<<<< HEAD
 	return . || (istype(loc, /obj/item/device/aicard))? (ISINRANGE(A.x, x - interaction_range, x + interaction_range) && ISINRANGE(A.y, y - interaction_range, y + interaction_range)): GLOB.cameranet.checkTurfVis(get_turf(A))
+=======
+	return . || (istype(loc, /obj/item/aicard))? (ISINRANGE(A.x, x - interaction_range, x + interaction_range) && ISINRANGE(A.y, y - interaction_range, y + interaction_range)): GLOB.cameranet.checkTurfVis(get_turf(A))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /mob/living/silicon/ai/cancel_camera()
 	view_core()
@@ -775,7 +784,7 @@
 		return
 	set_autosay()
 
-/mob/living/silicon/ai/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/device/aicard/card)
+/mob/living/silicon/ai/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/aicard/card)
 	if(!..())
 		return
 	if(interaction == AI_TRANS_TO_CARD)//The only possible interaction. Upload AI mob to a card.

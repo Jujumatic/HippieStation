@@ -11,6 +11,10 @@
 #define BOSS_MEDAL_HIEROPHANT "Hierophant"
 #define BOSS_MEDAL_LEGION	  "Legion"
 #define BOSS_MEDAL_TENDRIL	  "Tendril"
+<<<<<<< HEAD
+=======
+#define BOSS_MEDAL_SWARMERS   "Swarmer Beacon"
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 // Score names
 #define HIEROPHANT_SCORE 	 "Hierophants Killed"

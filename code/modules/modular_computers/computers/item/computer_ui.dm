@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 /obj/item/device/modular_computer/attack_self(mob/user)
+=======
+/obj/item/modular_computer/attack_self(mob/user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	. = ..()
 	ui_interact(user)
 
 // Operates TGUI
-/obj/item/device/modular_computer/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
+/obj/item/modular_computer/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
 	if(!enabled)
 		if(ui)
 			ui.close()
@@ -43,7 +47,7 @@
 		ui.set_autoupdate(state = 1)
 
 
-/obj/item/device/modular_computer/ui_data(mob/user)
+/obj/item/modular_computer/ui_data(mob/user)
 	var/list/data = get_header_data()
 	data["programs"] = list()
 	var/obj/item/computer_hardware/hard_drive/hard_drive = all_components[MC_HDD]
@@ -61,7 +65,7 @@
 
 
 // Handles user's GUI input
-/obj/item/device/modular_computer/ui_act(action, params)
+/obj/item/modular_computer/ui_act(action, params)
 	if(..())
 		return
 	var/obj/item/computer_hardware/hard_drive/hard_drive = all_components[MC_HDD]
@@ -159,7 +163,7 @@
 		else
 			return
 
-/obj/item/device/modular_computer/ui_host()
+/obj/item/modular_computer/ui_host()
 	if(physical)
 		return physical
 	return src

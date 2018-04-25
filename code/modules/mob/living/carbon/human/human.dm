@@ -230,6 +230,7 @@
 					return
 				L.embedded_objects -= I
 				L.receive_damage(I.embedding.embedded_unsafe_removal_pain_multiplier*I.w_class)//It hurts to rip it out, get surgery you dingus.
+<<<<<<< HEAD
 				
 				// Hippie Start - Remove pinned item
 				if (I.pinned)
@@ -244,6 +245,9 @@
 					I.forceMove(get_turf(src))
 				// Hippie End
 
+=======
+				I.forceMove(get_turf(src))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				usr.put_in_hands(I)
 				emote("scream")
 
@@ -725,7 +729,6 @@
 		if(bloody_hands)
 			bloody_hands = 0
 			update_inv_gloves()
-	update_icons()	//apply the now updated overlays to the mob
 
 /mob/living/carbon/human/wash_cream()
 	if(creamed) //clean both to prevent a rare bug
@@ -869,7 +872,7 @@
 /mob/living/carbon/human/Collide(atom/A)
 	..()
 	var/crashdir = get_dir(src, A)
-	var/obj/item/device/flightpack/FP = get_flightpack()
+	var/obj/item/flightpack/FP = get_flightpack()
 	if(FP)
 		FP.flight_impact(A, crashdir)
 

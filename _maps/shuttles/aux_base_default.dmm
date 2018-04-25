@@ -46,6 +46,7 @@
 /area/shuttle/auxillary_base)
 "y" = (
 /obj/effect/turf_decal/stripes/line,
+<<<<<<< HEAD
 /obj/docking_port/mobile{
 	dwidth = 4;
 	height = 9;
@@ -55,6 +56,8 @@
 	timid = 1;
 	width = 9
 	},
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plating,
 /area/shuttle/auxillary_base)
 "z" = (

@@ -25,6 +25,7 @@
 	mob_size = MOB_SIZE_LARGE
 	layer = LARGE_MOB_LAYER //Looks weird with them slipping under mineral walls and cameras and shit otherwise
 	mouse_opacity = MOUSE_OPACITY_OPAQUE // Easier to click on in melee, they're giant targets anyway
+<<<<<<< HEAD
 	environment_target_typecache = list(
 	/obj/machinery/door/window,
 	/obj/structure/window,
@@ -36,12 +37,14 @@
 	/obj/structure/barricade,
 	/obj/machinery/field,
 	/obj/machinery/power/emitter)
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/list/crusher_loot
 	var/medal_type
 	var/score_type = BOSS_SCORE
 	var/elimination = 0
 	var/anger_modifier = 0
-	var/obj/item/device/gps/internal
+	var/obj/item/gps/internal
 	var/recovery_time = 0
 
 /mob/living/simple_animal/hostile/megafauna/Initialize(mapload)
@@ -135,4 +138,8 @@
 			SSmedals.UnlockMedal("[medaltype] [BOSS_KILL_MEDAL_CRUSHER]", C)
 		SSmedals.SetScore(BOSS_SCORE, C, 1)
 		SSmedals.SetScore(score_type, C, 1)
+<<<<<<< HEAD
 	return TRUE
+=======
+	return TRUE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

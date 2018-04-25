@@ -72,7 +72,11 @@
 	var/justzap = FALSE
 	var/obj/item/electronics/airlock/electronics
 	var/shockCooldown = FALSE //Prevents multiple shocks from happening
+<<<<<<< HEAD
 	var/obj/item/device/doorCharge/charge //If applied, causes an explosion upon opening the door
+=======
+	var/obj/item/doorCharge/charge //If applied, causes an explosion upon opening the door
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/obj/item/note //Any papers pinned to the airlock
 	var/detonated = FALSE
 	var/abandoned = FALSE
@@ -939,7 +943,7 @@
 		cable.plugin(src, user)
 	else if(istype(C, /obj/item/airlock_painter))
 		change_paintjob(C, user)
-	else if(istype(C, /obj/item/device/doorCharge))
+	else if(istype(C, /obj/item/doorCharge))
 		if(!panel_open || security_level)
 			to_chat(user, "<span class='warning'>The maintenance panel must be open to apply [C]!</span>")
 			return

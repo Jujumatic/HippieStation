@@ -147,6 +147,12 @@
 		qdel(src)
 	return TRUE
 
+<<<<<<< HEAD
+=======
+/obj/vehicle/ridden/scooter/skateboard/wrench_act(mob/living/user, obj/item/I)
+	return
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 //Wheelys
 /obj/vehicle/ridden/scooter/wheelys
 	name = "Wheely-Heels"
@@ -187,4 +193,8 @@
 			H.adjustBrainLoss(1)
 			H.updatehealth()
 		visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying!</span>")
+<<<<<<< HEAD
 		playsound(src, 'sound/effects/bang.ogg', 50, 1)
+=======
+		playsound(src, 'sound/effects/bang.ogg', 50, 1)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

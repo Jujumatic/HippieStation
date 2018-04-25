@@ -10,7 +10,7 @@
 	damage_coeff = list(BRUTE = 0.5, BURN = 0.7, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 	pass_flags = PASSMOB
 
-	radio_key = /obj/item/device/encryptionkey/secbot //AI Priv + Security
+	radio_key = /obj/item/encryptionkey/secbot //AI Priv + Security
 	radio_channel = "Security" //Security channel
 	bot_type = SEC_BOT
 	model = "Securitron"
@@ -406,7 +406,11 @@ Auto Patrol: []"},
 	Sa.build_step = 1
 	Sa.add_overlay("hs_hole")
 	Sa.created_name = name
+<<<<<<< HEAD
 	new /obj/item/device/assembly/prox_sensor(Tsec)
+=======
+	new /obj/item/assembly/prox_sensor(Tsec)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	drop_part(baton_type, Tsec)
 
 	if(prob(50))

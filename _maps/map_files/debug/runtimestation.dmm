@@ -287,7 +287,7 @@
 /area/space/nearstation)
 "aS" = (
 /obj/structure/table,
-/obj/item/device/flashlight{
+/obj/item/flashlight{
 	pixel_y = 5
 	},
 /obj/item/storage/toolbox/syndicate,
@@ -422,7 +422,7 @@
 	},
 /obj/machinery/light,
 /obj/structure/table,
-/obj/item/device/analyzer,
+/obj/item/analyzer,
 /obj/item/wrench,
 /turf/open/floor/plating,
 /area/engine/atmos)
@@ -638,7 +638,11 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/chemistry)
 "bT" = (
+<<<<<<< HEAD
 /obj/machinery/chem_dispenser/scp_294,
+=======
+/obj/machinery/chem_dispenser,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/dark,
 /area/medical/chemistry)
 "bU" = (
@@ -1384,6 +1388,8 @@
 "oV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+<<<<<<< HEAD
+=======
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plasteel,
@@ -1402,9 +1408,31 @@
 "pQ" = (
 /obj/structure/cable{
 	icon_state = "4-8"
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+<<<<<<< HEAD
+"pA" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/closed/wall/r_wall,
+/area/science)
+"pI" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/external/glass,
+/turf/open/floor/plating,
+/area/medical/medbay)
+"pQ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel,
 /area/medical/chemistry)
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 "vv" = (
 /obj/machinery/door/airlock,
 /turf/open/floor/plating,

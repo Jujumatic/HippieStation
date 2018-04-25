@@ -310,8 +310,11 @@
 
 /obj/screen/parallax_layer/planet/update_o()
 	return //Shit wont move
+<<<<<<< HEAD
 
 #undef LOOP_NONE
 #undef LOOP_NORMAL
 #undef LOOP_REVERSE
 #undef LOOP_TIME
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

@@ -7,12 +7,14 @@
 	species = "replicapod"
 	plantname = "Replica Pod"
 	product = /mob/living/carbon/human //verrry special -- Urist
+	container_type = INJECTABLE|DRAWABLE
 	lifespan = 50
 	endurance = 8
 	maturation = 10
 	production = 1
 	yield = 1 //seeds if there isn't a dna inside
 	potency = 30
+	var/volume = 5
 	var/ckey = null
 	var/realName = null
 	var/datum/mind/mind = null
@@ -23,6 +25,7 @@
 	var/list/traits = null
 	var/contains_sample = 0
 
+<<<<<<< HEAD
 /obj/item/seeds/replicapod/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/reagent_containers/syringe))
 		if(!contains_sample)
@@ -45,6 +48,40 @@
 			to_chat(user, "<span class='warning'>The seeds already contain a genetic sample!</span>")
 	else
 		return ..()
+=======
+/obj/item/seeds/replicapod/Initialize()
+	. = ..()
+
+	create_reagents(volume)
+
+/obj/item/seeds/replicapod/on_reagent_change(changetype)
+	if(changetype == ADD_REAGENT)
+		var/datum/reagent/blood/B = reagents.has_reagent("blood")
+		if(B)
+			if(B.data["mind"] && B.data["cloneable"])
+				mind = B.data["mind"]
+				ckey = B.data["ckey"]
+				realName = B.data["real_name"]
+				blood_gender = B.data["gender"]
+				blood_type = B.data["blood_type"]
+				features = B.data["features"]
+				factions = B.data["factions"]
+				factions = B.data["traits"]
+				contains_sample = TRUE
+				visible_message("<span class='notice'>The [src] is injected with a fresh blood sample.</span>")
+			else
+				visible_message("<span class='warning'>The [src] rejects the sample!</span>")
+
+	if(!reagents.has_reagent("blood"))
+		mind = null
+		ckey = null
+		realName = null
+		blood_gender = null
+		blood_type = null
+		features = null
+		factions = null
+		contains_sample = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/seeds/replicapod/get_analyzer_text()
 	var/text = ..()
@@ -53,10 +90,11 @@
 	return text
 
 
-/obj/item/seeds/replicapod/harvest(mob/user = usr) //now that one is fun -- Urist
+/obj/item/seeds/replicapod/harvest(mob/user) //now that one is fun -- Urist
 	var/obj/machinery/hydroponics/parent = loc
 	var/make_podman = 0
 	var/ckey_holder = null
+	var/list/result = list()
 	if(CONFIG_GET(flag/revival_pod_plants))
 		if(ckey)
 			for(var/mob/M in GLOB.player_list)
@@ -113,6 +151,8 @@
 		var/output_loc = parent.Adjacent(user) ? user.loc : parent.loc //needed for TK
 		for(var/i=0,i<seed_count,i++)
 			var/obj/item/seeds/replicapod/harvestseeds = src.Copy()
+			result.Add(harvestseeds)
 			harvestseeds.forceMove(output_loc)
 
 	parent.update_tray()
+	return result

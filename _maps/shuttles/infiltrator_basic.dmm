@@ -527,7 +527,11 @@
 /obj/item/screwdriver{
 	pixel_y = 9
 	},
+<<<<<<< HEAD
 /obj/item/device/assembly/voice{
+=======
+/obj/item/assembly/voice{
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	pixel_y = 3
 	},
 /obj/structure/table/reinforced,
@@ -535,7 +539,11 @@
 /area/shuttle/syndicate/armory)
 "bz" = (
 /obj/item/wrench,
+<<<<<<< HEAD
 /obj/item/device/assembly/infra,
+=======
+/obj/item/assembly/infra,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/structure/table/reinforced,
 /obj/machinery/light{
 	dir = 1
@@ -543,6 +551,7 @@
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
 "bA" = (
+<<<<<<< HEAD
 /obj/item/device/assembly/signaler,
 /obj/item/device/assembly/signaler,
 /obj/item/device/assembly/prox_sensor{
@@ -550,6 +559,15 @@
 	pixel_y = 4
 	},
 /obj/item/device/assembly/prox_sensor{
+=======
+/obj/item/assembly/signaler,
+/obj/item/assembly/signaler,
+/obj/item/assembly/prox_sensor{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/obj/item/assembly/prox_sensor{
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	pixel_x = -8;
 	pixel_y = 4
 	},
@@ -560,7 +578,11 @@
 /obj/item/weldingtool/largetank{
 	pixel_y = 3
 	},
+<<<<<<< HEAD
 /obj/item/device/multitool,
+=======
+/obj/item/multitool,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
@@ -746,10 +768,17 @@
 /turf/open/floor/plasteel/vault,
 /area/shuttle/syndicate/hallway)
 "ce" = (
+<<<<<<< HEAD
 /obj/item/device/sbeacondrop/bomb{
 	pixel_y = 5
 	},
 /obj/item/device/sbeacondrop/bomb,
+=======
+/obj/item/sbeacondrop/bomb{
+	pixel_y = 5
+	},
+/obj/item/sbeacondrop/bomb,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/vault/side,
 /area/shuttle/syndicate/armory)
@@ -791,7 +820,11 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced,
+<<<<<<< HEAD
 /obj/item/device/aicard,
+=======
+/obj/item/aicard,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/vault/side,
 /area/shuttle/syndicate/armory)
 "cj" = (

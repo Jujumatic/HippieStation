@@ -5,7 +5,7 @@
 	icon_state = "pdapainter"
 	density = TRUE
 	anchored = TRUE
-	var/obj/item/device/pda/storedpda = null
+	var/obj/item/pda/storedpda = null
 	var/list/colorlist = list()
 	max_integrity = 200
 
@@ -30,6 +30,7 @@
 /obj/machinery/pdapainter/Initialize()
 	. = ..()
 	var/list/blocked = list(
+<<<<<<< HEAD
 		/obj/item/device/pda/ai/pai,
 		/obj/item/device/pda/ai,
 		/obj/item/device/pda/heads,
@@ -37,9 +38,18 @@
 		/obj/item/device/pda/syndicate,
 		/obj/item/device/pda/chameleon,
 		/obj/item/device/pda/chameleon/broken)
+=======
+		/obj/item/pda/ai/pai,
+		/obj/item/pda/ai,
+		/obj/item/pda/heads,
+		/obj/item/pda/clear,
+		/obj/item/pda/syndicate,
+		/obj/item/pda/chameleon,
+		/obj/item/pda/chameleon/broken)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
-	for(var/P in typesof(/obj/item/device/pda) - blocked)
-		var/obj/item/device/pda/D = new P
+	for(var/P in typesof(/obj/item/pda) - blocked)
+		var/obj/item/pda/D = new P
 
 		//D.name = "PDA Style [colorlist.len+1]" //Gotta set the name, otherwise it all comes up as "PDA"
 		D.name = D.icon_state //PDAs don't have unique names, but using the sprite names works.
@@ -69,7 +79,7 @@
 		power_change()
 		return
 
-	else if(istype(O, /obj/item/device/pda))
+	else if(istype(O, /obj/item/pda))
 		if(storedpda)
 			to_chat(user, "<span class='warning'>There is already a PDA inside!</span>")
 			return
@@ -110,7 +120,11 @@
 		return
 
 	if(storedpda)
+<<<<<<< HEAD
 		var/obj/item/device/pda/P
+=======
+		var/obj/item/pda/P
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		P = input(user, "Select your color!", "PDA Painting") as null|anything in colorlist
 		if(!P)
 			return

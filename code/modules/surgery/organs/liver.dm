@@ -1,6 +1,6 @@
 #define LIVER_DEFAULT_HEALTH 100 //amount of damage required for liver failure
 #define LIVER_DEFAULT_TOX_TOLERANCE 3 //amount of toxins the liver can filter out
-#define LIVER_DEFAULT_TOX_LETHALITY 0.5 //lower values lower how harmful toxins are to the liver
+#define LIVER_DEFAULT_TOX_LETHALITY 0.01 //lower values lower how harmful toxins are to the liver
 
 /obj/item/organ/liver
 	name = "liver"
@@ -24,6 +24,7 @@
 		if(!failing)//can't process reagents with a failing liver
 			//slowly heal liver damage
 			damage = max(0, damage - 0.1)
+<<<<<<< HEAD
 
 			if(filterToxins)
 				//handle liver toxin filtration
@@ -37,7 +38,20 @@
 						C.reagents.remove_reagent(initial(toxin.id), 1)
 				else if(toxamount > toxTolerance)
 					damage += toxamount*toxLethality
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
+			if(filterToxins && !owner.has_trait(TRAIT_TOXINLOVER))
+				//handle liver toxin filtration
+				var/static/list/toxinstypecache = typecacheof(/datum/reagent/toxin)
+				for(var/I in C.reagents.reagent_list)
+					var/datum/reagent/pickedreagent = I
+					if(is_type_in_typecache(pickedreagent, toxinstypecache))
+						var/thisamount = C.reagents.get_reagent_amount(initial(pickedreagent.id))
+						if (thisamount <= toxTolerance && thisamount)
+							C.reagents.remove_reagent(initial(pickedreagent.id), 1)
+						else
+							damage += (thisamount*toxLethality)
 
 			//metabolize reagents
 			C.reagents.metabolize(C, can_overdose=TRUE)
@@ -77,7 +91,7 @@
 	alcohol_tolerance = 0.001
 	maxHealth = 200 //double the health of a normal liver
 	toxTolerance = 15 //can shrug off up to 15u of toxins
-	toxLethality = 0.3 //20% less damage than a normal liver
+	toxLethality = 0.008 //20% less damage than a normal liver
 
 /obj/item/organ/liver/cybernetic/emp_act(severity)
 	switch(severity)

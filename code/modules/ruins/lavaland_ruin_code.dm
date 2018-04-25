@@ -112,7 +112,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/device/radio/headset/syndicate/alt
+	ears = /obj/item/radio/headset/syndicate/alt
 	back = /obj/item/storage/backpack
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol
 	id = /obj/item/card/id/syndicate/anyone
@@ -140,7 +140,13 @@
 
 /obj/item/clothing/mask/chameleon/gps/Initialize()
 	. = ..()
+<<<<<<< HEAD
 	new /obj/item/device/gps/internal/lavaland_syndicate_base(src)
 
 /obj/item/device/gps/internal/lavaland_syndicate_base
+=======
+	new /obj/item/gps/internal/lavaland_syndicate_base(src)
+
+/obj/item/gps/internal/lavaland_syndicate_base
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	gpstag = "Encrypted Signal"

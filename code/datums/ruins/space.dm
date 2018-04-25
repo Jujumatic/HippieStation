@@ -269,12 +269,15 @@
 	name = "Whiteship Dock"
 	description = "An abandoned but functional vessel parked in deep space, ripe for the taking."
 
+<<<<<<< HEAD
 /datum/map_template/ruin/space/scp_294
 	id = "scp_294"
 	suffix = "scp_294.dmm"
 	name = "SCP-294 Containment"
 	description = "An abandoned asteroid base that contains several EMP-proof turrets, and a valuable artifact. Should you get past the heavy laser turrets, a valuable treasure awaits."
 
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /datum/map_template/ruin/space/cat_experiments
 	id = "meow"
 	suffix = "mrow_thats_right.dmm"
@@ -286,4 +289,8 @@
 	id = "cloning_facility"
 	suffix = "cloning_facility.dmm"
 	name = "Ancient Cloning Lab"
+<<<<<<< HEAD
 	description = "An experimental cloning lab snapped off from an ancient ship. The cloner model inside lacks many modern functionalities and security measures."
+=======
+	description = "An experimental cloning lab snapped off from an ancient ship. The cloner model inside lacks many modern functionalities and security measures."
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

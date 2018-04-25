@@ -23,6 +23,11 @@
 
 
 /datum/weather/floor_is_lava/weather_act(mob/living/L)
+<<<<<<< HEAD
+=======
+	if(issilicon(L))
+		return
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	for(var/obj/structure/O in L.loc)
 		if(O.density || (L in O.buckled_mobs && istype(O, /obj/structure/bed)))
 			return

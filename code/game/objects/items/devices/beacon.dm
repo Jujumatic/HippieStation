@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /obj/item/device/beacon
+=======
+/obj/item/beacon
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	name = "\improper tracking beacon"
 	desc = "A beacon used by a teleporter."
 	icon = 'icons/obj/device.dmi'
@@ -9,18 +13,30 @@
 	var/enabled = TRUE
 	var/renamed = FALSE
 
+<<<<<<< HEAD
 /obj/item/device/beacon/Initialize()
+=======
+/obj/item/beacon/Initialize()
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	. = ..()
 	if (enabled)
 		GLOB.teleportbeacons += src
 	else 
 		icon_state = "beacon-off"
 
+<<<<<<< HEAD
 /obj/item/device/beacon/Destroy()
 	GLOB.teleportbeacons.Remove(src)
 	return ..()
 
 /obj/item/device/beacon/attack_self(mob/user)
+=======
+/obj/item/beacon/Destroy()
+	GLOB.teleportbeacons.Remove(src)
+	return ..()
+
+/obj/item/beacon/attack_self(mob/user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	enabled = !enabled
 	if (enabled)
 		icon_state = "beacon"
@@ -31,7 +47,11 @@
 	to_chat(user, "<span class='notice'>You [enabled ? "enable" : "disable"] the beacon.</span>")
 	return
 
+<<<<<<< HEAD
 /obj/item/device/beacon/attackby(obj/item/W, mob/user)
+=======
+/obj/item/beacon/attackby(obj/item/W, mob/user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	if(istype(W, /obj/item/pen)) // needed for things that use custom names like the locator
 		var/new_name = stripped_input(user, "What would you like the name to be?")
 		if(!user.canUseTopic(src, BE_CLOSE))

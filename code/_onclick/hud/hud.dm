@@ -104,7 +104,10 @@
 	healths = null
 	healthdoll = null
 	internals = null
+<<<<<<< HEAD
 	staminas = null
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	mood = null
 	lingchemdisplay = null
 	devilsouldisplay = null

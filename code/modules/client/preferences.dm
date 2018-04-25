@@ -159,8 +159,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	dat += "<a href='?_src_=prefs;preference=tab;tab=0' [current_tab == 0 ? "class='linkOn'" : ""]>Character Settings</a>"
 	dat += "<a href='?_src_=prefs;preference=tab;tab=1' [current_tab == 1 ? "class='linkOn'" : ""]>Game Preferences</a>"
 	dat += "<a href='?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>OOC Preferences</a>"
+<<<<<<< HEAD
 	dat += "<a href='?_src_=prefs;preference=tab;tab=3' [current_tab == 3 ? "class='linkOn'" : ""]>Loadout</a>" //hippie Loadouts
 	
+=======
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	if(!path)
 		dat += "<div class='notice'>Please create an account to save your preferences</div>"
 
@@ -253,6 +257,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			var/mutant_colors
 			if((MUTCOLORS in pref_species.species_traits) || (MUTCOLORS_PARTSONLY in pref_species.species_traits))
+<<<<<<< HEAD
 
 				if(!use_skintones)
 					dat += APPEARANCE_CATEGORY_COLUMN
@@ -265,6 +270,20 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			if((EYECOLOR in pref_species.species_traits) && !(NOEYES in pref_species.species_traits))
 
+=======
+
+				if(!use_skintones)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Mutant Color</h3>"
+
+				dat += "<span style='border: 1px solid #161616; background-color: #[features["mcolor"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color;task=input'>Change</a><BR>"
+
+				mutant_colors = TRUE
+
+			if((EYECOLOR in pref_species.species_traits) && !(NOEYES in pref_species.species_traits))
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!use_skintones && !mutant_colors)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -297,7 +316,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			//Mutant stuff
 			var/mutant_category = 0
 
+<<<<<<< HEAD
 			if("tail_lizard" in pref_species.mutant_bodyparts)
+=======
+			if("tail_lizard" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -310,7 +333,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+<<<<<<< HEAD
 			if("snout" in pref_species.mutant_bodyparts)
+=======
+			if("snout" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -323,7 +350,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+<<<<<<< HEAD
 			if("horns" in pref_species.mutant_bodyparts)
+=======
+			if("horns" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -336,7 +367,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+<<<<<<< HEAD
 			if("frills" in pref_species.mutant_bodyparts)
+=======
+			if("frills" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -349,7 +384,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+<<<<<<< HEAD
 			if("spines" in pref_species.mutant_bodyparts)
+=======
+			if("spines" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -362,7 +401,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+<<<<<<< HEAD
 			if("body_markings" in pref_species.mutant_bodyparts)
+=======
+			if("body_markings" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -375,7 +418,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+<<<<<<< HEAD
 			if("legs" in pref_species.mutant_bodyparts)
+=======
+			if("legs" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -388,7 +435,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+<<<<<<< HEAD
 			if("moth_wings" in pref_species.mutant_bodyparts)
+=======
+			if("moth_wings" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -400,6 +451,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
 					mutant_category = 0
+<<<<<<< HEAD
 
 			if("moth_wings" in pref_species.mutant_bodyparts)
 
@@ -410,12 +462,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<a href='?_src_=prefs;preference=moth_wings;task=input'>[features["moth_wings"]]</a><BR>"
 
 				dat += "</td>"
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 			dat = add_hippie_choices(dat)
 			
 			if(CONFIG_GET(flag/join_with_mutant_humans))
 
+<<<<<<< HEAD
 				if("tail_human" in pref_species.mutant_bodyparts)
+=======
+				if("tail_human" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					if(!mutant_category)
 						dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -428,7 +486,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "</td>"
 						mutant_category = 0
 
+<<<<<<< HEAD
 				if("ears" in pref_species.mutant_bodyparts)
+=======
+				if("ears" in pref_species.default_features)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					if(!mutant_category)
 						dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -441,7 +503,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "</td>"
 						mutant_category = 0
 
+<<<<<<< HEAD
 				if("wings" in pref_species.mutant_bodyparts && GLOB.r_wings_list.len >1)
+=======
+				if("wings" in pref_species.default_features && GLOB.r_wings_list.len >1)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					if(!mutant_category)
 						dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -600,10 +666,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<b>Combo HUD Lighting:</b> <a href = '?_src_=prefs;preference=combohud_lighting'>[(toggles & COMBOHUD_LIGHTING)?"Full-bright":"No Change"]</a><br>"
 				dat += "</td>"
 			dat += "</tr></table>"
+<<<<<<< HEAD
 			
 		else										//hippie Loadouts
 			dat = hippie_dat_replace(current_tab)	//hippie Loadouts
 			
+=======
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	dat += "<hr><center>"
 
 	if(!IsGuestKey(user.key))
@@ -717,9 +787,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			HTML += "<a class='white' href='?_src_=prefs;preference=job;task=setJobLevel;level=[prefUpperLevel];text=[rank]' oncontextmenu='javascript:return setJobPrefRedirect([prefLowerLevel], \"[rank]\");'>"
 
 			if(rank == SSjob.overflow_role)//Overflow is special
+<<<<<<< HEAD
 				if(jobban_isbanned(user, CLUWNEBAN) || jobban_isbanned(user, CATBAN))
 					HTML += "<font color=orange>Mandatory</font>"
 				else if(job_civilian_low & overflow.flag)
+=======
+				if(job_civilian_low & overflow.flag)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					HTML += "<font color=green>Yes</font>"
 				else
 					HTML += "<font color=red>No</font>"
@@ -899,9 +973,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		dat += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center>"
 		dat += "<hr>"
 		dat += "<center><b>Current traits:</b> [all_traits.len ? all_traits.Join(", ") : "None"]</center>"
+<<<<<<< HEAD
 		/*dat += "<center><font color='#AAFFAA'>[positive_traits.len] / [MAX_POSITIVE_TRAITS]</font> \
 		| <font color='#AAAAFF'>[neutral_traits.len] / [MAX_NEUTRAL_TRAITS]</font> \
 		| <font color='#FFAAAA'>[negative_traits.len] / [MAX_NEGATIVE_TRAITS]</font></center><br>"*/
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		dat += "<center>[all_traits.len] / [MAX_TRAITS] max traits<br>\
 		<b>Trait balance remaining:</b> [GetTraitBalance()]</center><br>"
 		for(var/V in SStraits.traits)
@@ -909,22 +986,52 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/trait_name = initial(T.name)
 			var/has_trait
 			var/trait_cost = initial(T.value) * -1
+<<<<<<< HEAD
 			for(var/_V in all_traits)
 				if(_V == trait_name)
 					has_trait = TRUE
 			if(has_trait)
 				trait_cost *= -1 //invert it back, since we'd be regaining this amount
+=======
+			var/lock_reason = "This trait is unavailable."
+			var/trait_conflict = FALSE
+			for(var/_V in all_traits)
+				if(_V == trait_name)
+					has_trait = TRUE
+			if(initial(T.mood_trait) && CONFIG_GET(flag/disable_human_mood))
+				lock_reason = "Mood is disabled."
+				trait_conflict = TRUE
+			if(has_trait)
+				if(trait_conflict)
+					all_traits -= trait_name
+					has_trait = FALSE
+				else
+					trait_cost *= -1 //invert it back, since we'd be regaining this amount
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 			if(trait_cost > 0)
 				trait_cost = "+[trait_cost]"
 			var/font_color = "#AAAAFF"
 			if(initial(T.value) != 0)
 				font_color = initial(T.value) > 0 ? "#AAFFAA" : "#FFAAAA"
+<<<<<<< HEAD
 			if(has_trait)
 				dat += "<b><font color='[font_color]'>[trait_name]</font></b> - [initial(T.desc)] \
 				<a href='?_src_=prefs;preference=trait;task=update;trait=[trait_name]'>[has_trait ? "Lose" : "Take"] ([trait_cost] pts.)</a><br>"
 			else
 				dat += "<font color='[font_color]'>[trait_name]</font> - [initial(T.desc)] \
 				<a href='?_src_=prefs;preference=trait;task=update;trait=[trait_name]'>[has_trait ? "Lose" : "Take"] ([trait_cost] pts.)</a><br>"
+=======
+			if(trait_conflict)
+				dat += "<font color='[font_color]'>[trait_name]</font> - [initial(T.desc)] \
+				<font color='red'><b>LOCKED: [lock_reason]</b></font><br>"
+			else
+				if(has_trait)
+					dat += "<b><font color='[font_color]'>[trait_name]</font></b> - [initial(T.desc)] \
+					<a href='?_src_=prefs;preference=trait;task=update;trait=[trait_name]'>[has_trait ? "Lose" : "Take"] ([trait_cost] pts.)</a><br>"
+				else
+					dat += "<font color='[font_color]'>[trait_name]</font> - [initial(T.desc)] \
+					<a href='?_src_=prefs;preference=trait;task=update;trait=[trait_name]'>[has_trait ? "Lose" : "Take"] ([trait_cost] pts.)</a><br>"
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		dat += "<br><center><a href='?_src_=prefs;preference=trait;task=reset'>Reset Traits</a></center>"
 
 	user << browse(null, "window=preferences")

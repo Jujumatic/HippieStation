@@ -211,13 +211,13 @@
 	w_class = WEIGHT_CLASS_BULKY
 	force = 0.001
 	armour_penetration = 1000
-	var/obj/machinery/power/supermatter_shard/shard
+	var/obj/machinery/power/supermatter_crystal/shard
 	var/balanced = 1
 	force_string = "INFINITE"
 
 /obj/item/melee/supermatter_sword/Initialize()
 	. = ..()
-	shard = new /obj/machinery/power/supermatter_shard(src)
+	shard = new /obj/machinery/power/supermatter_crystal(src)
 	qdel(shard.countdown)
 	shard.countdown = null
 	START_PROCESSING(SSobj, src)
@@ -334,7 +334,11 @@
 /obj/item/melee/roastingstick/Initialize()
 	. = ..()
 	if (!ovens)
+<<<<<<< HEAD
 		ovens = typecacheof(list(/obj/singularity, /obj/machinery/power/supermatter_shard/crystal, /obj/structure/bonfire, /obj/structure/destructible/clockwork/massive/ratvar))
+=======
+		ovens = typecacheof(list(/obj/singularity, /obj/machinery/power/supermatter_crystal, /obj/structure/bonfire, /obj/structure/destructible/clockwork/massive/ratvar))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/melee/roastingstick/attack_self(mob/user)
 	on = !on

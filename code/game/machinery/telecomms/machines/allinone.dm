@@ -37,5 +37,9 @@
 	signal.broadcast()
 
 /obj/machinery/telecomms/allinone/attackby(obj/item/P, mob/user, params)
+<<<<<<< HEAD
 	if(istype(P, /obj/item/device/multitool))
+=======
+	if(istype(P, /obj/item/multitool))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		return attack_hand(user)

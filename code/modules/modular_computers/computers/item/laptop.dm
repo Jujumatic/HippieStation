@@ -1,4 +1,4 @@
-/obj/item/device/modular_computer/laptop
+/obj/item/modular_computer/laptop
 	name = "laptop"
 	desc = "A portable laptop computer."
 
@@ -21,38 +21,42 @@
 	var/w_class_open = WEIGHT_CLASS_BULKY
 	var/slowdown_open = TRUE
 
-/obj/item/device/modular_computer/laptop/examine(mob/user)
+/obj/item/modular_computer/laptop/examine(mob/user)
 	..()
 	if(screen_on)
 		to_chat(user, "<span class='notice'>Alt-click to close it.</span>")
 
-/obj/item/device/modular_computer/laptop/Initialize()
+/obj/item/modular_computer/laptop/Initialize()
 	. = ..()
 
 	if(start_open && !screen_on)
 		toggle_open()
 
-/obj/item/device/modular_computer/laptop/update_icon()
+/obj/item/modular_computer/laptop/update_icon()
 	if(screen_on)
 		..()
 	else
 		cut_overlays()
 		icon_state = icon_state_closed
 
-/obj/item/device/modular_computer/laptop/attack_self(mob/user)
+/obj/item/modular_computer/laptop/attack_self(mob/user)
 	if(!screen_on)
 		try_toggle_open(user)
 	else
 		return ..()
 
-/obj/item/device/modular_computer/laptop/verb/open_computer()
+/obj/item/modular_computer/laptop/verb/open_computer()
 	set name = "Toggle Open"
 	set category = "Object"
 	set src in view(1)
 
 	try_toggle_open(usr)
 
+<<<<<<< HEAD
 /obj/item/device/modular_computer/laptop/MouseDrop(obj/over_object, src_location, over_location)
+=======
+/obj/item/modular_computer/laptop/MouseDrop(obj/over_object, src_location, over_location)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	. = ..()
 	if(over_object == usr || over_object == src)
 		try_toggle_open(usr)
@@ -65,14 +69,22 @@
 				return
 			M.put_in_hand(src, H.held_index)
 
+<<<<<<< HEAD
 /obj/item/device/modular_computer/laptop/attack_hand(mob/user)
+=======
+/obj/item/modular_computer/laptop/attack_hand(mob/user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	. = ..()
 	if(.)
 		return
 	if(screen_on && isturf(loc))
 		return attack_self(user)
 
+<<<<<<< HEAD
 /obj/item/device/modular_computer/laptop/proc/try_toggle_open(mob/living/user)
+=======
+/obj/item/modular_computer/laptop/proc/try_toggle_open(mob/living/user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	if(issilicon(user))
 		return
 	if(!isturf(loc) && !ismob(loc)) // No opening it in backpack.
@@ -83,13 +95,13 @@
 	toggle_open(user)
 
 
-/obj/item/device/modular_computer/laptop/AltClick(mob/user)
+/obj/item/modular_computer/laptop/AltClick(mob/user)
 	if(screen_on) // Close it.
 		try_toggle_open(user)
 	else
 		return ..()
 
-/obj/item/device/modular_computer/laptop/proc/toggle_open(mob/living/user=null)
+/obj/item/modular_computer/laptop/proc/toggle_open(mob/living/user=null)
 	if(screen_on)
 		to_chat(user, "<span class='notice'>You close \the [src].</span>")
 		slowdown = initial(slowdown)
@@ -105,5 +117,5 @@
 
 
 // Laptop frame, starts empty and closed.
-/obj/item/device/modular_computer/laptop/buildable
+/obj/item/modular_computer/laptop/buildable
 	start_open = FALSE

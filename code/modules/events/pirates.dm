@@ -94,13 +94,13 @@
 	density = TRUE
 	anchored = TRUE
 	var/active = FALSE
-	var/obj/item/device/gps/gps
+	var/obj/item/gps/gps
 	var/credits_stored = 0
 	var/siphon_per_tick = 5
 
 /obj/machinery/shuttle_scrambler/Initialize(mapload)
 	. = ..()
-	gps = new/obj/item/device/gps/internal/pirate(src)
+	gps = new/obj/item/gps/internal/pirate(src)
 	gps.tracking = FALSE
 	update_icon()
 
@@ -174,7 +174,11 @@
 	QDEL_NULL(gps)
 	return ..()
 
+<<<<<<< HEAD
 /obj/item/device/gps/internal/pirate
+=======
+/obj/item/gps/internal/pirate
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	gpstag = "Nautical Signal"
 	desc = "You can hear shanties over the static."
 

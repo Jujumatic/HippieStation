@@ -195,6 +195,7 @@
 				return 0
 		if(!(lube&SLIDE_ICE))
 			to_chat(C, "<span class='notice'>You slipped[ O ? " on the [O.name]" : ""]!</span>")
+<<<<<<< HEAD
 			// Hippie Start - custom sounds for slipping
 			var/slip_sound = 'sound/misc/slip.ogg'
 			if(prob(95))
@@ -209,6 +210,8 @@
 				slip_sound = 'hippiestation/sound/misc/oof.ogg'
 			playsound(C.loc, (slip_sound), 50, 1, -3)
 			// Hippie End
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 			playsound(C.loc, 'sound/misc/slip.ogg', 50, 1, -3)
 
 		C.SendSignal(COMSIG_ADD_MOOD_EVENT, "slipped", /datum/mood_event/slipped)

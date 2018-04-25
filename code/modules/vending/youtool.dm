@@ -9,12 +9,21 @@
 		            /obj/item/weldingtool = 3,
 		            /obj/item/wirecutters = 5,
 		            /obj/item/wrench = 5,
+<<<<<<< HEAD
 		            /obj/item/device/analyzer = 5,
 		            /obj/item/device/t_scanner = 5,
 		            /obj/item/screwdriver = 5,
 		            /obj/item/device/flashlight/glowstick = 3,
 		            /obj/item/device/flashlight/glowstick/red = 3,
 		            /obj/item/device/flashlight = 5)
+=======
+		            /obj/item/analyzer = 5,
+		            /obj/item/t_scanner = 5,
+		            /obj/item/screwdriver = 5,
+		            /obj/item/flashlight/glowstick = 3,
+		            /obj/item/flashlight/glowstick/red = 3,
+		            /obj/item/flashlight = 5)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	contraband = list(/obj/item/weldingtool/hugetank = 2,
 		              /obj/item/clothing/gloves/color/fyellow = 2)
 	premium = list(/obj/item/clothing/gloves/color/yellow = 1)

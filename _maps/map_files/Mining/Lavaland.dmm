@@ -106,18 +106,18 @@
 /obj/structure/rack,
 /obj/item/storage/bag/ore,
 /obj/item/pickaxe,
-/obj/item/device/flashlight,
+/obj/item/flashlight,
 /obj/item/clothing/glasses/meson,
-/obj/item/device/mining_scanner,
+/obj/item/mining_scanner,
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
 "av" = (
 /obj/structure/rack,
 /obj/item/storage/bag/ore,
-/obj/item/device/flashlight,
+/obj/item/flashlight,
 /obj/item/pickaxe,
 /obj/item/clothing/glasses/meson,
-/obj/item/device/mining_scanner,
+/obj/item/mining_scanner,
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
 "aw" = (
@@ -164,7 +164,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors/explored)
 "aE" = (
-/obj/item/device/radio/intercom{
+/obj/item/radio/intercom{
 	desc = "Talk through this. It looks like it has been modified to not broadcast.";
 	dir = 2;
 	name = "Prison Intercom (General)";
@@ -384,10 +384,10 @@
 "bn" = (
 /obj/structure/table,
 /obj/item/pickaxe,
-/obj/item/device/gps/mining,
-/obj/item/device/gps/mining,
-/obj/item/device/gps/mining,
-/obj/item/device/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
 /turf/open/floor/plasteel/purple/side{
 	dir = 9
 	},
@@ -583,7 +583,11 @@
 /turf/open/floor/plating,
 /area/mine/production)
 "bO" = (
+<<<<<<< HEAD
 /obj/item/device/beacon,
+=======
+/obj/item/beacon,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plasteel/purple/corner{
 	dir = 8
 	},
@@ -932,7 +936,7 @@
 /turf/closed/wall,
 /area/mine/living_quarters)
 "cO" = (
-/obj/item/device/radio/intercom{
+/obj/item/radio/intercom{
 	dir = 8;
 	name = "Station Intercom (General)";
 	pixel_x = -28
@@ -1210,9 +1214,12 @@
 	c_tag = "Communications Relay";
 	dir = 8;
 	network = list("mine")
+<<<<<<< HEAD
 	},
 /obj/effect/baseturf_helper/picky/lava_land/basalt{
 	whitelist = /turf/open/floor
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	},
 /turf/open/floor/circuit,
 /area/mine/maintenance)
@@ -1334,7 +1341,7 @@
 	dir = 8;
 	network = list("mine")
 	},
-/obj/item/device/radio/intercom{
+/obj/item/radio/intercom{
 	dir = 8;
 	name = "Station Intercom (General)";
 	pixel_x = 28
@@ -1946,7 +1953,7 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "fq" = (
-/obj/item/device/radio/intercom{
+/obj/item/radio/intercom{
 	dir = 8;
 	name = "Station Intercom (General)";
 	pixel_x = 28
@@ -2071,7 +2078,7 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "fI" = (
-/obj/item/device/radio/intercom{
+/obj/item/radio/intercom{
 	dir = 8;
 	name = "Station Intercom (General)";
 	pixel_x = -28
@@ -2304,13 +2311,11 @@
 "gY" = (
 /obj/docking_port/stationary{
 	area_type = /area/lavaland/surface/outdoors;
-	baseturf_type = /turf/open/lava/smooth/lava_land_surface;
 	dir = 8;
 	dwidth = 2;
 	height = 5;
 	id = "laborcamp_away";
 	name = "labor camp";
-	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface;
 	width = 9
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -3258,13 +3263,11 @@
 "Uq" = (
 /obj/docking_port/stationary{
 	area_type = /area/lavaland/surface/outdoors;
-	baseturf_type = /turf/open/lava/smooth/lava_land_surface;
 	dir = 2;
 	dwidth = 11;
 	height = 22;
 	id = "whiteship_lavaland";
 	name = "lavaland wastes";
-	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface;
 	width = 35
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -3272,13 +3275,11 @@
 "Wp" = (
 /obj/docking_port/stationary{
 	area_type = /area/lavaland/surface/outdoors;
-	baseturf_type = /turf/open/lava/smooth/lava_land_surface;
 	dir = 8;
 	dwidth = 3;
 	height = 5;
 	id = "mining_away";
 	name = "lavaland mine";
-	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface;
 	width = 7
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -3339,6 +3340,7 @@
 	glass = 1;
 	name = "Mining Shuttle Airlock";
 	opacity = 0
+<<<<<<< HEAD
 	},
 /turf/open/floor/plasteel,
 /area/mine/production)
@@ -3349,6 +3351,8 @@
 "WG" = (
 /obj/effect/baseturf_helper/picky/lava_land/basalt{
 	whitelist = /turf/open/floor
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	},
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
@@ -3360,6 +3364,7 @@
 /obj/effect/baseturf_helper/picky/lava_land/plating,
 /turf/closed/wall,
 /area/mine/production)
+<<<<<<< HEAD
 "WJ" = (
 /obj/effect/baseturf_helper/picky/lava_land/plating,
 /turf/closed/wall/r_wall,
@@ -3376,6 +3381,28 @@
 	dir = 8
 	},
 /area/mine/living_quarters)
+=======
+"WF" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall,
+/area/mine/laborcamp)
+"WH" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall,
+/area/mine/eva)
+"WI" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall,
+/area/mine/production)
+"WJ" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall/r_wall,
+/area/mine/maintenance)
+"WK" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall,
+/area/mine/living_quarters)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 (1,1,1) = {"
 aa

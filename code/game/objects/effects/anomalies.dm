@@ -8,7 +8,7 @@
 	anchored = TRUE
 	light_range = 3
 	var/movechance = 70
-	var/obj/item/device/assembly/signaler/anomaly/aSignal = null
+	var/obj/item/assembly/signaler/anomaly/aSignal = null
 	var/area/impact_area
 
 	var/lifespan = 990
@@ -73,7 +73,7 @@
 
 
 /obj/effect/anomaly/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/device/analyzer))
+	if(istype(I, /obj/item/analyzer))
 		to_chat(user, "<span class='notice'>Analyzing... [src]'s unstable field is fluctuating along frequency [format_frequency(aSignal.frequency)], code [aSignal.code].</span>")
 
 ///////////////////////
@@ -193,9 +193,15 @@
 	var/turf/T = safepick(get_area_turfs(impact_area))
 	if(T)
 			// Calculate new position (searches through beacons in world)
+<<<<<<< HEAD
 		var/obj/item/device/beacon/chosen
 		var/list/possible = list()
 		for(var/obj/item/device/beacon/W in GLOB.teleportbeacons)
+=======
+		var/obj/item/beacon/chosen
+		var/list/possible = list()
+		for(var/obj/item/beacon/W in GLOB.teleportbeacons)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 			possible += W
 
 		if(possible.len > 0)
@@ -218,7 +224,11 @@
 			var/y_distance = TO.y - FROM.y
 			var/x_distance = TO.x - FROM.x
 			for (var/atom/movable/A in urange(12, FROM )) // iterate thru list of mobs in the area
+<<<<<<< HEAD
 				if(istype(A, /obj/item/device/beacon))
+=======
+				if(istype(A, /obj/item/beacon))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					continue // don't teleport beacons because that's just insanely stupid
 				if(A.anchored)
 					continue

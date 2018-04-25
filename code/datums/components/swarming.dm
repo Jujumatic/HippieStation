@@ -22,7 +22,11 @@
 
 /datum/component/swarming/proc/leave_swarm(atom/movable/AM)
 	GET_COMPONENT_FROM(other_swarm, /datum/component/swarming, AM)
+<<<<<<< HEAD
 	if(!other_swarm || !other_swarm in swarm_members)
+=======
+	if(!other_swarm || !(other_swarm in swarm_members))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		return
 	swarm_members -= other_swarm
 	if(!swarm_members.len)

@@ -2,6 +2,7 @@
 
 #define islist(L) (istype(L, /list))
 
+<<<<<<< HEAD
 #if DM_VERSION >= 512
 #define in_range(source, user) (get_dist(source, user) <= 1 && (get_step(source, 0)?:z) == (get_step(user, 0)?:z))
 #if DM_VERSION > 512
@@ -10,6 +11,9 @@
 #else
 #define in_range(source, user) (get_dist(source, user) <= 1)
 #endif
+=======
+#define in_range(source, user) (get_dist(source, user) <= 1 && (get_step(source, 0)?:z) == (get_step(user, 0)?:z))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 #define ismovableatom(A) (istype(A, /atom/movable))
 
@@ -170,13 +174,19 @@ GLOBAL_LIST_INIT(pointed_types, typecacheof(list(
 #define isbodypart(A) (istype(A, /obj/item/bodypart))
 
 //Assemblies
-#define isassembly(O) (istype(O, /obj/item/device/assembly))
+#define isassembly(O) (istype(O, /obj/item/assembly))
 
-#define isigniter(O) (istype(O, /obj/item/device/assembly/igniter))
-
+<<<<<<< HEAD
 #define isprox(O) (istype(O, /obj/item/device/assembly/prox_sensor))
 
 #define issignaler(O) (istype(O, /obj/item/device/assembly/signaler))
+=======
+#define isigniter(O) (istype(O, /obj/item/assembly/igniter))
+
+#define isprox(O) (istype(O, /obj/item/assembly/prox_sensor))
+
+#define issignaler(O) (istype(O, /obj/item/assembly/signaler))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 GLOBAL_LIST_INIT(glass_sheet_types, typecacheof(list(
 	/obj/item/stack/sheet/glass,

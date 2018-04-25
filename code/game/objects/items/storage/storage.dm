@@ -1,79 +1,14 @@
-// External storage-related logic:
-// /mob/proc/ClickOn() in /_onclick/click.dm - clicking items in storages
-// /mob/living/Move() in /modules/mob/living/living.dm - hiding storage boxes on mob movement
-// /item/attackby() in /game/objects/items.dm - use_to_pickup and allow_quick_gather functionality
-// -- c0
-
 
 /obj/item/storage
 	name = "storage"
 	icon = 'icons/obj/storage.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
-	var/silent = 0 // No message on putting items in
-	var/list/can_hold = new/list() //Typecache of objects which this item can store (if set, it can't store anything else)
-	var/list/cant_hold = new/list() //Typecache of objects which this item can't store
-	var/list/is_seeing = new/list() //List of mobs which are currently seeing the contents of this item's storage
-	var/max_w_class = WEIGHT_CLASS_SMALL //Max size of objects that this object can store (in effect only if can_hold isn't set)
-	var/max_combined_w_class = 14 //The sum of the w_classes of all the items in this storage item.
-	var/storage_slots = 7 //The number of storage slots in this container.
-	var/obj/screen/storage/boxes = null
-	var/obj/screen/close/closer = null
-	var/use_to_pickup	//Set this to make it possible to use this item in an inverse way, so you can have the item in your hand and click items on the floor to pick them up.
-	var/display_contents_with_number	//Set this to make the storage item group contents of the same type and display them as a number.
-	var/allow_quick_empty	//Set this variable to allow the object to have the 'empty' verb, which dumps all the contents on the floor.
-	var/allow_quick_gather	//Set this variable to allow the object to have the 'toggle mode' verb, which quickly collects all items from a tile.
-	var/collection_mode = 1;  //0 = pick one at a time, 1 = pick all on tile, 2 = pick all of a type
-	var/preposition = "in" // You put things 'in' a bag, but trays need 'on'.
-	var/rustle_jimmies = TRUE	//Play the rustle sound on insertion
-
-
-/obj/item/storage/MouseDrop(atom/over_object)
-	if(ismob(usr)) //all the check for item manipulation are in other places, you can safely open any storages as anything and its not buggy, i checked
-		var/mob/M = usr
-
-		if(!over_object)
-			return
-
-		if (ismecha(M.loc)) // stops inventory actions in a mech
-			return
-
-		// this must come before the screen objects only block, dunno why it wasn't before
-		if(over_object == M && M.CanReach(src,view_only = TRUE))
-			orient2hud(M)
-			if(M.s_active)
-				M.s_active.close(M)
-			show_to(M)
-			return
-
-		if(!M.incapacitated())
-			if(!istype(over_object, /obj/screen))
-				return dump_content_at(over_object, M)
-
-			if(loc != usr || (loc && loc.loc == usr))
-				return
-
-			playsound(loc, "rustle", 50, 1, -5)
-
-			if(istype(over_object, /obj/screen/inventory/hand))
-				var/obj/screen/inventory/hand/H = over_object
-				M.putItemFromInventoryInHandIfPossible(src, H.held_index)
-
-			add_fingerprint(usr)
-
-
-/obj/item/storage/MouseDrop_T(atom/movable/O, mob/user)
-	if(isitem(O))
-		var/obj/item/I = O
-		if(iscarbon(user) || isdrone(user))
-			var/mob/living/L = user
-			if(!L.incapacitated() && I == L.get_active_held_item())
-				if(can_be_inserted(I, 0))
-					handle_item_insertion(I, 0 , L)
-
+	var/component_type = /datum/component/storage/concrete
 
 /obj/item/storage/get_dumping_location(obj/item/storage/source,mob/user)
 	return src
 
+<<<<<<< HEAD
 //Tries to dump content
 /obj/item/storage/proc/dump_content_at(atom/dest_object, mob/user)
 	var/atom/dump_destination = dest_object.get_dumping_location()
@@ -518,65 +453,17 @@
 
 
 /obj/item/storage/Initialize(mapload)
+=======
+/obj/item/storage/Initialize()
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	. = ..()
-
-	can_hold = typecacheof(can_hold)
-	cant_hold = typecacheof(cant_hold)
-
-	if(allow_quick_empty)
-		verbs += /obj/item/storage/verb/quick_empty
-	else
-		verbs -= /obj/item/storage/verb/quick_empty
-
-	if(allow_quick_gather)
-		verbs += /obj/item/storage/verb/toggle_gathering_mode
-	else
-		verbs -= /obj/item/storage/verb/toggle_gathering_mode
-
-	boxes = new /obj/screen/storage()
-	boxes.name = "storage"
-	boxes.master = src
-	boxes.icon_state = "block"
-	boxes.screen_loc = "7,7 to 10,8"
-	boxes.layer = HUD_LAYER
-	boxes.plane = HUD_PLANE
-	closer = new /obj/screen/close()
-	closer.master = src
-	closer.icon_state = "backpack_close"
-	closer.layer = ABOVE_HUD_LAYER
-	closer.plane = ABOVE_HUD_PLANE
-	orient2hud()
-
 	PopulateContents()
 
+/obj/item/storage/ComponentInitialize()
+	AddComponent(component_type)
 
-/obj/item/storage/Destroy()
-	for(var/obj/O in contents)
-		O.mouse_opacity = initial(O.mouse_opacity)
-
-	close_all()
-	qdel(boxes)
-	qdel(closer)
-	return ..()
-
-
-/obj/item/storage/emp_act(severity)
-	if(!isliving(loc))
-		for(var/obj/O in contents)
-			O.emp_act(severity)
-	..()
-
-
-/obj/item/storage/attack_self(mob/user)
-	//Clicking on itself will empty it, if it has the verb to do that.
-	if(user.get_active_held_item() == src)
-		if(verbs.Find(/obj/item/storage/verb/quick_empty))
-			quick_empty()
-
-/obj/item/storage/handle_atom_del(atom/A)
-	if(A in contents)
-		usr = null
-		remove_from_storage(A, null)
+/obj/item/storage/AllowDrop()
+	return TRUE
 
 /obj/item/storage/contents_explosion(severity, target)
 	for(var/atom/A in contents)

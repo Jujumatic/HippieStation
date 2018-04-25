@@ -172,7 +172,15 @@
 	if(isliving(M))
 		var/mob/living/L = M
 		L.cure_fakedeath(id)
+<<<<<<< HEAD
+=======
 	..()
+
+/datum/reagent/toxin/zombiepowder/on_mob_life(mob/living/carbon/M)
+	M.adjustOxyLoss(0.5*REM, 0)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+	..()
+	. = 1
 
 /datum/reagent/toxin/zombiepowder/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(0.5*REM, 0)
@@ -843,6 +851,7 @@
 /datum/reagent/toxin/acid/fluacid/on_mob_life(mob/living/M)
 	M.adjustFireLoss(current_cycle/10, 0)
 	. = 1
+<<<<<<< HEAD
 	..()
 
 /datum/reagent/toxin/peaceborg/confuse
@@ -876,6 +885,8 @@
 		M.adjustStaminaLoss(10)
 	if(prob(30))
 		to_chat(M, "You should sit down and take a rest...")
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	..()
 
 /datum/reagent/toxin/delayed

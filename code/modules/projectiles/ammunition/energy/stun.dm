@@ -3,6 +3,10 @@
 	select_name = "stun"
 	fire_sound = 'sound/weapons/taser.ogg'
 	e_cost = 200
+<<<<<<< HEAD
+=======
+	harmful = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/ammo_casing/energy/electrode/spec
 	e_cost = 100
@@ -22,3 +26,7 @@
 	select_name  = "disable"
 	e_cost = 50
 	fire_sound = 'sound/weapons/taser2.ogg'
+<<<<<<< HEAD
+=======
+	harmful = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

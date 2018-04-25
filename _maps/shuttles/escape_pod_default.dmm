@@ -35,7 +35,11 @@
 /obj/structure/chair{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/item/device/radio/intercom{
+=======
+/obj/item/radio/intercom{
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	pixel_x = 25
 	},
 /obj/item/storage/pod{

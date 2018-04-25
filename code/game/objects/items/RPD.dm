@@ -194,6 +194,10 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	var/static/datum/pipe_info/first_atmos
 	var/static/datum/pipe_info/first_disposal
 	var/static/datum/pipe_info/first_transit
+<<<<<<< HEAD
+=======
+	var/autowrench = FALSE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/pipe_dispenser/New()
 	. = ..()
@@ -358,6 +362,11 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					activate()
 					var/obj/item/pipe_meter/PM = new /obj/item/pipe_meter(get_turf(A))
 					PM.setAttachLayer(temp_piping_layer)
+<<<<<<< HEAD
+=======
+					if(autowrench)
+						PM.wrench_act(user, src)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 			else
 				to_chat(user, "<span class='notice'>You start building a pipe...</span>")
 				if(do_after(user, 2, target = A))
@@ -374,7 +383,13 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					P.add_fingerprint(usr)
 					P.setPipingLayer(temp_piping_layer)
 					P.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY)
+<<<<<<< HEAD
 			
+=======
+					if(autowrench)
+						P.wrench_act(user, src)
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		if(DISPOSALS_MODE) //Making disposals pipes
 			if(!can_make_pipe)
 				return ..()
@@ -426,6 +441,11 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		else
 			return ..()
 
+/obj/item/pipe_dispenser/AltClick(mob/living/user)
+	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		return
+	autowrench = !autowrench
+	to_chat(user, "<span class='notice'>You [autowrench ? "enable" : "disable"] auto wrenching.</span>")
 
 /obj/item/pipe_dispenser/proc/activate()
 	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)

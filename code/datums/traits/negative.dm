@@ -8,6 +8,10 @@
 	gain_text = "<span class='danger'>You start feeling depressed.</span>"
 	lose_text = "<span class='notice'>You no longer feel depressed.</span>" //if only it were that easy!
 	medical_record_text = "Patient has a severe mood disorder causing them to experience sudden moments of sadness."
+<<<<<<< HEAD
+=======
+	mood_trait = TRUE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 
 
@@ -15,6 +19,10 @@
 	name = "Family Heirloom"
 	desc = "You are the current owner of an heirloom. passed down for generations. You have to keep it safe!"
 	value = -1
+<<<<<<< HEAD
+=======
+	mood_trait = TRUE
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/obj/item/heirloom
 	var/where_text
 
@@ -51,9 +59,13 @@
 	if(!where)
 		where = "at your feet"
 		if(where == "in your backpack")
+<<<<<<< HEAD
 			var/obj/item/storage/B = H.back
 			B.orient2hud(trait_holder)
 			B.show_to(trait_holder)
+=======
+			H.back.SendSignal(COMSIG_TRY_STORAGE_SHOW, H)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	where_text = "<span class='boldnotice'>There is a precious family [heirloom.name] [where], passed down from generation to generation. Keep it safe!</span>"
 
 /datum/trait/family_heirloom/post_add()

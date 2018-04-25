@@ -299,7 +299,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 			else
 				to_chat(M, "<span class='cultlarge'>\"I accept this meager sacrifice.\"</span>")
 
-	var/obj/item/device/soulstone/stone = new /obj/item/device/soulstone(get_turf(src))
+	var/obj/item/soulstone/stone = new /obj/item/soulstone(get_turf(src))
 	if(sacrificial.mind && !sacrificial.suiciding)
 		stone.invisibility = INVISIBILITY_MAXIMUM //so it's not picked up during transfer_soul()
 		stone.transfer_soul("FORCE", sacrificial, usr)
@@ -488,10 +488,6 @@ structure_check() searches for nearby cultist structures required for the invoca
 	sound_to_playing_players('sound/effects/dimensional_rend.ogg')
 	var/turf/T = get_turf(src)
 	sleep(40)
-	if(locate(/obj/singularity/narsie) in GLOB.poi_list)
-		T.visible_message("<span class='warning'>A faint fizzle could be heard echoing along with a soft chorus of screams and chanting...</span>")
-		playsound(T, 'sound/items/welder.ogg', 25, 1)
-		return
 	if(src)
 		color = RUNE_COLOR_RED
 	new /obj/singularity/narsie/large/cult(T) //Causes Nar-Sie to spawn even if the rune has been removed

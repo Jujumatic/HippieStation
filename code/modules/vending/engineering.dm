@@ -15,9 +15,15 @@
 					/obj/item/screwdriver = 12,
 					/obj/item/crowbar = 12,
 					/obj/item/wirecutters = 12,
+<<<<<<< HEAD
 					/obj/item/device/multitool = 12,
 					/obj/item/wrench = 12,
 					/obj/item/device/t_scanner = 12,
+=======
+					/obj/item/multitool = 12,
+					/obj/item/wrench = 12,
+					/obj/item/t_scanner = 12,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 					/obj/item/stock_parts/cell = 8,
 					/obj/item/weldingtool = 8,
 					/obj/item/clothing/head/welding = 8,

@@ -7,6 +7,7 @@
 	magic_fluff_string = "<span class='holoparasite'>..And draw the Drone, a dextrous master of construction and repair.</span>"
 	tech_fluff_string = "<span class='holoparasite'>Boot sequence complete. Dextrous combat modules loaded. Holoparasite swarm online.</span>"
 	carp_fluff_string = "<span class='holoparasite'>CARP CARP CARP! You caught one! It can hold stuff in its fins, sort of.</span>"
+<<<<<<< HEAD
 	dextrous = 1
 	held_items = list(null, null)
 	environment_target_typecache = list(
@@ -18,6 +19,10 @@
 	/obj/structure/rack,
 	/obj/structure/barricade,
 	/obj/machinery/camera) //so we can also attack cameras
+=======
+	dextrous = TRUE
+	held_items = list(null, null)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/obj/item/internal_storage //what we're storing within ourself
 
 /mob/living/simple_animal/hostile/guardian/dextrous/death(gibbed)

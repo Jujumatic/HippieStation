@@ -144,9 +144,6 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	QDEL_NULL(rpg_loot)
 	return ..()
 
-/obj/item/device
-	icon = 'icons/obj/device.dmi'
-
 /obj/item/proc/check_allowed_items(atom/target, not_inside, target_self)
 	if(((src in target) && !target_self) || (!isturf(target.loc) && !isturf(target) && not_inside))
 		return 0
@@ -279,10 +276,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	if(!(interaction_flags_item & INTERACT_ITEM_ATTACK_HAND_PICKUP))		//See if we're supposed to auto pickup.
 		return
 
-	if(istype(loc, /obj/item/storage))
-		//If the item is in a storage item, take it out
-		var/obj/item/storage/S = loc
-		S.remove_from_storage(src, user.loc)
+	//If the item is in a storage item, take it out
+	loc.SendSignal(COMSIG_TRY_STORAGE_TAKE, src, user.loc, TRUE)
 
 	if(throwing)
 		throwing.finalize(FALSE)
@@ -295,15 +290,16 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	if(!user.put_in_active_hand(src))
 		dropped(user)
 
+/obj/item/proc/allow_attack_hand_drop(mob/user)
+	return TRUE
+
 /obj/item/attack_paw(mob/user)
 	if(!user)
 		return
 	if(anchored)
 		return
 
-	if(istype(loc, /obj/item/storage))
-		var/obj/item/storage/S = loc
-		S.remove_from_storage(src, user.loc)
+	loc.SendSignal(COMSIG_TRY_STORAGE_TAKE, src, user.loc, TRUE)
 
 	if(throwing)
 		throwing.finalize(FALSE)
@@ -335,63 +331,6 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		if(!R.low_power_mode) //can't equip modules with an empty cell.
 			R.activate_module(src)
 			R.hud_used.update_robot_modules_display()
-
-// Due to storage type consolidation this should get used more now.
-// I have cleaned it up a little, but it could probably use more.  -Sayu
-// The lack of ..() is intentional, do not add one
-// added one, fuck the police
-/obj/item/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/storage))
-		var/obj/item/storage/S = W
-		if(S.use_to_pickup)
-			if(S.collection_mode) //Mode is set to collect multiple items on a tile and we clicked on a valid one.
-				if(isturf(loc))
-					var/list/rejections = list()
-
-					var/list/things = loc.contents.Copy()
-					if (S.collection_mode == 2)
-						things = typecache_filter_list(things, typecacheof(type))
-
-					var/len = things.len
-					if(!len)
-						to_chat(user, "<span class='notice'>You failed to pick up anything with [S].</span>")
-						return
-					var/datum/progressbar/progress = new(user, len, loc)
-
-					while (do_after(user, 10, TRUE, S, FALSE, CALLBACK(src, .proc/handle_mass_pickup, S, things, loc, rejections, progress)))
-						stoplag(1)
-
-					qdel(progress)
-
-					to_chat(user, "<span class='notice'>You put everything you could [S.preposition] [S].</span>")
-					return
-
-			else if(S.can_be_inserted(src))
-				S.handle_item_insertion(src)
-				return
-	return ..()
-
-/obj/item/proc/handle_mass_pickup(obj/item/storage/S, list/things, atom/thing_loc, list/rejections, datum/progressbar/progress)
-	for(var/obj/item/I in things)
-		things -= I
-		if(I.loc != thing_loc)
-			continue
-		if(I.type in rejections) // To limit bag spamming: any given type only complains once
-			continue
-		if(!S.can_be_inserted(I, stop_messages = TRUE))	// Note can_be_inserted still makes noise when the answer is no
-			if(S.contents.len >= S.storage_slots)
-				break
-			rejections += I.type	// therefore full bags are still a little spammy
-			continue
-
-		S.handle_item_insertion(I, TRUE)	//The 1 stops the "You put the [src] into [S]" insertion message from being displayed.
-
-		if (TICK_CHECK)
-			progress.update(progress.goal - things.len)
-			return TRUE
-
-	progress.update(progress.goal - things.len)
-	return FALSE
 
 /obj/item/proc/GetDeconstructableContents()
 	return GetAllContents() - src
@@ -429,6 +368,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 /obj/item/proc/pickup(mob/user)
 	SendSignal(COMSIG_ITEM_PICKUP, user)
 	item_flags |= IN_INVENTORY
+<<<<<<< HEAD
 
 /obj/item/proc/allow_attack_hand_drop(mob/user)
 	return TRUE
@@ -440,6 +380,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 // called when this item is added into a storage item, which is passed on as S. The loc variable is already set to the storage item.
 /obj/item/proc/on_enter_storage(obj/item/storage/S)
 	return
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 // called when "found" in pockets and storage items. Returns 1 if the search should end.
 /obj/item/proc/on_found(mob/finder)
@@ -457,6 +399,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		if(item_action_slot_check(slot, user)) //some items only give their actions buttons when in a specific slot.
 			A.Grant(user)
 	item_flags |= IN_INVENTORY
+<<<<<<< HEAD
 
 	// Hippie Start - Custom screams
 	if (iscarbon(user))
@@ -464,6 +407,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		if (C)
 			C.reindex_screams()
 	// Hippie End
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 //sometimes we only want to grant the item's action if it's equipped in a specific slot.
 /obj/item/proc/item_action_slot_check(slot, mob/user)
@@ -612,12 +557,10 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 
 /obj/item/proc/remove_item_from_storage(atom/newLoc) //please use this if you're going to snowflake an item out of a obj/item/storage
 	if(!newLoc)
-		return 0
-	if(istype(loc, /obj/item/storage))
-		var/obj/item/storage/S = loc
-		S.remove_from_storage(src,newLoc)
-		return 1
-	return 0
+		return FALSE
+	if(loc.SendSignal(COMSIG_CONTAINS_STORAGE))
+		return loc.SendSignal(COMSIG_TRY_STORAGE_TAKE, src, newLoc, TRUE)
+	return FALSE
 
 /obj/item/proc/get_belt_overlay() //Returns the icon used for overlaying the object on a belt
 	return mutable_appearance('icons/obj/clothing/belt_overlays.dmi', icon_state)

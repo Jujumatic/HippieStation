@@ -40,7 +40,10 @@
 #define TRAIT_NOBREATH			"no_breath"
 #define TRAIT_ANTIMAGIC			"anti_magic"
 #define TRAIT_HOLY				"holy"
+<<<<<<< HEAD
 
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 #define TRAIT_DEPRESSION			"depression"
 #define TRAIT_JOLLY				"jolly"
 #define TRAIT_NOCRITDAMAGE		"no_crit"

@@ -2,6 +2,10 @@
 	if(istype(input) && !QDELETED(input))
 		if(istype(input, /datum/weakref))
 			return input
+<<<<<<< HEAD
+=======
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		if(!input.weak_reference)
 			input.weak_reference = new /datum/weakref(input)
 		return input.weak_reference

@@ -41,6 +41,7 @@
 	if(..())
 		return TRUE
 	if(istype(W, /obj/item/storage/bag/ore))
+<<<<<<< HEAD
 		var/obj/item/storage/bag/ore/S = W
 		if(S.collection_mode == 1)
 			for(var/obj/item/stack/ore/O in contents)
@@ -59,6 +60,10 @@
 		playsound(src, 'sound/weapons/genhit.ogg', 50, 1)
 		return
 
+=======
+		for(var/obj/item/stack/ore/O in src)
+			W.SendSignal(COMSIG_PARENT_ATTACKBY, O)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /turf/open/floor/plating/asteroid/singularity_act()
 	if(is_planet_level(z))

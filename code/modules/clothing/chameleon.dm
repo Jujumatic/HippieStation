@@ -387,8 +387,13 @@
 	desc = "A pair of black shoes."
 	permeability_coefficient = 0.05
 	resistance_flags = NONE
+<<<<<<< HEAD
 	pockets = /obj/item/storage/internal/pocket/shoes
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+=======
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
@@ -420,7 +425,11 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/chameleon)
 	clumsy_check = 0
 	item_flags = NONE
+<<<<<<< HEAD
 	pin = /obj/item/device/firing_pin
+=======
+	pin = /obj/item/firing_pin
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	cell_type = /obj/item/stock_parts/cell/bluespace
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
@@ -579,15 +588,27 @@
 /obj/item/storage/belt/chameleon
 	name = "toolbelt"
 	desc = "Holds tools."
+<<<<<<< HEAD
 	silent = TRUE
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
 /obj/item/storage/belt/chameleon/Initialize()
 	. = ..()
+<<<<<<< HEAD
+=======
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/storage/belt
 	chameleon_action.chameleon_name = "Belt"
 	chameleon_action.initialize_disguises()
+
+/obj/item/storage/belt/chameleon/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.silent = TRUE
 
 /obj/item/storage/belt/chameleon/emp_act(severity)
 	chameleon_action.emp_randomise()
@@ -596,20 +617,25 @@
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
+<<<<<<< HEAD
 /obj/item/device/radio/headset/chameleon
+=======
+/obj/item/radio/headset/chameleon
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	name = "radio headset"
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/device/radio/headset/chameleon/Initialize()
+/obj/item/radio/headset/chameleon/Initialize()
 	. = ..()
 	chameleon_action = new(src)
-	chameleon_action.chameleon_type = /obj/item/device/radio/headset
+	chameleon_action.chameleon_type = /obj/item/radio/headset
 	chameleon_action.chameleon_name = "Headset"
 	chameleon_action.initialize_disguises()
 
-/obj/item/device/radio/headset/chameleon/emp_act(severity)
+/obj/item/radio/headset/chameleon/emp_act(severity)
 	chameleon_action.emp_randomise()
 
+<<<<<<< HEAD
 /obj/item/device/radio/headset/chameleon/broken/Initialize()
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
@@ -619,17 +645,32 @@
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
 /obj/item/device/pda/chameleon/Initialize()
+=======
+/obj/item/radio/headset/chameleon/broken/Initialize()
+	. = ..()
+	chameleon_action.emp_randomise(INFINITY)
+
+/obj/item/pda/chameleon
+	name = "PDA"
+	var/datum/action/item_action/chameleon/change/chameleon_action
+
+/obj/item/pda/chameleon/Initialize()
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	. = ..()
 	chameleon_action = new(src)
-	chameleon_action.chameleon_type = /obj/item/device/pda
+	chameleon_action.chameleon_type = /obj/item/pda
 	chameleon_action.chameleon_name = "PDA"
-	chameleon_action.chameleon_blacklist = typecacheof(list(/obj/item/device/pda/heads, /obj/item/device/pda/ai, /obj/item/device/pda/ai/pai), only_root_path = TRUE)
+	chameleon_action.chameleon_blacklist = typecacheof(list(/obj/item/pda/heads, /obj/item/pda/ai, /obj/item/pda/ai/pai), only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
 
-/obj/item/device/pda/chameleon/emp_act(severity)
+/obj/item/pda/chameleon/emp_act(severity)
 	chameleon_action.emp_randomise()
 
+<<<<<<< HEAD
 /obj/item/device/pda/chameleon/broken/Initialize()
+=======
+/obj/item/pda/chameleon/broken/Initialize()
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 

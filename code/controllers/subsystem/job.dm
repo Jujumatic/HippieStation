@@ -267,6 +267,7 @@ SUBSYSTEM_DEF(job)
 
 	HandleFeedbackGathering()
 
+<<<<<<< HEAD
 	// Hippie Start - Catbans
 	for(var/i in unassigned)
 		var/mob/dead/new_player/player = i
@@ -274,6 +275,8 @@ SUBSYSTEM_DEF(job)
 			AssignRole(player, "Assistant")
 	// Hippie End
 	
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	//People who wants to be the overflow role, sure, go on.
 	Debug("DO, Running Overflow Check 1")
 	var/datum/job/overflow = GetJob(SSjob.overflow_role)

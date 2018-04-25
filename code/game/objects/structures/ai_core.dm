@@ -9,7 +9,11 @@
 	var/state = 0
 	var/datum/ai_laws/laws
 	var/obj/item/circuitboard/circuit = null
+<<<<<<< HEAD
 	var/obj/item/device/mmi/brain = null
+=======
+	var/obj/item/mmi/brain = null
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/can_deconstruct = TRUE
 
 /obj/structure/AIcore/Initialize()
@@ -61,7 +65,11 @@
 	return TRUE
 
 /obj/structure/AIcore/latejoin_inactive/attackby(obj/item/P, mob/user, params)
+<<<<<<< HEAD
 	if(istype(P, /obj/item/device/multitool))
+=======
+	if(istype(P, /obj/item/multitool))
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		active = !active
 		to_chat(user, "You [active? "activate" : "deactivate"] [src]'s transimtters.")
 		return
@@ -172,8 +180,8 @@
 					module.install(laws, user)
 					return
 
-				if(istype(P, /obj/item/device/mmi) && !brain)
-					var/obj/item/device/mmi/M = P
+				if(istype(P, /obj/item/mmi) && !brain)
+					var/obj/item/mmi/M = P
 					if(!M.brainmob)
 						to_chat(user, "<span class='warning'>Sticking an empty [M.name] into the frame would sort of defeat the purpose!</span>")
 						return
@@ -243,7 +251,7 @@
 					return
 
 			if(AI_READY_CORE)
-				if(istype(P, /obj/item/device/aicard))
+				if(istype(P, /obj/item/aicard))
 					P.transfer_ai("INACTIVE", "AICARD", src, user)
 					return
 
@@ -303,14 +311,18 @@ That prevents a few funky behaviors.
 //The type of interaction, the player performing the operation, the AI itself, and the card object, if any.
 
 
-/atom/proc/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/device/aicard/card)
+/atom/proc/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/aicard/card)
 	if(istype(card))
 		if(card.flush)
 			to_chat(user, "<span class='boldannounce'>ERROR</span>: AI flush is in progress, cannot execute transfer protocol.")
 			return 0
 	return 1
 
+<<<<<<< HEAD
 /obj/structure/AIcore/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/device/aicard/card)
+=======
+/obj/structure/AIcore/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/aicard/card)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	if(state != AI_READY_CORE || !..())
 		return
  //Transferring a carded AI to a core.

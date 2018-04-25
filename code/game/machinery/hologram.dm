@@ -349,6 +349,7 @@ Possible to do for anyone motivated enough:
 			if(!istype(AI))
 				AI = null
 
+<<<<<<< HEAD
 			if(!QDELETED(master) && !master.incapacitated() && master.client && (!AI || AI.eyeobj))//If there is an AI attached, it's not incapacitated, it has a client, and the client eye is centered on the projector.
 				if(is_operational())//If the  machine has power.
 					if(AI)	//ais are range based
@@ -364,6 +365,10 @@ Possible to do for anyone motivated enough:
 					else
 						continue
 			clear_holo(master)//If not, we want to get rid of the hologram.
+=======
+			if(!is_operational() || !validate_user(master))
+				clear_holo(master)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 	if(outgoing_call)
 		outgoing_call.Check()
@@ -484,8 +489,37 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 	SetLightsAndPower()
 	return TRUE
 
+//Try to transfer hologram to another pad that can project on T
+/obj/machinery/holopad/proc/transfer_to_nearby_pad(turf/T,mob/holo_owner)
+	var/obj/effect/overlay/holo_pad_hologram/h = masters[holo_owner]
+	if(!h || h.HC) //Holocalls can't change source.
+		return FALSE
+	for(var/pad in holopads)
+		var/obj/machinery/holopad/another = pad
+		if(another == src)
+			continue
+		if(another.validate_location(T))
+			unset_holo(holo_owner)
+			another.set_holo(holo_owner, h)
+			return TRUE
+	return FALSE
+
+/obj/machinery/holopad/proc/validate_user(mob/living/user)
+	if(QDELETED(user) || user.incapacitated() || !user.client)
+		return FALSE
+	return TRUE
+		
+//Can we display holos there
+//Area check instead of line of sight check because this is a called a lot if AI wants to move around.
+/obj/machinery/holopad/proc/validate_location(turf/T,check_los = FALSE)
+	if(T.z == z && get_dist(T, src) <= holo_range && T.loc == get_area(src))
+		return TRUE
+	else
+		return FALSE
+
 /obj/machinery/holopad/proc/move_hologram(mob/living/user, turf/new_turf)
 	if(LAZYLEN(masters) && masters[user])
+<<<<<<< HEAD
 		var/area/holo_area = get_area(src)
 		if(new_turf.loc in holo_area.related)
 			var/obj/effect/overlay/holo_pad_hologram/holo = masters[user]
@@ -494,6 +528,20 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 			update_holoray(user, new_turf)
 		else
 			clear_holo(user)
+=======
+		var/obj/effect/overlay/holo_pad_hologram/holo = masters[user]
+		var/transfered = FALSE
+		if(!validate_location(new_turf))
+			if(!transfer_to_nearby_pad(new_turf,user))
+				clear_holo(user)
+				return FALSE
+			else
+				transfered = TRUE
+		//All is good.
+		holo.forceMove(new_turf)
+		if(!transfered)
+			update_holoray(user,new_turf)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	return TRUE
 
 

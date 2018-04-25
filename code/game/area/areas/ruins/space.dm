@@ -464,6 +464,7 @@
 	name = "Listening Post"
 	icon_state = "yellow"
 
+<<<<<<< HEAD
 /area/ruin/space/has_grav/powered/scp_294
 	name = "Abandoned SCP-294 Containment"
 	icon_state = "yellow"
@@ -471,3 +472,8 @@
 /area/ruin/space/has_grav/powered/ancient_shuttle
 	name = "Ancient Shuttle"
 	icon_state = "yellow"
+=======
+/area/ruin/space/has_grav/powered/ancient_shuttle
+	name = "Ancient Shuttle"
+	icon_state = "yellow"
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

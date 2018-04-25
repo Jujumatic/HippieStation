@@ -212,8 +212,13 @@
 							req_components[path] -= used_amt
 						else
 							added_components[part] = path
+<<<<<<< HEAD
 							replacer.remove_from_storage(part, src)
 							req_components[path]--
+=======
+							if(replacer.SendSignal(COMSIG_TRY_STORAGE_TAKE, part, src))
+								req_components[path]--
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 				for(var/obj/item/part in added_components)
 					if(istype(part,/obj/item/stack))

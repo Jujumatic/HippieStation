@@ -36,14 +36,15 @@ PROCESSING_SUBSYSTEM_DEF(circuit)
 		var/list/category_list = circuit_fabricator_recipe_list[category]
 		category_list += IC // Populating the fabricator categories
 
-	for(var/path in typesof(/obj/item/device/electronic_assembly))
-		var/obj/item/device/electronic_assembly/A = path
+	for(var/path in typesof(/obj/item/electronic_assembly))
+		var/obj/item/electronic_assembly/A = path
 		var/name = initial(A.name)
 		all_assemblies[name] = path
 		cached_assemblies[A] = new path
 
 
 	circuit_fabricator_recipe_list["Assemblies"] = list(
+<<<<<<< HEAD
 		/obj/item/device/electronic_assembly/default,
 		/obj/item/device/electronic_assembly/calc,
 		/obj/item/device/electronic_assembly/clam,
@@ -71,12 +72,48 @@ PROCESSING_SUBSYSTEM_DEF(circuit)
 		/obj/item/device/electronic_assembly/wallmount/light,
 		/obj/item/device/electronic_assembly/wallmount,
 		/obj/item/device/electronic_assembly/wallmount/heavy
+=======
+		/obj/item/electronic_assembly/default,
+		/obj/item/electronic_assembly/calc,
+		/obj/item/electronic_assembly/clam,
+		/obj/item/electronic_assembly/simple,
+		/obj/item/electronic_assembly/hook,
+		/obj/item/electronic_assembly/pda,
+		/obj/item/electronic_assembly/medium/default,
+		/obj/item/electronic_assembly/medium/box,
+		/obj/item/electronic_assembly/medium/clam,
+		/obj/item/electronic_assembly/medium/medical,
+		/obj/item/electronic_assembly/medium/gun,
+		/obj/item/electronic_assembly/medium/radio,
+		/obj/item/electronic_assembly/large/default,
+		/obj/item/electronic_assembly/large/scope,
+		/obj/item/electronic_assembly/large/terminal,
+		/obj/item/electronic_assembly/large/arm,
+		/obj/item/electronic_assembly/large/tall,
+		/obj/item/electronic_assembly/large/industrial,
+		/obj/item/electronic_assembly/drone/default,
+		/obj/item/electronic_assembly/drone/arms,
+		/obj/item/electronic_assembly/drone/secbot,
+		/obj/item/electronic_assembly/drone/medbot,
+		/obj/item/electronic_assembly/drone/genbot,
+		/obj/item/electronic_assembly/drone/android,
+		/obj/item/electronic_assembly/wallmount/light,
+		/obj/item/electronic_assembly/wallmount,
+		/obj/item/electronic_assembly/wallmount/heavy
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		///obj/item/weapon/implant/integrated_circuit
 		)
 
 	circuit_fabricator_recipe_list["Tools"] = list(
+<<<<<<< HEAD
 		/obj/item/device/integrated_electronics/wirer,
 		/obj/item/device/integrated_electronics/debugger,
 		/obj/item/device/integrated_electronics/analyzer,
 		/obj/item/device/integrated_electronics/detailer
+=======
+		/obj/item/integrated_electronics/wirer,
+		/obj/item/integrated_electronics/debugger,
+		/obj/item/integrated_electronics/analyzer,
+		/obj/item/integrated_electronics/detailer
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 		)

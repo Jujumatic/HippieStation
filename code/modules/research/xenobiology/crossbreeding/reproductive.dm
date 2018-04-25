@@ -18,6 +18,7 @@ Reproductive extracts:
 		to_chat(user, "<span class='warning'>[src] is still digesting!</span>")
 		return
 	if(istype(O, /obj/item/storage/bag/bio))
+<<<<<<< HEAD
 		var/obj/item/storage/P = O
 		var/obj/item/reagent_containers/food/snacks/monkeycube/M
 		for(var/obj/item/X in P.contents)
@@ -34,6 +35,18 @@ Reproductive extracts:
 		cubes_eaten++
 		to_chat(user, "<span class='notice'>You feed [O] to [src], and it pulses gently.</span>")
 		playsound(src, 'sound/items/eatfood.ogg', 20, 1)
+=======
+		var/list/inserted = list()
+		O.SendSignal(COMSIG_TRY_STORAGE_TAKE_TYPE, /obj/item/reagent_containers/food/snacks/monkeycube, src, 1, null, null, user, inserted)
+		if(inserted.len)
+			var/obj/item/reagent_containers/food/snacks/monkeycube/M = inserted[1]
+			if(istype(M))
+				eat_cube(M, user)
+		else
+			to_chat(user, "<span class='warning'>There are no monkey cubes in the bio bag!</span>")
+	if(istype(O,/obj/item/reagent_containers/food/snacks/monkeycube))
+		eat_cube(O, user)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	if(cubes_eaten >= 3)
 		var/cores = rand(1,4)
 		visible_message("<span class='notice'>[src] briefly swells to a massive size, and expels [cores] extract[cores > 1 ? "s":""]!</span>")
@@ -43,6 +56,15 @@ Reproductive extracts:
 			new extract_type(get_turf(loc))
 		cubes_eaten = 0
 
+<<<<<<< HEAD
+=======
+/obj/item/slimecross/reproductive/proc/eat_cube(obj/item/reagent_containers/food/snacks/monkeycube, mob/user)
+		qdel(monkeycube)
+		cubes_eaten++
+		to_chat(user, "<span class='notice'>You feed [monkeycube] to [src], and it pulses gently.</span>")
+		playsound(src, 'sound/items/eatfood.ogg', 20, 1)
+
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /obj/item/slimecross/reproductive/grey
 	extract_type = /obj/item/slime_extract/grey
 	colour = "grey"

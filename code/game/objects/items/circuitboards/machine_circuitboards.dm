@@ -449,7 +449,11 @@
 		/obj/item/stock_parts/matter_bin = 1,
 		/obj/item/stock_parts/micro_laser = 1,
 		/obj/item/stock_parts/manipulator = 1,
+<<<<<<< HEAD
 		/obj/item/device/assembly/igniter = 1)
+=======
+		/obj/item/assembly/igniter = 1)
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	needs_anchored = FALSE
 
 /obj/item/circuitboard/machine/mining_equipment_vendor
@@ -534,6 +538,17 @@
 		/obj/item/stock_parts/capacitor = 1)
 	def_components = list(/obj/item/stock_parts/cell = /obj/item/stock_parts/cell/high/empty)
 
+/obj/item/circuitboard/machine/rad_collector
+	name = "Radiation Collector (Machine Board)"
+	build_path = /obj/machinery/power/rad_collector
+	req_components = list(
+		/obj/item/stack/cable_coil = 5,
+		/obj/item/stock_parts/matter_bin = 1,
+		/obj/item/stack/sheet/plasmarglass = 2,
+		/obj/item/stock_parts/capacitor = 1,
+		/obj/item/stock_parts/manipulator = 1)
+	needs_anchored = FALSE
+
 /obj/item/circuitboard/machine/tesla_coil
 	name = "Tesla Controller (Machine Board)"
 	desc = "You can use a screwdriver to switch between Research and Power Generation"
@@ -609,6 +624,17 @@
 		/obj/item/stock_parts/cell = 1)
 	def_components = list(/obj/item/stock_parts/cell = /obj/item/stock_parts/cell/high)
 	needs_anchored = FALSE
+<<<<<<< HEAD
+=======
+
+/obj/item/circuitboard/machine/chem_dispenser/drinks
+	name = "Soda Dispenser (Machine Board)"
+	build_path = /obj/machinery/chem_dispenser/drinks
+
+/obj/item/circuitboard/machine/chem_dispenser/drinks/beer
+	name = "Booze Dispenser (Machine Board)"
+	build_path = /obj/machinery/chem_dispenser/drinks/beer
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/circuitboard/machine/smoke_machine
 	name = "Smoke Machine (Machine Board)"

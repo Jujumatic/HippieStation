@@ -686,4 +686,8 @@
 	description = "The sorrow and melancholy of a thousand bereaved clowns, forever denied their Honkmechs."
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#eef442" // rgb: 238, 244, 66
+<<<<<<< HEAD
 	taste_description = "mournful honking"
+=======
+	taste_description = "mournful honking"
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

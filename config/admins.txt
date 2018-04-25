@@ -131,4 +131,9 @@ JStheguy = Game Master
 excessiveuseofcobby = Game Master
 Plizzard = Game Master
 octareenroon91 = Game Master
+<<<<<<< HEAD
 Serpentarium = Game Master
+=======
+Serpentarium = Game Master
+Averagejoe82 = Game Master
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45

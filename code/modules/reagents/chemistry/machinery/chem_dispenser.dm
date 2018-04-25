@@ -413,6 +413,10 @@ obj/machinery/chem_dispenser/proc/work_animation()
 	amount = 10
 	pixel_y = 6
 	layer = WALL_OBJ_LAYER
+<<<<<<< HEAD
+=======
+	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	working_state = null
 	nopower_state = null
 	dispensable_reagents = list(
@@ -450,6 +454,7 @@ obj/machinery/chem_dispenser/proc/work_animation()
 	anchored = TRUE
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "booze_dispenser"
+	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks/beer
 	dispensable_reagents = list(
 		"beer",
 		"kahlua",

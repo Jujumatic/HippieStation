@@ -23,11 +23,14 @@
 	*/
 	var/zone_selected = null
 
+<<<<<<< HEAD
 	// Hippie Start
 	var/macro_default = "default"
 	var/macro_hotkeys = "hotkeys"
 	// Hippie End
 
+=======
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	var/computer_id = null
 	var/list/logging = list(INDIVIDUAL_ATTACK_LOG, INDIVIDUAL_SAY_LOG, INDIVIDUAL_EMOTE_LOG, INDIVIDUAL_OOC_LOG)
 	var/obj/machinery/machine = null
@@ -65,7 +68,11 @@
 	var/list/held_items = list() //len = number of hands, eg: 2 nulls is 2 empty hands, 1 item and 1 null is 1 full hand and 1 empty hand.
 	//held_items[active_hand_index] is the actively held item, but please use get_active_held_item() instead, because OOP
 
+<<<<<<< HEAD
 	var/obj/item/storage/s_active = null//Carbon
+=======
+	var/datum/component/storage/active_storage = null//Carbon
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 	var/datum/hud/hud_used = null
 

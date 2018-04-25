@@ -72,12 +72,16 @@
 /area/ruin/space/abandoned_tele)
 "q" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/device/flashlight,
+/obj/item/flashlight,
 /turf/open/floor/plating/airless,
 /area/ruin/space/abandoned_tele)
 "r" = (
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/item/device/beacon,
+=======
+/obj/item/beacon,
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 /turf/open/floor/plating/airless,
 /area/ruin/space/abandoned_tele)
 "s" = (
@@ -110,8 +114,8 @@
 /area/ruin/space/abandoned_tele)
 "z" = (
 /obj/structure/closet/crate,
-/obj/item/device/aicard,
-/obj/item/device/multitool,
+/obj/item/aicard,
+/obj/item/multitool,
 /obj/item/weldingtool,
 /obj/item/wrench,
 /obj/item/circuitboard/computer/teleporter,

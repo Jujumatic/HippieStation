@@ -9,7 +9,11 @@
 	anchored = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 0
+<<<<<<< HEAD
 	var/obj/item/device/beacon/Beacon
+=======
+	var/obj/item/beacon/Beacon
+>>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/machinery/bluespace_beacon/Initialize()
 	. = ..()
