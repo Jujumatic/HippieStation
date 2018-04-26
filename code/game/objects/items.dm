@@ -369,6 +369,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	SendSignal(COMSIG_ITEM_PICKUP, user)
 	item_flags |= IN_INVENTORY
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /obj/item/proc/allow_attack_hand_drop(mob/user)
 	return TRUE
@@ -382,6 +383,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	return
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 // called when "found" in pockets and storage items. Returns 1 if the search should end.
 /obj/item/proc/on_found(mob/finder)
@@ -400,6 +403,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 			A.Grant(user)
 	item_flags |= IN_INVENTORY
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	// Hippie Start - Custom screams
 	if (iscarbon(user))
@@ -409,6 +413,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	// Hippie End
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 //sometimes we only want to grant the item's action if it's equipped in a specific slot.
 /obj/item/proc/item_action_slot_check(slot, mob/user)

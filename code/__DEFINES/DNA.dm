@@ -61,6 +61,7 @@
 
 //Transformation proc stuff
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define TR_KEEPITEMS	1
 #define TR_KEEPVIRUS	2
 #define TR_KEEPDAMAGE	4
@@ -70,6 +71,8 @@
 #define TR_DEFAULTMSG	64
 #define TR_KEEPORGANS	256
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define TR_KEEPITEMS	(1<<0)
 #define TR_KEEPVIRUS	(1<<1)
 #define TR_KEEPDAMAGE	(1<<2)
@@ -78,7 +81,10 @@
 #define TR_KEEPSE		(1<<5)	// changelings shouldn't edit the DNA's SE when turning into a monkey
 #define TR_DEFAULTMSG	(1<<6)
 #define TR_KEEPORGANS	(1<<8)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 
 #define CLONER_FRESH_CLONE "fresh"

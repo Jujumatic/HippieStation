@@ -1,9 +1,13 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define DISEASE_LIMIT		3 //HIPPIE, we like to have three diseases
 =======
 #define DISEASE_LIMIT		1
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define DISEASE_LIMIT		1
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define VIRUS_SYMPTOM_LIMIT	6
 
 //Visibility Flags
@@ -17,6 +21,7 @@
 
 //Spread Flags
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define DISEASE_SPREAD_SPECIAL 1
 #define DISEASE_SPREAD_NON_CONTAGIOUS 2
 #define DISEASE_SPREAD_BLOOD 4
@@ -24,13 +29,18 @@
 #define DISEASE_SPREAD_CONTACT_SKIN 16
 #define DISEASE_SPREAD_AIRBORNE 32
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define DISEASE_SPREAD_SPECIAL			(1<<0)
 #define DISEASE_SPREAD_NON_CONTAGIOUS	(1<<1)
 #define DISEASE_SPREAD_BLOOD			(1<<2)
 #define DISEASE_SPREAD_CONTACT_FLUIDS	(1<<3)
 #define DISEASE_SPREAD_CONTACT_SKIN 	(1<<4)
 #define DISEASE_SPREAD_AIRBORNE			(1<<5)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 //Severity Defines
 #define DISEASE_SEVERITY_POSITIVE	"Positive"  //Diseases that buff, heal, or at least do nothing at all

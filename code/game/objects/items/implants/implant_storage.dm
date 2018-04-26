@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/storage/internal/implant
 	name = "bluespace pocket"
 	max_w_class = WEIGHT_CLASS_NORMAL
@@ -9,6 +10,8 @@
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/implant/storage
 	name = "storage implant"
 	desc = "Stores up to two big items in a bluespace pocket."
@@ -21,11 +24,16 @@
 
 /obj/item/implant/storage/removed(source, silent = FALSE, special = 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(..())
 =======
 	. = ..()
 	if(.)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	. = ..()
+	if(.)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(!special)
 			qdel(GetComponent(/datum/component/storage/concrete/implant))
 

@@ -12,18 +12,24 @@
 	dog_fashion = null
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/headset/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins putting \the [src]'s antenna up [user.p_their()] nose! It looks like [user.p_theyre()] trying to give [user.p_them()]self cancer!</span>")
 	return TOXLOSS
 
 /obj/item/device/radio/headset/examine(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/radio/headset/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins putting \the [src]'s antenna up [user.p_their()] nose! It looks like [user.p_theyre()] trying to give [user.p_them()]self cancer!</span>")
 	return TOXLOSS
 
 /obj/item/radio/headset/examine(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 	to_chat(user, "<span class='notice'>To speak on the general radio frequency, use ; before speaking.</span>")
 	if (command)
@@ -205,6 +211,7 @@
 /obj/item/radio/headset/headset_cent/empty
 	keyslot = null
 	keyslot2 = null
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 /obj/item/device/radio/headset/headset_cent/empty
@@ -217,6 +224,11 @@
 /obj/item/radio/headset/headset_cent/commander
 	keyslot = new /obj/item/encryptionkey/heads/captain
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+/obj/item/radio/headset/headset_cent/commander
+	keyslot = new /obj/item/encryptionkey/heads/captain
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/radio/headset/headset_cent/alt
 	name = "\improper CentCom bowman headset"

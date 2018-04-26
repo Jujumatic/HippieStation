@@ -9,6 +9,7 @@
 	return src
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //Tries to dump content
 /obj/item/storage/proc/dump_content_at(atom/dest_object, mob/user)
 	var/atom/dump_destination = dest_object.get_dumping_location()
@@ -456,6 +457,9 @@
 =======
 /obj/item/storage/Initialize()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/storage/Initialize()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	PopulateContents()
 

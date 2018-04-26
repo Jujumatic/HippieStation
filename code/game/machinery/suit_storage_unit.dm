@@ -104,14 +104,20 @@
 	storage_type = /obj/item/tank/internals/emergency_oxygen/double
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/suit_storage_unit/radsuit
 	name = "radiation suit storage unit"
 	suit_type = /obj/item/clothing/suit/radiation
 	helmet_type = /obj/item/clothing/head/radiation
 	storage_type = /obj/item/geiger_counter
 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/suit_storage_unit/open
 	state_open = TRUE
 	density = FALSE

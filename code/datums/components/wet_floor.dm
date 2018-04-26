@@ -25,11 +25,15 @@
 /datum/component/wet_floor/Initialize(strength, duration_minimum, duration_add, duration_maximum, _permanent = FALSE)
 	if(!isopenturf(parent))
 <<<<<<< HEAD
+<<<<<<< HEAD
 		. = COMPONENT_INCOMPATIBLE
 		CRASH("Wet floor component attempted to be applied to a non open turf!")
 =======
 		return COMPONENT_INCOMPATIBLE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		return COMPONENT_INCOMPATIBLE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	add_wet(strength, duration_minimum, duration_add, duration_maximum)
 	RegisterSignal(COMSIG_TURF_IS_WET, .proc/is_wet)
 	RegisterSignal(COMSIG_TURF_MAKE_DRY, .proc/dry)
@@ -143,11 +147,15 @@
 /datum/component/wet_floor/OnTransfer(datum/to_datum)
 	if(!isopenturf(to_datum))
 <<<<<<< HEAD
+<<<<<<< HEAD
 		. = COMPONENT_INCOMPATIBLE
 		CRASH("Wet floor component attempted to be transferred to a non open turf!")
 =======
 		return COMPONENT_INCOMPATIBLE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		return COMPONENT_INCOMPATIBLE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/turf/O = parent
 	O.cut_overlay(current_overlay)
 	var/turf/T = to_datum

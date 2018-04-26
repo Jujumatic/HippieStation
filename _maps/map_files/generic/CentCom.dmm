@@ -3068,6 +3068,7 @@
 	id = "XCCQMLoaddoor2";
 	name = "Supply Dock Loading Door"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	},
 /obj/machinery/conveyor{
 	dir = 4;
@@ -3075,6 +3076,8 @@
 	movedir = 8
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	},
 /obj/effect/turf_decal/stripes/end{
 	dir = 8
@@ -3102,6 +3105,7 @@
 	id = "XCCQMLoaddoor2";
 	name = "Supply Dock Loading Door"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	},
 /obj/machinery/conveyor{
 	dir = 4;
@@ -3109,6 +3113,8 @@
 	movedir = 8
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 2
@@ -5323,16 +5329,22 @@
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 8
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	},
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
+<<<<<<< HEAD
 =======
 	},
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /area/tdome/tdomeobserve)
 "oT" = (
 /obj/structure/table/wood,
@@ -8479,18 +8491,24 @@
 /obj/docking_port/stationary{
 	area_type = /area/syndicate_mothership/control;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	baseturf_type = /turf/open/space;
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	dir = 1;
 	dwidth = 3;
 	height = 7;
 	name = "escape pod loader";
 	roundstart_template = /datum/map_template/shuttle/assault_pod/default;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	turf_type = /turf/open/floor/plating/airless;
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	width = 7
 	},
 /turf/open/floor/plating/airless,
@@ -8591,10 +8609,17 @@
 	name = "CentCom Security";
 	opacity = 1;
 	req_access_txt = "101"
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+=======
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -13409,9 +13434,12 @@
 	name = "syndicate recon outpost";
 	roundstart_template = /datum/map_template/shuttle/infiltrator/basic;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	turf_type = /turf/open/floor/plating/asteroid/snow;
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	width = 23
 	},
 /turf/open/floor/plating/asteroid/snow/airless,

@@ -59,6 +59,7 @@
 			break
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/doorButtons/access_button/attack_hand(mob/user)
 	. = ..()
 	if(.)
@@ -66,6 +67,9 @@
 =======
 /obj/machinery/doorButtons/access_button/interact(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/doorButtons/access_button/interact(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(busy)
 		return
 	if(!allowed(user))
@@ -265,6 +269,7 @@
 		icon_state = "access_control_standby"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/doorButtons/airlock_controller/attack_hand(mob/user)
 	. = ..()
 	if(.)
@@ -272,6 +277,9 @@
 =======
 /obj/machinery/doorButtons/airlock_controller/ui_interact(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/doorButtons/airlock_controller/ui_interact(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/datum/browser/popup = new(user, "computer", name)
 	popup.set_title_image(user.browse_rsc_icon(src.icon, src.icon_state))
 	popup.set_content(returnText())

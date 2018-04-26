@@ -580,9 +580,15 @@
 	beakers += B1
 	beakers += B2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 #undef READY
 #undef WIRED
 #undef EMPTY
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

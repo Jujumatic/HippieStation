@@ -105,10 +105,14 @@
 
 /obj/machinery/power/rad_collector/attackby(obj/item/W, mob/user, params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(W, /obj/item/device/analyzer) && loaded_tank)
 =======
 	if(istype(W, /obj/item/analyzer) && loaded_tank)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(W, /obj/item/analyzer) && loaded_tank)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		atmosanalyzer_scan(loaded_tank.air_contents, user)
 	else if(istype(W, /obj/item/tank/internals/plasma))
 		if(!anchored)
@@ -142,7 +146,10 @@
 	return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/power/rad_collector/screwdriver_act(mob/living/user, obj/item/I)
 	if(loaded_tank)
 		to_chat(user, "<span class='warning'>Remove the plasma tank first!</span>")
@@ -150,7 +157,10 @@
 		default_deconstruction_screwdriver(user, icon_state, icon_state, I)
 	return TRUE
 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/power/rad_collector/crowbar_act(mob/living/user, obj/item/I)
 	if(loaded_tank)
 		if(locked)
@@ -159,10 +169,15 @@
 		eject()
 		return TRUE
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	if(default_deconstruction_crowbar(I))
 		return TRUE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(default_deconstruction_crowbar(I))
+		return TRUE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	to_chat(user, "<span class='warning'>There isn't a tank loaded!</span>")
 	return TRUE
 

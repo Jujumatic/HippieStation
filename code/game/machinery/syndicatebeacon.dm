@@ -129,6 +129,7 @@
 /obj/item/sbeacondrop/powersink
 	desc = "A label on it reads: <i>Warning: Activating this device will send a power draining device to your location</i>."
 <<<<<<< HEAD
+<<<<<<< HEAD
 	droptype = /obj/item/device/powersink
 
 /obj/item/device/sbeacondrop/clownbomb
@@ -137,5 +138,10 @@
 
 /obj/item/sbeacondrop/clownbomb
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	droptype = /obj/item/powersink
+
+/obj/item/sbeacondrop/clownbomb
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	desc = "A label on it reads: <i>Warning: Activating this device will send a silly explosive to your location</i>."
 	droptype = /obj/machinery/syndicatebomb/badmin/clown

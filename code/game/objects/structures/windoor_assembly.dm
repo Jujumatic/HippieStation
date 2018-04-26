@@ -254,6 +254,7 @@
 				user.visible_message("[user] pries the windoor into the frame.",
 					"<span class='notice'>You start prying the windoor into the frame...</span>")
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 				if(W.use_tool(src, user, 40, volume=100) && electronics)
 
@@ -268,6 +269,14 @@
 					to_chat(user, "<span class='notice'>You finish the windoor.</span>")
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+				if(W.use_tool(src, user, 40, volume=100) && electronics)
+
+					density = TRUE //Shouldn't matter but just incase
+					to_chat(user, "<span class='notice'>You finish the windoor.</span>")
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					if(secure)
 						var/obj/machinery/door/window/brigdoor/windoor = new /obj/machinery/door/window/brigdoor(loc)
 						if(facing == "l")

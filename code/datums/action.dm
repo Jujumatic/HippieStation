@@ -693,7 +693,10 @@
 		owner.remove_alt_appearance("smallsprite")
 		small = FALSE
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/action/item_action/storage_gather_mode
 	name = "Switch gathering mode"
@@ -716,4 +719,7 @@
 /datum/action/item_action/storage_gather_mode/Trigger()
 	GET_COMPONENT_FROM(STR, /datum/component/storage, target)
 	STR.gather_mode_switch(owner)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

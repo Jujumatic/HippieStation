@@ -31,6 +31,7 @@
 	. = ..()
 	var/list/blocked = list(
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/pda/ai/pai,
 		/obj/item/device/pda/ai,
 		/obj/item/device/pda/heads,
@@ -39,6 +40,8 @@
 		/obj/item/device/pda/chameleon,
 		/obj/item/device/pda/chameleon/broken)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/pda/ai/pai,
 		/obj/item/pda/ai,
 		/obj/item/pda/heads,
@@ -46,7 +49,10 @@
 		/obj/item/pda/syndicate,
 		/obj/item/pda/chameleon,
 		/obj/item/pda/chameleon/broken)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	for(var/P in typesof(/obj/item/pda) - blocked)
 		var/obj/item/pda/D = new P
@@ -121,10 +127,14 @@
 
 	if(storedpda)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/obj/item/device/pda/P
 =======
 		var/obj/item/pda/P
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		var/obj/item/pda/P
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		P = input(user, "Select your color!", "PDA Painting") as null|anything in colorlist
 		if(!P)
 			return

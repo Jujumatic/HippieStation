@@ -237,10 +237,14 @@
 		step(wearer, pick(GLOB.alldirs))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flightpack/proc/on_mob_move(mob/mob, turf/oldLoc, dir, forced)
 =======
 /obj/item/flightpack/proc/on_mob_move(mob/mob, turf/oldLoc, dir, forced)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flightpack/proc/on_mob_move(mob/mob, turf/oldLoc, dir, forced)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(forced)
 		if(cached_pull && istype(oldLoc) && (get_dist(oldLoc, loc) <= 1) && !oldLoc.density)
 			cached_pull.forceMove(oldLoc)
@@ -260,10 +264,14 @@
 		ion_trail.generate_effect()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flightpack/intercept_user_move(dir, mob, newLoc, oldLoc)
 =======
 /obj/item/flightpack/intercept_user_move(dir, mob, newLoc, oldLoc)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flightpack/intercept_user_move(dir, mob, newLoc, oldLoc)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!flight)
 		return
 	var/momentum_increment = momentum_gain

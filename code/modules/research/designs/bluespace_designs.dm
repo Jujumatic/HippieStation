@@ -10,10 +10,14 @@
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 150, MAT_GLASS = 100)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	build_path = /obj/item/device/beacon
 =======
 	build_path = /obj/item/beacon
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	build_path = /obj/item/beacon
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	category = list("Bluespace Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SECURITY
 

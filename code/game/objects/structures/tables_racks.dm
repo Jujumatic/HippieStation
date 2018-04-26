@@ -136,6 +136,7 @@
 		var/obj/item/storage/bag/tray/T = I
 		if(T.contents.len > 0) // If the tray isn't empty
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/list/obj/item/oldContents = T.contents.Copy()
 			T.quick_empty()
 			for(var/obj/item/C in oldContents)
@@ -144,6 +145,9 @@
 =======
 			I.SendSignal(COMSIG_TRY_STORAGE_QUICK_EMPTY, drop_location())
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			I.SendSignal(COMSIG_TRY_STORAGE_QUICK_EMPTY, drop_location())
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			user.visible_message("[user] empties [I] on [src].")
 			return
 		// If the tray IS empty, continue on (tray will be placed on the table like other items)

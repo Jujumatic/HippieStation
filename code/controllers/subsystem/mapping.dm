@@ -356,10 +356,14 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 			if(!mapfile)
 				return
 <<<<<<< HEAD
+<<<<<<< HEAD
 			away_name = mapfile
 =======
 			away_name = mapfile + " custom"
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			away_name = mapfile + " custom"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			to_chat(usr,"<span class='notice'>Loading [mapfile]...</span>")
 			var/datum/map_template/template = new(mapfile, "Away Mission")
 			away_level = template.load_new_z()

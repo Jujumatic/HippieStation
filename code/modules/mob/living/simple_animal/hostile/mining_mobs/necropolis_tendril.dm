@@ -41,10 +41,14 @@
 			var/turf/closed/mineral/M = F
 			M.ScrapeAway(null, CHANGETURF_IGNORE_AIR)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	gps = new /obj/item/device/gps/internal(src)
 =======
 	gps = new /obj/item/gps/internal(src)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	gps = new /obj/item/gps/internal(src)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /mob/living/simple_animal/hostile/spawner/lavaland/Destroy()
 	QDEL_NULL(emitted_light)

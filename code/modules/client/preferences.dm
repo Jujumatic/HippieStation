@@ -160,9 +160,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	dat += "<a href='?_src_=prefs;preference=tab;tab=1' [current_tab == 1 ? "class='linkOn'" : ""]>Game Preferences</a>"
 	dat += "<a href='?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>OOC Preferences</a>"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	dat += "<a href='?_src_=prefs;preference=tab;tab=3' [current_tab == 3 ? "class='linkOn'" : ""]>Loadout</a>" //hippie Loadouts
 	
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 	if(!path)
@@ -258,6 +261,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/mutant_colors
 			if((MUTCOLORS in pref_species.species_traits) || (MUTCOLORS_PARTSONLY in pref_species.species_traits))
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 				if(!use_skintones)
 					dat += APPEARANCE_CATEGORY_COLUMN
@@ -279,11 +283,24 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<span style='border: 1px solid #161616; background-color: #[features["mcolor"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color;task=input'>Change</a><BR>"
 
+=======
+
+				if(!use_skintones)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Mutant Color</h3>"
+
+				dat += "<span style='border: 1px solid #161616; background-color: #[features["mcolor"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color;task=input'>Change</a><BR>"
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				mutant_colors = TRUE
 
 			if((EYECOLOR in pref_species.species_traits) && !(NOEYES in pref_species.species_traits))
 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!use_skintones && !mutant_colors)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -317,10 +334,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("tail_lizard" in pref_species.mutant_bodyparts)
 =======
 			if("tail_lizard" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("tail_lizard" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -334,10 +355,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("snout" in pref_species.mutant_bodyparts)
 =======
 			if("snout" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("snout" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -351,10 +376,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("horns" in pref_species.mutant_bodyparts)
 =======
 			if("horns" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("horns" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -368,10 +397,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("frills" in pref_species.mutant_bodyparts)
 =======
 			if("frills" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("frills" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -385,10 +418,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("spines" in pref_species.mutant_bodyparts)
 =======
 			if("spines" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("spines" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -402,10 +439,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("body_markings" in pref_species.mutant_bodyparts)
 =======
 			if("body_markings" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("body_markings" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -419,10 +460,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("legs" in pref_species.mutant_bodyparts)
 =======
 			if("legs" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("legs" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -436,10 +481,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if("moth_wings" in pref_species.mutant_bodyparts)
 =======
 			if("moth_wings" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if("moth_wings" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -451,6 +500,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
 					mutant_category = 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 			if("moth_wings" in pref_species.mutant_bodyparts)
@@ -464,16 +514,22 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "</td>"
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 			dat = add_hippie_choices(dat)
 			
 			if(CONFIG_GET(flag/join_with_mutant_humans))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if("tail_human" in pref_species.mutant_bodyparts)
 =======
 				if("tail_human" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				if("tail_human" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					if(!mutant_category)
 						dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -487,10 +543,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if("ears" in pref_species.mutant_bodyparts)
 =======
 				if("ears" in pref_species.default_features)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				if("ears" in pref_species.default_features)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					if(!mutant_category)
 						dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -504,10 +564,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						mutant_category = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if("wings" in pref_species.mutant_bodyparts && GLOB.r_wings_list.len >1)
 =======
 				if("wings" in pref_species.default_features && GLOB.r_wings_list.len >1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				if("wings" in pref_species.default_features && GLOB.r_wings_list.len >1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					if(!mutant_category)
 						dat += APPEARANCE_CATEGORY_COLUMN
 
@@ -570,9 +634,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<b>Ghosts of Others:</b> <a href='?_src_=prefs;task=input;preference=ghostothers'>[button_name]</a><br>"
 			dat += "<br>"
+<<<<<<< HEAD
 
 			dat += "<b>FPS:</b> <a href='?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
 
+=======
+
+			dat += "<b>FPS:</b> <a href='?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			dat += "<b>Parallax (Fancy Space):</b> <a href='?_src_=prefs;preference=parallaxdown' oncontextmenu='window.location.href=\"?_src_=prefs;preference=parallaxup\";return false;'>"
 			switch (parallax)
 				if (PARALLAX_LOW)
@@ -667,6 +737,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "</td>"
 			dat += "</tr></table>"
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 		else										//hippie Loadouts
 			dat = hippie_dat_replace(current_tab)	//hippie Loadouts
@@ -674,6 +745,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	dat += "<hr><center>"
 
 	if(!IsGuestKey(user.key))
@@ -788,12 +862,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			if(rank == SSjob.overflow_role)//Overflow is special
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if(jobban_isbanned(user, CLUWNEBAN) || jobban_isbanned(user, CATBAN))
 					HTML += "<font color=orange>Mandatory</font>"
 				else if(job_civilian_low & overflow.flag)
 =======
 				if(job_civilian_low & overflow.flag)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				if(job_civilian_low & overflow.flag)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					HTML += "<font color=green>Yes</font>"
 				else
 					HTML += "<font color=red>No</font>"
@@ -974,11 +1052,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		dat += "<hr>"
 		dat += "<center><b>Current traits:</b> [all_traits.len ? all_traits.Join(", ") : "None"]</center>"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/*dat += "<center><font color='#AAFFAA'>[positive_traits.len] / [MAX_POSITIVE_TRAITS]</font> \
 		| <font color='#AAAAFF'>[neutral_traits.len] / [MAX_NEUTRAL_TRAITS]</font> \
 		| <font color='#FFAAAA'>[negative_traits.len] / [MAX_NEGATIVE_TRAITS]</font></center><br>"*/
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		dat += "<center>[all_traits.len] / [MAX_TRAITS] max traits<br>\
 		<b>Trait balance remaining:</b> [GetTraitBalance()]</center><br>"
 		for(var/V in SStraits.traits)
@@ -987,12 +1068,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/has_trait
 			var/trait_cost = initial(T.value) * -1
 <<<<<<< HEAD
+<<<<<<< HEAD
 			for(var/_V in all_traits)
 				if(_V == trait_name)
 					has_trait = TRUE
 			if(has_trait)
 				trait_cost *= -1 //invert it back, since we'd be regaining this amount
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			var/lock_reason = "This trait is unavailable."
 			var/trait_conflict = FALSE
 			for(var/_V in all_traits)
@@ -1007,12 +1091,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					has_trait = FALSE
 				else
 					trait_cost *= -1 //invert it back, since we'd be regaining this amount
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(trait_cost > 0)
 				trait_cost = "+[trait_cost]"
 			var/font_color = "#AAAAFF"
 			if(initial(T.value) != 0)
 				font_color = initial(T.value) > 0 ? "#AAFFAA" : "#FFAAAA"
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if(has_trait)
 				dat += "<b><font color='[font_color]'>[trait_name]</font></b> - [initial(T.desc)] \
@@ -1021,6 +1109,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<font color='[font_color]'>[trait_name]</font> - [initial(T.desc)] \
 				<a href='?_src_=prefs;preference=trait;task=update;trait=[trait_name]'>[has_trait ? "Lose" : "Take"] ([trait_cost] pts.)</a><br>"
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(trait_conflict)
 				dat += "<font color='[font_color]'>[trait_name]</font> - [initial(T.desc)] \
 				<font color='red'><b>LOCKED: [lock_reason]</b></font><br>"
@@ -1031,7 +1121,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				else
 					dat += "<font color='[font_color]'>[trait_name]</font> - [initial(T.desc)] \
 					<a href='?_src_=prefs;preference=trait;task=update;trait=[trait_name]'>[has_trait ? "Lose" : "Take"] ([trait_cost] pts.)</a><br>"
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		dat += "<br><center><a href='?_src_=prefs;preference=trait;task=reset'>Reset Traits</a></center>"
 
 	user << browse(null, "window=preferences")

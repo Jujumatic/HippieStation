@@ -15,9 +15,13 @@ AI
 	exp_requirements = 180
 	exp_type = EXP_TYPE_CREW
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	exp_type_department = EXP_TYPE_SILICON
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	exp_type_department = EXP_TYPE_SILICON
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	antag_rep = 20
 	var/do_special_check = TRUE
 

@@ -50,6 +50,7 @@
 			dat += "<b>Charge:</b> <a href='?src=[REF(src)];above_filter=1'>\>[result_filters["Charge Above"] ? result_filters["Charge Above"] : "NaN"]%</a> and <a href='?src=[REF(src)];below_filter=1'>\<[result_filters["Charge Below"] ? result_filters["Charge Below"] : "NaN"]%</a><br>"
 			dat += "<b>Accessible:</b> <a href='?src=[REF(src)];access_filter=1'>[result_filters["Responsive"] ? "Non-Responsive Only" : "All"]</a><br><br>"
 <<<<<<< HEAD
+<<<<<<< HEAD
 			for(var/A in apcs)
 				var/obj/machinery/power/apc/APC = apcs[A]
 				if(result_filters["Name"] && !findtext(APC.name, result_filters["Name"]) && !findtext(APC.area.name, result_filters["Name"]))
@@ -65,6 +66,8 @@
 				<b>Area:</b> [APC.area]<br>\
 				[APC.aidisabled || APC.panel_open ? "<font color='#FF0000'>APC does not respond to interface query.</font>" : "<font color='#00FF00'>APC responds to interface query.</font>"]<br><br>"
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			for(var/A in GLOB.apcs_list)
 				if(check_apc(A))
 					var/obj/machinery/power/apc/APC = A
@@ -80,7 +83,10 @@
 					<b>Charge:</b> [APC.cell ? "[DisplayEnergy(APC.cell.charge)] / [DisplayEnergy(APC.cell.maxcharge)] ([round((APC.cell.charge / APC.cell.maxcharge) * 100)]%)" : "No Powercell Installed"]<br>\
 					<b>Area:</b> [APC.area]<br>\
 					[APC.aidisabled || APC.panel_open ? "<font color='#FF0000'>APC does not respond to interface query.</font>" : "<font color='#00FF00'>APC responds to interface query.</font>"]<br><br>"
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			dat += "<a href='?src=[REF(src)];check_logs=1'>Check Logs</a><br>"
 			dat += "<a href='?src=[REF(src)];log_out=1'>Log Out</a><br>"
 			if(obj_flags & EMAGGED)

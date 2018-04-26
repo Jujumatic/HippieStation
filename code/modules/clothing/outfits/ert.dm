@@ -232,12 +232,17 @@
 		return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/radio/R = H.ears
 	R.keyslot = new /obj/item/device/encryptionkey/heads/hop
 =======
 	var/obj/item/radio/R = H.ears
 	R.keyslot = new /obj/item/encryptionkey/heads/hop
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/radio/R = H.ears
+	R.keyslot = new /obj/item/encryptionkey/heads/hop
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	R.recalculateChannels()
 
 /datum/outfit/ert/chaplain

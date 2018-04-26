@@ -21,6 +21,7 @@
 
 //Admin Permissions
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define R_BUILDMODE		0x1
 #define R_ADMIN			0x2
 #define R_BAN			0x4
@@ -37,6 +38,8 @@
 #define R_AUTOLOGIN		0x2000
 #define R_DBRANKS		0x4000
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define R_BUILDMODE		(1<<0)
 #define R_ADMIN			(1<<1)
 #define R_BAN			(1<<2)
@@ -52,7 +55,10 @@
 #define R_SPAWN			(1<<12)
 #define R_AUTOLOGIN		(1<<13)
 #define R_DBRANKS		(1<<14)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 #define R_DEFAULT R_AUTOLOGIN
 

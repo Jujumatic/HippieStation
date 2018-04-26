@@ -143,11 +143,14 @@ Des: Removes all infected images from the alien.
 	qdel(src)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #undef HEAT_DAMAGE_LEVEL_1
 #undef HEAT_DAMAGE_LEVEL_2
 #undef HEAT_DAMAGE_LEVEL_3
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /mob/living/carbon/alien/can_hold_items()
 	return has_fine_manipulation

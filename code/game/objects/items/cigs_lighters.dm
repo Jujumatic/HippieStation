@@ -707,10 +707,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 			cut_overlays()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(O, /obj/item/device/multitool))
 =======
 	if(istype(O, /obj/item/multitool))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(O, /obj/item/multitool))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(screw && !(obj_flags & EMAGGED))//also kinky
 			if(!super)
 				cut_overlays()

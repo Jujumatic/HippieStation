@@ -21,10 +21,14 @@
 
 /obj/machinery/computer/cargo/express/attackby(obj/item/W, mob/living/user, params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if((istype(W, /obj/item/card/id) || istype(W, /obj/item/device/pda)) && allowed(user))
 =======
 	if((istype(W, /obj/item/card/id) || istype(W, /obj/item/pda)) && allowed(user))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if((istype(W, /obj/item/card/id) || istype(W, /obj/item/pda)) && allowed(user))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		locked = !locked
 		to_chat(user, "<span class='notice'>You [locked ? "lock" : "unlock"] the interface.</span>")
 		return
@@ -116,10 +120,14 @@
 			var/datum/supply_order/SO = new(pack, name, rank, ckey, reason)
 			if(!(obj_flags & EMAGGED))
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if(SO.pack.cost * 2 <= SSshuttle.points)
 =======
 				if(SO.pack.cost <= SSshuttle.points)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				if(SO.pack.cost <= SSshuttle.points)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					landingzone = locate(/area/quartermaster/storage) in GLOB.sortedAreas
 					for(var/turf/open/floor/T in landingzone.contents)
 						if(is_blocked_turf(T))

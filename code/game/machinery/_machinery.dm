@@ -414,16 +414,22 @@ Class Procs:
 								component_parts += SN
 							else
 <<<<<<< HEAD
+<<<<<<< HEAD
 								W.remove_from_storage(B, src)
 								component_parts += B
 								B.moveToNullspace()
 							W.handle_item_insertion(A, 1)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 								if(W.SendSignal(COMSIG_TRY_STORAGE_TAKE, B, src))
 									component_parts += B
 									B.moveToNullspace()
 							W.SendSignal(COMSIG_TRY_STORAGE_INSERT, A, null, null, TRUE)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 							component_parts -= A
 							to_chat(user, "<span class='notice'>[A.name] replaced with [B.name].</span>")
 							shouldplaysound = 1 //Only play the sound when parts are actually replaced!

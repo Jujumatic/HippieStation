@@ -671,7 +671,11 @@ generate/load female uniform sprites matching all previously decided variables
 
 	update_inv_head()
 <<<<<<< HEAD
+<<<<<<< HEAD
 	update_inv_wear_mask()
 =======
 	update_inv_wear_mask()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	update_inv_wear_mask()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

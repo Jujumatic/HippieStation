@@ -41,12 +41,17 @@
 
 /obj/machinery/bsa/back/multitool_act(mob/living/user, obj/item/I)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(I, /obj/item/device/multitool)) // Only this multitool type has a data buffer.
 		var/obj/item/device/multitool/M = I
 =======
 	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
 		var/obj/item/multitool/M = I
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
+		var/obj/item/multitool/M = I
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		M.buffer = src
 		to_chat(user, "<span class='notice'>You store linkage information in [I]'s buffer.</span>")
 	else
@@ -60,12 +65,17 @@
 
 /obj/machinery/bsa/front/multitool_act(mob/living/user, obj/item/I)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(I, /obj/item/device/multitool)) // Only this multitool type has a data buffer.
 		var/obj/item/device/multitool/M = I
 =======
 	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
 		var/obj/item/multitool/M = I
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
+		var/obj/item/multitool/M = I
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		M.buffer = src
 		to_chat(user, "<span class='notice'>You store linkage information in [I]'s buffer.</span>")
 	else
@@ -81,12 +91,17 @@
 
 /obj/machinery/bsa/middle/multitool_act(mob/living/user, obj/item/I)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(I, /obj/item/device/multitool)) // Only this multitool type has a data buffer.
 		var/obj/item/device/multitool/M = I
 =======
 	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
 		var/obj/item/multitool/M = I
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
+		var/obj/item/multitool/M = I
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(M.buffer)
 			if(istype(M.buffer, /obj/machinery/bsa/back))
 				back = M.buffer
@@ -283,12 +298,17 @@
 	if(istype(target, /area))
 		return get_area_name(target, TRUE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	else if(istype(target, /obj/item/device/gps))
 		var/obj/item/device/gps/G = target
 =======
 	else if(istype(target, /obj/item/gps))
 		var/obj/item/gps/G = target
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	else if(istype(target, /obj/item/gps))
+		var/obj/item/gps/G = target
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		return G.gpstag
 
 /obj/machinery/computer/bsa_control/proc/get_impact_turf()

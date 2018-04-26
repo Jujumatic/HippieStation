@@ -32,10 +32,14 @@
 	new /obj/item/gun/energy/e_gun(src)
 	new /obj/item/door_remote/captain(src)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// hippie - Removed spare id from captain's locker
 =======
 	new /obj/item/card/id/captains_spare(src)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	new /obj/item/card/id/captains_spare(src)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/structure/closet/secure_closet/hop
 	name = "\proper head of personnel's locker"

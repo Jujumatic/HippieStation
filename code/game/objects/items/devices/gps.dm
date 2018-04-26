@@ -41,19 +41,27 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	add_overlay("working")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/gps/AltClick(mob/user)
 =======
 /obj/item/gps/AltClick(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/gps/AltClick(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!user.canUseTopic(src, BE_CLOSE))
 		return
 	toggletracking(user)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/gps/proc/toggletracking(mob/user)
 =======
 /obj/item/gps/proc/toggletracking(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/gps/proc/toggletracking(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!user.canUseTopic(src, BE_CLOSE))
 		return //user not valid to use gps
 	if(emped)

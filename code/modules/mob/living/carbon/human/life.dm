@@ -17,6 +17,7 @@
 #define THERMAL_PROTECTION_ARM_RIGHT	0.075
 #define THERMAL_PROTECTION_HAND_LEFT	0.025
 #define THERMAL_PROTECTION_HAND_RIGHT	0.025
+<<<<<<< HEAD
 
 // bitflags for the percentual amount of protection a piece of clothing which covers the body part offers.
 // Used with human/proc/get_heat_protection() and human/proc/get_cold_protection()
@@ -33,6 +34,8 @@
 #define THERMAL_PROTECTION_ARM_RIGHT	0.075
 #define THERMAL_PROTECTION_HAND_LEFT	0.025
 #define THERMAL_PROTECTION_HAND_RIGHT	0.025
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /mob/living/carbon/human/Life()
 	set invisibility = 0
@@ -317,6 +320,7 @@
 					clear_alert("embeddedobject")
 					SendSignal(COMSIG_CLEAR_MOOD_EVENT, "embedded")
 <<<<<<< HEAD
+<<<<<<< HEAD
 				// Hippie Start - Handle un-impaling player if pinned item falls out
 				if (I.pinned)
 					do_pindown(pinned_to, 0)
@@ -327,6 +331,8 @@
 				// Hippie End
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /mob/living/carbon/human/proc/handle_active_genes()
 	for(var/datum/mutation/human/HM in dna.mutations)
@@ -445,9 +451,12 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 			adjustToxLoss(4) //Let's be honest you shouldn't be alive by now
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #undef HUMAN_MAX_OXYLOSS
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #undef THERMAL_PROTECTION_HEAD
 #undef THERMAL_PROTECTION_CHEST
 #undef THERMAL_PROTECTION_GROIN

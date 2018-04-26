@@ -38,16 +38,22 @@
 #define MINER			(1<<8)
 #define LAWYER			(1<<9)
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CHAPLAIN			(1<<10)
 #define CLOWN				(1<<11)
 #define MIME				(1<<12)
 #define ASSISTANT			(1<<13)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define CHAPLAIN		(1<<10)
 #define CLOWN			(1<<11)
 #define MIME			(1<<12)
 #define ASSISTANT		(1<<13)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1

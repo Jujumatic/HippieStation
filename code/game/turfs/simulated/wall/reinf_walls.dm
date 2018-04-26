@@ -142,10 +142,14 @@
 				to_chat(user, "<span class='notice'>You start loosening the anchoring bolts which secure the support rods to their frame...</span>")
 				if(W.use_tool(src, user, 40, volume=100))
 <<<<<<< HEAD
+<<<<<<< HEAD
 					if(!istype(src, /turf/closed/wall/r_wall) || d_state != BOLTS)
 =======
 					if(!istype(src, /turf/closed/wall/r_wall) || d_state != ANCHOR_BOLTS)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+					if(!istype(src, /turf/closed/wall/r_wall) || d_state != ANCHOR_BOLTS)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 						return 1
 					d_state = SUPPORT_RODS
 					update_icon()
@@ -156,10 +160,14 @@
 				to_chat(user, "<span class='notice'>You start to pry the cover back into place...</span>")
 				if(W.use_tool(src, user, 20, volume=100))
 <<<<<<< HEAD
+<<<<<<< HEAD
 					if(!istype(src, /turf/closed/wall/r_wall) || d_state != BOLTS)
 =======
 					if(!istype(src, /turf/closed/wall/r_wall) || d_state != ANCHOR_BOLTS)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+					if(!istype(src, /turf/closed/wall/r_wall) || d_state != ANCHOR_BOLTS)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 						return 1
 					d_state = CUT_COVER
 					update_icon()

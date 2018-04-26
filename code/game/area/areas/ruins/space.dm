@@ -465,6 +465,7 @@
 	icon_state = "yellow"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/ruin/space/has_grav/powered/scp_294
 	name = "Abandoned SCP-294 Containment"
 	icon_state = "yellow"
@@ -477,3 +478,8 @@
 	name = "Ancient Shuttle"
 	icon_state = "yellow"
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/area/ruin/space/has_grav/powered/ancient_shuttle
+	name = "Ancient Shuttle"
+	icon_state = "yellow"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

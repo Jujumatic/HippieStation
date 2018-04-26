@@ -31,18 +31,24 @@
 #ifdef UNIT_TESTS
 /proc/log_test(text)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	WRITE_FILE(GLOB.test_log, "\[[time_stamp()]]: [text]")
 	SEND_TEXT(world.log, text)
 #endif
 
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	WRITE_LOG(GLOB.test_log, text)
 	SEND_TEXT(world.log, text)
 #endif
 
 
 /* Items with ADMINPRIVATE prefixed are stripped from public logs. */
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /proc/log_admin(text)
 	GLOB.admin_log.Add(text)
 	if (CONFIG_GET(flag/log_admin))
@@ -117,11 +123,19 @@
 	if (CONFIG_GET(flag/log_pda))
 		//same thing here
 		WRITE_LOG(GLOB.world_pda_log, "CHAT: [text]")
+<<<<<<< HEAD
 
 /proc/log_vote(text)
 	if (CONFIG_GET(flag/log_vote))
 		WRITE_LOG(GLOB.world_game_log, "VOTE: [text]")
 
+=======
+
+/proc/log_vote(text)
+	if (CONFIG_GET(flag/log_vote))
+		WRITE_LOG(GLOB.world_game_log, "VOTE: [text]")
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /proc/log_topic(text)
 	WRITE_LOG(GLOB.world_game_log, "TOPIC: [text]")

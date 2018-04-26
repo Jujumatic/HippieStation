@@ -285,6 +285,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 
 // attack with hand, switch position
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/conveyor_switch/attack_hand(mob/user)
 	. = ..()
 	if(.)
@@ -292,6 +293,9 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 =======
 /obj/machinery/conveyor_switch/interact(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/conveyor_switch/interact(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	add_fingerprint(user)
 	if(position == 0)
 		if(oneway)   //is it a oneway switch
@@ -313,9 +317,13 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	// find any switches with same id as this one, and set their positions to match us
 	for(var/obj/machinery/conveyor_switch/S in GLOB.conveyors_by_id[id])
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		S.invert_icon = invert_icon
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		S.invert_icon = invert_icon
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		S.position = position
 		S.update_icon()
 		CHECK_TICK

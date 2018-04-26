@@ -48,7 +48,10 @@ Thus, the two variables affect pump operation are set in New():
 	icon_state = "volpump_on_map"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/atmospherics/components/binary/volume_pump/on/layer1
 	piping_layer = PIPING_LAYER_MIN
 	pixel_x = -PIPING_LAYER_P_X
@@ -59,7 +62,10 @@ Thus, the two variables affect pump operation are set in New():
 	pixel_x = PIPING_LAYER_P_X
 	pixel_y = PIPING_LAYER_P_Y
 	
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/atmospherics/components/binary/volume_pump/update_icon_nopipes()
 	if(!is_operational())
 		icon_state = "volpump_off"

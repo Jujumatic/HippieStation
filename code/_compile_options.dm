@@ -17,6 +17,7 @@
 
 //#define UNIT_TESTS			//Enables unit tests via TEST_RUN_PARAMETER
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #ifndef PRELOAD_RSC				//set to:
 #define PRELOAD_RSC	2			//	0 to allow using external resources or on-demand behaviour;
@@ -24,18 +25,24 @@
 								//	2 for preloading absolutely everything;
 
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 #ifndef PRELOAD_RSC				//set to:
 #define PRELOAD_RSC	2			//	0 to allow using external resources or on-demand behaviour;
 #endif							//	1 to use the default behaviour;
 								//	2 for preloading absolutely everything;
 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #ifdef LOWMEMORYMODE
 #define FORCE_MAP "_maps/runtimestation.json"
 #endif
 
 //Update this whenever you need to take advantage of more recent byond features
+<<<<<<< HEAD
 <<<<<<< HEAD
 #define MIN_COMPILER_VERSION 511
 #if DM_VERSION < MIN_COMPILER_VERSION
@@ -43,12 +50,17 @@
 #error Your version of BYOND is too out-of-date to compile this project. Go to byond.com/download and update.
 #error You need version 511 or higher
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define MIN_COMPILER_VERSION 512
 #if DM_VERSION < MIN_COMPILER_VERSION
 //Don't forget to update this part
 #error Your version of BYOND is too out-of-date to compile this project. Go to byond.com/download and update.
 #error You need version 512 or higher
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #endif
 
 //Additional code for the above flags.

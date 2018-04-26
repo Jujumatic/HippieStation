@@ -30,10 +30,14 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker/attack_hand(mob/user)
 	if(jammed)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		to_chat(user, "<span class='warning'>The Syndicate are jamming the console!</span>")
 =======
 		to_chat(user, "<span class='warning'>The Syndicate is jamming the console!</span>")
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		to_chat(user, "<span class='warning'>The Syndicate is jamming the console!</span>")
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		return
 	return ..()
 

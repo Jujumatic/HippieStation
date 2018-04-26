@@ -11,10 +11,14 @@ GLOBAL_LIST_EMPTY(PDAs)
 #define PDA_SCANNER_GAS			5
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/pda
 =======
 /obj/item/pda
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/pda
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "\improper PDA"
 	desc = "A portable microcomputer by Thinktronic Systems, LTD. Functionality determined by a preprogrammed ROM cartridge."
 	icon = 'icons/obj/pda.dmi'
@@ -83,10 +87,14 @@ GLOBAL_LIST_EMPTY(PDAs)
 	var/underline_flag = TRUE //flag for underline
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/pda/suicide_act(mob/living/carbon/user)
 =======
 /obj/item/pda/suicide_act(mob/living/carbon/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/pda/suicide_act(mob/living/carbon/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/deathMessage = msg_input(user)
 	if (!deathMessage)
 		deathMessage = "i ded"
@@ -95,10 +103,14 @@ GLOBAL_LIST_EMPTY(PDAs)
 	return BRUTELOSS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/pda/examine(mob/user)
 =======
 /obj/item/pda/examine(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/pda/examine(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 	if(!id && !inserted_item)
 		return
@@ -120,10 +132,14 @@ GLOBAL_LIST_EMPTY(PDAs)
 	update_icon()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/pda/equipped(mob/user, slot)
 =======
 /obj/item/pda/equipped(mob/user, slot)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/pda/equipped(mob/user, slot)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(!equipped)
 		if(user.client)
@@ -614,10 +630,14 @@ GLOBAL_LIST_EMPTY(PDAs)
 		update_icon()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/pda/proc/msg_input(mob/living/U = usr)
 =======
 /obj/item/pda/proc/msg_input(mob/living/U = usr)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/pda/proc/msg_input(mob/living/U = usr)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/t = stripped_input(U, "Please enter message", name)
 	if (!t || toff)
 		return

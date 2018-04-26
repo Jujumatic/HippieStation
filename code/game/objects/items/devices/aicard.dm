@@ -13,18 +13,24 @@
 	var/mob/living/silicon/ai/AI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/aicard/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] is trying to upload themselves into [src]! That's not going to work out well!</span>")
 	return BRUTELOSS
 
 /obj/item/device/aicard/afterattack(atom/target, mob/user, proximity)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/aicard/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] is trying to upload themselves into [src]! That's not going to work out well!</span>")
 	return BRUTELOSS
 
 /obj/item/aicard/afterattack(atom/target, mob/user, proximity)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 	if(!proximity || !target)
 		return

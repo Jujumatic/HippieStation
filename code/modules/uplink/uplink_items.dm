@@ -1020,10 +1020,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/device_tools/briefcase_launchpad/purchase(mob/user, datum/component/uplink/U)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	spawn_item(/obj/item/device/launchpad_remote, user) //free remote
 =======
 	spawn_item(/obj/item/launchpad_remote, user) //free remote
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	spawn_item(/obj/item/launchpad_remote, user) //free remote
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 
 /datum/uplink_item/device_tools/magboots
@@ -1093,10 +1097,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			transported to you that will teleport the actual bomb to it upon activation. Note that this bomb can \
 			be defused, and some crew may attempt to do so."
 <<<<<<< HEAD
+<<<<<<< HEAD
 	item = /obj/item/device/sbeacondrop/clownbomb
 =======
 	item = /obj/item/sbeacondrop/clownbomb
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	item = /obj/item/sbeacondrop/clownbomb
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	cost = 15
 	surplus = 0
 	include_modes = list(/datum/game_mode/nuclear/clown_ops)
@@ -1314,10 +1322,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	head after three seconds uninterrupted."
 	cost = 5
 <<<<<<< HEAD
+<<<<<<< HEAD
 	item = /obj/item/device/reverse_bear_trap
 =======
 	item = /obj/item/reverse_bear_trap
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	item = /obj/item/reverse_bear_trap
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	restricted_roles = list("Clown")
 
 /datum/uplink_item/role_restricted/mimery
@@ -1427,6 +1439,17 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			transported to you that will teleport the actual bomb to it upon activation. Note that this bomb can \
 			be defused, and some crew may attempt to do so."
 	item = /obj/item/device/sbeacondrop/clownbomb
+	cost = 15
+	restricted_roles = list("Clown")
+
+/datum/uplink_item/device_tools/clown_bomb
+	name = "Clown Bomb"
+	desc = "The Clown bomb is a hilarious device capable of massive pranks. It has an adjustable timer, \
+			with a minimum of 60 seconds, and can be bolted to the floor with a wrench to prevent \
+			movement. The bomb is bulky and cannot be moved; upon ordering this item, a smaller beacon will be \
+			transported to you that will teleport the actual bomb to it upon activation. Note that this bomb can \
+			be defused, and some crew may attempt to do so."
+	item = /obj/item/sbeacondrop/clownbomb
 	cost = 15
 	restricted_roles = list("Clown")
 

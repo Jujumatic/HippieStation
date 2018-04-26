@@ -40,10 +40,14 @@
 	gloves = /obj/item/clothing/gloves/combat
 	back = /obj/item/storage/backpack/clown
 <<<<<<< HEAD
+<<<<<<< HEAD
 	ears = /obj/item/device/radio/headset/syndicate/alt
 =======
 	ears = /obj/item/radio/headset/syndicate/alt
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	ears = /obj/item/radio/headset/syndicate/alt
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	l_pocket = /obj/item/pinpointer/nuke/syndicate
 	r_pocket = /obj/item/bikehorn
 	id = /obj/item/card/id/syndicate
@@ -53,10 +57,14 @@
 	implants = list(/obj/item/implant/sad_trombone)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	uplink_type = /obj/item/device/radio/uplink/clownop
 =======
 	uplink_type = /obj/item/radio/uplink/clownop
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	uplink_type = /obj/item/radio/uplink/clownop
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/outfit/syndicate/clownop/no_crystals
 	tc = 0
@@ -71,8 +79,12 @@
 	name = "Clown Operative Leader - Basic"
 	id = /obj/item/card/id/syndicate/nuke_leader
 <<<<<<< HEAD
+<<<<<<< HEAD
 	r_hand = /obj/item/device/nuclear_challenge/clownops
 =======
 	r_hand = /obj/item/nuclear_challenge/clownops
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	r_hand = /obj/item/nuclear_challenge/clownops
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	command_radio = TRUE

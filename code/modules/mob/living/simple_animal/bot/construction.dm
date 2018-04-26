@@ -9,6 +9,7 @@
 	var/created_name
 	var/build_step = ASSEMBLY_FIRST_STEP
 	var/robot_arm = /obj/item/bodypart/r_arm/robot
+<<<<<<< HEAD
 
 /obj/item/bot_assembly/attackby(obj/item/I, mob/user, params)
 	..()
@@ -16,6 +17,15 @@
 		rename_bot()
 		return
 
+=======
+
+/obj/item/bot_assembly/attackby(obj/item/I, mob/user, params)
+	..()
+	if(istype(I, /obj/item/pen))
+		rename_bot()
+		return
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/bot_assembly/proc/rename_bot()
 	var/t = stripped_input(usr, "Enter new robot name", name, created_name,MAX_NAME_LEN)
 	if(!t)
@@ -276,10 +286,14 @@
 	created_name = "Medibot" //To preserve the name if it's a unique medbot I guess
 	var/skin = null //Same as medbot, set to tox or ointment for the respective kits.
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/healthanalyzer = /obj/item/device/healthanalyzer
 =======
 	var/healthanalyzer = /obj/item/healthanalyzer
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/healthanalyzer = /obj/item/healthanalyzer
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/firstaid = /obj/item/storage/firstaid
 
 /obj/item/bot_assembly/medbot/Initialize()
@@ -319,10 +333,14 @@
 	switch(build_step)
 		if(ASSEMBLY_FIRST_STEP)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if(istype(W, /obj/item/device/healthanalyzer))
 =======
 			if(istype(W, /obj/item/healthanalyzer))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if(istype(W, /obj/item/healthanalyzer))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if(!user.temporarilyRemoveItemFromInventory(W))
 					return
 				healthanalyzer = W.type
@@ -401,10 +419,14 @@
 
 			else if(istype(I, /obj/item/screwdriver)) //deconstruct
 <<<<<<< HEAD
+<<<<<<< HEAD
 				new /obj/item/device/assembly/signaler(Tsec)
 =======
 				new /obj/item/assembly/signaler(Tsec)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				new /obj/item/assembly/signaler(Tsec)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				new /obj/item/clothing/head/helmet/sec(Tsec)
 				to_chat(user, "<span class='notice'>You disconnect the signaler from the helmet.</span>")
 				qdel(src)
@@ -439,10 +461,14 @@
 			else if(istype(I, /obj/item/screwdriver)) //deconstruct
 				cut_overlay("hs_eye")
 <<<<<<< HEAD
+<<<<<<< HEAD
 				new /obj/item/device/assembly/prox_sensor(Tsec)
 =======
 				new /obj/item/assembly/prox_sensor(Tsec)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				new /obj/item/assembly/prox_sensor(Tsec)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				to_chat(user, "<span class='notice'>You detach the proximity sensor from [src].</span>")
 				build_step--
 

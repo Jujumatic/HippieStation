@@ -281,10 +281,14 @@
 	var/cooldown = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/harmalarm/emag_act(mob/user)
 =======
 /obj/item/harmalarm/emag_act(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/harmalarm/emag_act(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	obj_flags ^= EMAGGED
 	if(obj_flags & EMAGGED)
 		to_chat(user, "<font color='red'>You short out the safeties on [src]!</font>")
@@ -292,10 +296,14 @@
 		to_chat(user, "<font color='red'>You reset the safeties on [src]!</font>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/harmalarm/attack_self(mob/user)
 =======
 /obj/item/harmalarm/attack_self(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/harmalarm/attack_self(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/safety = !(obj_flags & EMAGGED)
 	if(cooldown > world.time)
 		to_chat(user, "<font color='red'>The device is still recharging!</font>")

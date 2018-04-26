@@ -97,6 +97,7 @@
 	slot_flags = SLOT_BELT | SLOT_POCKET
 	w_class = WEIGHT_CLASS_NORMAL
 <<<<<<< HEAD
+<<<<<<< HEAD
 	storage_slots = 8
 	max_combined_w_class = 16 //Doesn't matter what this is, so long as it's more or equal to storage_slots * ore.w_class
 	max_w_class = WEIGHT_CLASS_HUGE
@@ -105,6 +106,8 @@
 	var/datum/component/mobhook
 
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	component_type = /datum/component/storage/concrete/stack
 	var/spam_protection = FALSE //If this is TRUE, the holder won't receive any messages when they fail to pick up ore through crossing it
 	var/datum/component/mobhook
@@ -117,7 +120,10 @@
 	STR.max_w_class = WEIGHT_CLASS_HUGE
 	STR.max_combined_stack_amount = 50
 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/storage/bag/ore/equipped(mob/user)
 	. = ..()
 	if (mobhook && mobhook.parent != user)
@@ -139,6 +145,7 @@
 	if (istype(user.pulling, /obj/structure/ore_box))
 		box = user.pulling
 <<<<<<< HEAD
+<<<<<<< HEAD
 	for(var/A in tile)
 		if (!is_type_in_typecache(A, can_hold))
 			continue
@@ -154,6 +161,8 @@
 				spam_protection = TRUE
 				continue
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	GET_COMPONENT(STR, /datum/component/storage)
 	if(STR)
 		for(var/A in tile)
@@ -169,7 +178,10 @@
 					to_chat(user, "<span class='warning'>Your [name] is full and can't hold any more!</span>")
 					spam_protection = TRUE
 					continue
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(show_message)
 		playsound(user, "rustle", 50, TRUE)
 		if (box)
@@ -246,6 +258,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	component_type = /datum/component/storage/concrete/stack
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	allow_quick_empty = 1 // this function is superceded
 
@@ -364,6 +377,8 @@
 
 	return ..(S,new_location)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/storage/bag/sheetsnatcher/ComponentInitialize()
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage/concrete/stack)
@@ -371,7 +386,10 @@
 	STR.can_hold = typecacheof(list(/obj/item/stack/sheet))
 	STR.cant_hold = typecacheof(list(/obj/item/stack/sheet/mineral/sandstone, /obj/item/stack/sheet/mineral/wood))
 	STR.max_combined_stack_amount = 300
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 // -----------------------------
 //    Sheet Snatcher (Cyborg)
@@ -477,9 +495,12 @@
 	desc = "A bag for storing pills, patches, and bottles."
 	w_class = WEIGHT_CLASS_TINY
 <<<<<<< HEAD
+<<<<<<< HEAD
 	can_hold = list(/obj/item/reagent_containers/pill, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/glass/bottle)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	resistance_flags = FLAMMABLE
 
 /obj/item/storage/bag/chemistry/ComponentInitialize()
@@ -501,9 +522,12 @@
 	desc = "A bag for the safe transportation and disposal of biowaste and other biological materials."
 	w_class = WEIGHT_CLASS_TINY
 <<<<<<< HEAD
+<<<<<<< HEAD
 	can_hold = list(/obj/item/slime_extract, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/blood, /obj/item/reagent_containers/hypospray/medipen, /obj/item/reagent_containers/food/snacks/deadmouse, /obj/item/reagent_containers/food/snacks/monkeycube)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	resistance_flags = FLAMMABLE
 
 /obj/item/storage/bag/bio/ComponentInitialize()

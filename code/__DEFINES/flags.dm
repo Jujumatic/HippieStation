@@ -8,12 +8,17 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 
 // for /datum/var/datum_flags
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define DF_USE_TAG 1
 #define DF_VAR_EDITED 2
 =======
 #define DF_USE_TAG		(1<<0)
 #define DF_VAR_EDITED	(1<<1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define DF_USE_TAG		(1<<0)
+#define DF_VAR_EDITED	(1<<1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 //FLAGS BITMASK
 #define STOPSPRESSUREDMAGE_1		(1<<0)	//This flag is used on the flags_1 variable for SUIT and HEAD items which stop pressure damage. Note that the flag 1 was previous used as ONBACK, so it is possible for some code to use (flags & 1) when checking if something can be put on your back. Replace this code with (inv_flags & SLOT_BACK) if you see it anywhere
@@ -31,10 +36,14 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define ON_BORDER_1					(1<<9)		// item has priority to check when entering or leaving
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define NOSLIP_1			1024 		//prevents from slipping on wet floors, in space etc
 =======
 #define NOSLIP_1					(1<<10) 		//prevents from slipping on wet floors, in space etc
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define NOSLIP_1					(1<<10) 		//prevents from slipping on wet floors, in space etc
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 // BLOCK_GAS_SMOKE_EFFECT_1 only used in masks at the moment.
 #define BLOCK_GAS_SMOKE_EFFECT_1	(1<<12)	// blocks the effect that chemical clouds would have on a mob --glasses, mask and helmets ONLY!
@@ -70,6 +79,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 
 // LAVA_PROTECT used on the flags_2 variable for both SUIT and HEAD items, and stops lava damage. Must be present in both to stop lava damage.
 #define LAVA_PROTECT_2				(1<<11)
+<<<<<<< HEAD
 
 // LAVA_PROTECT used on the flags_2 variable for both SUIT and HEAD items, and stops lava damage. Must be present in both to stop lava damage.
 #define LAVA_PROTECT_2			2048
@@ -84,6 +94,10 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define NO_LAVA_GEN_1				64 //Blocks lava rivers being generated on the turf
 //#define CHECK_RICOCHET_1	32		//Same thing as atom flag.
 =======
+=======
+
+//turf-only flags
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define NOJAUNT_1				(1<<0)
 #define UNUSED_TRANSIT_TURF_1	(1<<1)
 #define CAN_BE_DIRTY_1			(1<<2) // If a turf can be made dirty at roundstart. This is also used in areas.
@@ -91,7 +105,10 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define NO_RUINS_1				(1<<5) //Blocks ruins spawning on the turf
 #define NO_LAVA_GEN_1			(1<<6) //Blocks lava rivers being generated on the turf
 //#define CHECK_RICOCHET_1		32		//Same thing as atom flag.
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /*
 	These defines are used specifically with the atom/pass_flags bitmask
@@ -109,12 +126,17 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 
 //Movement Types
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define GROUND 1
 #define FLYING 2
 =======
 #define GROUND (1<<0)
 #define FLYING (1<<1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define GROUND (1<<0)
+#define FLYING (1<<1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 // Flags for reagents
 #define REAGENT_NOREACT (1<<0)

@@ -97,9 +97,13 @@ the new instance inside the host to be updated to the template's stats.
 				stat("Adaptation Ready: [round(adapt_ready/10, 0.1)]s")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /mob/camera/disease/examine(mob/user)
 	..()
 	if(isobserver(user))

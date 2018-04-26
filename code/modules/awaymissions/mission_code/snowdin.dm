@@ -530,10 +530,14 @@
 				/obj/item/gun/magic/wand/resurrection/inert = 15,
 				/obj/item/gun/magic/wand/resurrection = 10,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				/obj/item/device/radio/uplink/old = 2,
 =======
 				/obj/item/radio/uplink/old = 2,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				/obj/item/radio/uplink/old = 2,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				/obj/item/book/granter/spell/charge = 12,
 				/obj/item/grenade/clusterbuster/spawner_manhacks = 15,
 				/obj/item/book/granter/spell/fireball = 10,

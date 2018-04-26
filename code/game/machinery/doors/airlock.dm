@@ -73,10 +73,14 @@
 	var/obj/item/electronics/airlock/electronics
 	var/shockCooldown = FALSE //Prevents multiple shocks from happening
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/doorCharge/charge //If applied, causes an explosion upon opening the door
 =======
 	var/obj/item/doorCharge/charge //If applied, causes an explosion upon opening the door
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/doorCharge/charge //If applied, causes an explosion upon opening the door
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/obj/item/note //Any papers pinned to the airlock
 	var/detonated = FALSE
 	var/abandoned = FALSE

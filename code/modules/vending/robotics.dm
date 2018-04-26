@@ -9,18 +9,24 @@
 		            /obj/item/clothing/under/rank/roboticist = 4,
 		            /obj/item/stack/cable_coil = 4,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		            /obj/item/device/assembly/flash/handheld = 4,
 					/obj/item/stock_parts/cell/high = 12,
 					/obj/item/device/assembly/prox_sensor = 3,
 					/obj/item/device/assembly/signaler = 3,
 					/obj/item/device/healthanalyzer = 3,
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		            /obj/item/assembly/flash/handheld = 4,
 					/obj/item/stock_parts/cell/high = 12,
 					/obj/item/assembly/prox_sensor = 3,
 					/obj/item/assembly/signaler = 3,
 					/obj/item/healthanalyzer = 3,
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					/obj/item/scalpel = 2,
 					/obj/item/circular_saw = 2,
 					/obj/item/tank/internals/anesthetic = 2,

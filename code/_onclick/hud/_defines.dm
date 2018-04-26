@@ -104,10 +104,14 @@
 #define ui_health "EAST-1:28,CENTER-1:15"
 #define ui_internal "EAST-1:28,CENTER:17"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define ui_mood "EAST-1:28,CENTER-4:10" // Hippie - Moved it down one so it's not in the way of our stamina
 =======
 #define ui_mood "EAST-1:28,CENTER-3:10"
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define ui_mood "EAST-1:28,CENTER-3:10"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 //borgs
 #define ui_borg_health "EAST-1:28,CENTER-1:15"		//borgs have the health display where humans have the pressure damage indicator.

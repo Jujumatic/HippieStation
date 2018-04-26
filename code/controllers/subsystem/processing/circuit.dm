@@ -45,6 +45,7 @@ PROCESSING_SUBSYSTEM_DEF(circuit)
 
 	circuit_fabricator_recipe_list["Assemblies"] = list(
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/electronic_assembly/default,
 		/obj/item/device/electronic_assembly/calc,
 		/obj/item/device/electronic_assembly/clam,
@@ -73,6 +74,8 @@ PROCESSING_SUBSYSTEM_DEF(circuit)
 		/obj/item/device/electronic_assembly/wallmount,
 		/obj/item/device/electronic_assembly/wallmount/heavy
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/electronic_assembly/default,
 		/obj/item/electronic_assembly/calc,
 		/obj/item/electronic_assembly/clam,
@@ -100,20 +103,29 @@ PROCESSING_SUBSYSTEM_DEF(circuit)
 		/obj/item/electronic_assembly/wallmount/light,
 		/obj/item/electronic_assembly/wallmount,
 		/obj/item/electronic_assembly/wallmount/heavy
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		///obj/item/weapon/implant/integrated_circuit
 		)
 
 	circuit_fabricator_recipe_list["Tools"] = list(
+<<<<<<< HEAD
 <<<<<<< HEAD
 		/obj/item/device/integrated_electronics/wirer,
 		/obj/item/device/integrated_electronics/debugger,
 		/obj/item/device/integrated_electronics/analyzer,
 		/obj/item/device/integrated_electronics/detailer
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/integrated_electronics/wirer,
 		/obj/item/integrated_electronics/debugger,
 		/obj/item/integrated_electronics/analyzer,
 		/obj/item/integrated_electronics/detailer
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		)

@@ -38,8 +38,12 @@
 
 /obj/machinery/telecomms/allinone/attackby(obj/item/P, mob/user, params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(P, /obj/item/device/multitool))
 =======
 	if(istype(P, /obj/item/multitool))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(P, /obj/item/multitool))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		return attack_hand(user)

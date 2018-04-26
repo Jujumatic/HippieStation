@@ -24,9 +24,13 @@
 	var/ext_next_use = 0
 	var/atom/collw
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	var/obj/item/card/id/access_card
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/card/id/access_card
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/allowed_circuit_action_flags = IC_ACTION_COMBAT | IC_ACTION_LONG_RANGE //which circuit flags are allowed
 	var/combat_circuits = 0 //number of combat cicuits in the assembly, used for diagnostic hud
 	var/long_range_circuits = 0 //number of long range cicuits in the assembly, used for diagnostic hud
@@ -58,16 +62,21 @@
 		)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/examine(mob/user)
 =======
 /obj/item/electronic_assembly/examine(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/examine(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(can_anchor)
 		to_chat(user, "<span class='notice'>The anchoring bolts [anchored ? "are" : "can be"] <b>wrenched</b> in place and the maintainence panel [opened ? "can be" : "is"] <b>screwed</b> in place.</span>")
 	else
 		to_chat(user, "<span class='notice'>The maintainence panel [opened ? "can be" : "is"] <b>screwed</b> in place.</span>")
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/check_interactivity(mob/user)
 	return user.canUseTopic(src, BE_CLOSE)
@@ -76,6 +85,8 @@
 	collw = AM
 	.=..()
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/electronic_assembly/proc/check_interactivity(mob/user)
 	return user.canUseTopic(src, BE_CLOSE)
 
@@ -86,7 +97,10 @@
 		var/obj/machinery/door/D = collw
 		if(D.check_access(access_card))
 			D.open()
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/electronic_assembly/Initialize()
 	.=..()
@@ -103,6 +117,7 @@
 	diag_hud_set_circuittracking()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/Destroy()
 	STOP_PROCESSING(SScircuit, src)
 	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
@@ -116,11 +131,21 @@
 		diag_hud.remove_from_hud(src)
 	QDEL_NULL(access_card)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	access_card = new /obj/item/card/id(src)
+
+/obj/item/electronic_assembly/Destroy()
+	STOP_PROCESSING(SScircuit, src)
+	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
+		diag_hud.remove_from_hud(src)
+	QDEL_NULL(access_card)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	return ..()
 
 /obj/item/electronic_assembly/process()
 	handle_idle_power()
 	check_pulling()
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	//updates diagnostic hud
@@ -128,6 +153,8 @@
 	diag_hud_set_circuitcell()
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	//updates diagnostic hud
 	diag_hud_set_circuithealth()
@@ -146,16 +173,22 @@
 				IC.power_fail()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/interact(mob/user)
 	ui_interact(user)
 
 /obj/item/device/electronic_assembly/ui_interact(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/electronic_assembly/interact(mob/user)
 	ui_interact(user)
 
 /obj/item/electronic_assembly/ui_interact(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(!check_interactivity(user))
 		return
@@ -185,6 +218,7 @@
 		var/obj/item/integrated_circuit/circuit = c
 		if(!circuit.removable)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			builtin_components += "<a href='?src=[REF(circuit)]'>[circuit.displayed_name]</a> | "
 			builtin_components += "<a href='?src=[REF(circuit)];rename=1;return=1'>\[Rename\]</a> | "
 			builtin_components += "<a href='?src=[REF(circuit)];scan=1;return=1'>\[Copy Ref\]</a>"
@@ -192,6 +226,10 @@
 			builtin_components += "<a href='?src=[REF(circuit)];rename=1;return=1'>\[R\]</a> | "
 			builtin_components += "<a href='?src=[REF(circuit)]'>[circuit.displayed_name]</a>"
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			builtin_components += "<a href='?src=[REF(circuit)];rename=1;return=1'>\[R\]</a> | "
+			builtin_components += "<a href='?src=[REF(circuit)]'>[circuit.displayed_name]</a>"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			builtin_components += "<br>"
 
 	// Put removable circuits (if any) in separate categories from non-removable
@@ -208,12 +246,15 @@
 		var/obj/item/integrated_circuit/circuit = c
 		if(circuit.removable)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			HTML += "<a href='?src=[REF(circuit)]'>[circuit.displayed_name]</a> | "
 			HTML += "<a href='?src=[REF(circuit)];rename=1;return=1'>\[Rename\]</a> | "
 			HTML += "<a href='?src=[REF(circuit)];scan=1;return=1'>\[Copy Ref\]</a> | "
 			HTML += "<a href='?src=[REF(src)];component=[REF(circuit)];remove=1'>\[Remove\]</a> | "
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			HTML += "<a href='?src=[REF(src)];component=[REF(circuit)];up=1' style='text-decoration:none;'>&#8593;</a> "
 			HTML += "<a href='?src=[REF(src)];component=[REF(circuit)];down=1' style='text-decoration:none;'>&#8595;</a>  "
 			HTML += "<a href='?src=[REF(src)];component=[REF(circuit)];top=1' style='text-decoration:none;'>&#10514;</a> "
@@ -286,10 +327,14 @@
 	interact(usr) // To refresh the UI.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/pickup(mob/living/user)
 =======
 /obj/item/electronic_assembly/pickup(mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/pickup(mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	//update diagnostic hud when picked up, true is used to force the hud to be hidden
 	diag_hud_set_circuithealth(TRUE)
@@ -298,10 +343,14 @@
 	diag_hud_set_circuittracking(TRUE)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/dropped(mob/user)
 =======
 /obj/item/electronic_assembly/dropped(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/dropped(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	//update diagnostic hud when dropped
 	diag_hud_set_circuithealth()
@@ -310,10 +359,14 @@
 	diag_hud_set_circuittracking()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/rename()
 =======
 /obj/item/electronic_assembly/proc/rename()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/proc/rename()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/mob/M = usr
 	if(!check_interactivity(M))
 		return
@@ -413,10 +466,14 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/try_remove_component(obj/item/integrated_circuit/IC, mob/user, silent)
 =======
 /obj/item/electronic_assembly/proc/try_remove_component(obj/item/integrated_circuit/IC, mob/user, silent)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/proc/try_remove_component(obj/item/integrated_circuit/IC, mob/user, silent)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!opened)
 		if(!silent)
 			to_chat(user, "<span class='warning'>[src]'s hatch is closed, so you can't fiddle with the internal components.</span>")
@@ -452,11 +509,16 @@
 	diag_hud_set_circuitstat()
 	diag_hud_set_circuittracking()
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 
+=======
+
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/electronic_assembly/afterattack(atom/target, mob/user, proximity)
 	for(var/obj/item/integrated_circuit/input/S in assembly_components)
 		if(S.sense(target,user,proximity))
@@ -464,10 +526,14 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/screwdriver_act(mob/living/user, obj/item/I)
 =======
 /obj/item/electronic_assembly/screwdriver_act(mob/living/user, obj/item/I)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/screwdriver_act(mob/living/user, obj/item/I)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	I.play_tool_sound(src)
 	opened = !opened
 	to_chat(user, "<span class='notice'>You [opened ? "open" : "close"] the maintenance hatch of [src].</span>")
@@ -475,10 +541,14 @@
 	return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/attackby(obj/item/I, mob/living/user)
 =======
 /obj/item/electronic_assembly/attackby(obj/item/I, mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/attackby(obj/item/I, mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(can_anchor && default_unfasten_wrench(user, I, 20))
 		return
 	if(istype(I, /obj/item/integrated_circuit))
@@ -492,10 +562,14 @@
 				S.attackby_react(I,user,user.a_intent)
 			return ..()
 <<<<<<< HEAD
+<<<<<<< HEAD
 	else if(istype(I, /obj/item/device/multitool) || istype(I, /obj/item/device/integrated_electronics/wirer) || istype(I, /obj/item/device/integrated_electronics/debugger))
 =======
 	else if(istype(I, /obj/item/multitool) || istype(I, /obj/item/integrated_electronics/wirer) || istype(I, /obj/item/integrated_electronics/debugger))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	else if(istype(I, /obj/item/multitool) || istype(I, /obj/item/integrated_electronics/wirer) || istype(I, /obj/item/integrated_electronics/debugger))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(opened)
 			interact(user)
 			return TRUE
@@ -525,12 +599,17 @@
 		interact(user)
 		return TRUE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	else if(istype(I, /obj/item/device/integrated_electronics/detailer))
 		var/obj/item/device/integrated_electronics/detailer/D = I
 =======
 	else if(istype(I, /obj/item/integrated_electronics/detailer))
 		var/obj/item/integrated_electronics/detailer/D = I
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	else if(istype(I, /obj/item/integrated_electronics/detailer))
+		var/obj/item/integrated_electronics/detailer/D = I
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		detail_color = D.detail_color
 		update_icon()
 	else
@@ -600,10 +679,14 @@
 		update_light()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/stop_pulling()
 =======
 /obj/item/electronic_assembly/stop_pulling()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/stop_pulling()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	for(var/I in assembly_components)
 		var/obj/item/integrated_circuit/IC = I
 		IC.stop_pulling()
@@ -627,6 +710,7 @@
 	return acting_object.drop_location()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/attack_tk(mob/user)
 	if(anchored)
 		return
@@ -640,6 +724,8 @@
 
 /obj/item/device/electronic_assembly/default //The /default electronic_assemblys are to allow the introduction of the new naming scheme without breaking old saves.
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/electronic_assembly/attack_tk(mob/user)
 	if(anchored)
 		return
@@ -652,7 +738,10 @@
 	..()
 
 /obj/item/electronic_assembly/default //The /default electronic_assemblys are to allow the introduction of the new naming scheme without breaking old saves.
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
   name = "type-a electronic assembly"
 
 /obj/item/electronic_assembly/calc
@@ -671,28 +760,40 @@
 	desc = "It's a case, for building small electronics with. This one has a simple design."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/hook
 =======
 /obj/item/electronic_assembly/hook
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/hook
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-e electronic assembly"
 	icon_state = "setup_small_hook"
 	desc = "It's a case, for building small electronics with. This one looks like it has a belt clip, but it's purely decorative."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/pda
 =======
 /obj/item/electronic_assembly/pda
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/pda
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-f electronic assembly"
 	icon_state = "setup_small_pda"
 	desc = "It's a case, for building small electronics with. This one resembles a PDA."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/medium
 =======
 /obj/item/electronic_assembly/medium
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/medium
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "electronic mechanism"
 	icon_state = "setup_medium"
 	desc = "It's a case, for building medium-sized electronics with."
@@ -719,28 +820,40 @@
 	desc = "It's a case, for building medium-sized electronics with. This one resembles some type of medical apparatus."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/medium/gun
 =======
 /obj/item/electronic_assembly/medium/gun
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/medium/gun
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-e electronic mechanism"
 	icon_state = "setup_medium_gun"
 	desc = "It's a case, for building medium-sized electronics with. This one resembles a gun, or some type of tool, if you're feeling optimistic."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/medium/radio
 =======
 /obj/item/electronic_assembly/medium/radio
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/medium/radio
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-f electronic mechanism"
 	icon_state = "setup_medium_radio"
 	desc = "It's a case, for building medium-sized electronics with. This one resembles an old radio."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/large
 =======
 /obj/item/electronic_assembly/large
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/large
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "electronic machine"
 	icon_state = "setup_large"
 	desc = "It's a case, for building large electronics with."
@@ -749,10 +862,14 @@
 	max_complexity = IC_COMPLEXITY_BASE * 4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/large/default
 =======
 /obj/item/electronic_assembly/large/default
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/large/default
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-a electronic machine"
 
 /obj/item/electronic_assembly/large/scope
@@ -771,28 +888,40 @@
 	desc = "It's a case, for building large electronics with. This one resembles a robotic arm."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/large/tall
 =======
 /obj/item/electronic_assembly/large/tall
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/large/tall
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-e electronic machine"
 	icon_state = "setup_large_tall"
 	desc = "It's a case, for building large electronics with. This one has a tall design."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/large/industrial
 =======
 /obj/item/electronic_assembly/large/industrial
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/large/industrial
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-f electronic machine"
 	icon_state = "setup_large_industrial"
 	desc = "It's a case, for building large electronics with. This one resembles some kind of industrial machinery."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/drone
 =======
 /obj/item/electronic_assembly/drone
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/drone
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "electronic drone"
 	icon_state = "setup_drone"
 	desc = "It's a case, for building mobile electronics with."
@@ -814,46 +943,66 @@
 	desc = "It's a case, for building mobile electronics with. This one is armed and dangerous."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/drone/secbot
 =======
 /obj/item/electronic_assembly/drone/secbot
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/drone/secbot
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-c electronic drone"
 	icon_state = "setup_drone_secbot"
 	desc = "It's a case, for building mobile electronics with. This one resembles a Securitron."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/drone/medbot
 =======
 /obj/item/electronic_assembly/drone/medbot
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/drone/medbot
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-d electronic drone"
 	icon_state = "setup_drone_medbot"
 	desc = "It's a case, for building mobile electronics with. This one resembles a Medibot."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/drone/genbot
 =======
 /obj/item/electronic_assembly/drone/genbot
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/drone/genbot
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-e electronic drone"
 	icon_state = "setup_drone_genbot"
 	desc = "It's a case, for building mobile electronics with. This one has a generic bot design."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/drone/android
 =======
 /obj/item/electronic_assembly/drone/android
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/drone/android
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "type-f electronic drone"
 	icon_state = "setup_drone_android"
 	desc = "It's a case, for building mobile electronics with. This one has a hominoid design."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/wallmount
 =======
 /obj/item/electronic_assembly/wallmount
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/wallmount
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "wall-mounted electronic assembly"
 	icon_state = "setup_wallmount_medium"
 	desc = "It's a case, for building medium-sized electronics with. It has a magnetized backing to allow it to stick to walls, but you'll still need to wrench the anchoring bolts in place to keep it on."
@@ -862,10 +1011,14 @@
 	max_complexity = IC_COMPLEXITY_BASE * 2
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/wallmount/heavy
 =======
 /obj/item/electronic_assembly/wallmount/heavy
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/wallmount/heavy
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "heavy wall-mounted electronic assembly"
 	icon_state = "setup_wallmount_large"
 	desc = "It's a case, for building large electronics with. It has a magnetized backing to allow it to stick to walls, but you'll still need to wrench the anchoring bolts in place to keep it on."
@@ -874,10 +1027,14 @@
 	max_complexity = IC_COMPLEXITY_BASE * 4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/wallmount/light
 =======
 /obj/item/electronic_assembly/wallmount/light
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/wallmount/light
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "light wall-mounted electronic assembly"
 	icon_state = "setup_wallmount_small"
 	desc = "It's a case, for building small electronics with. It has a magnetized backing to allow it to stick to walls, but you'll still need to wrench the anchoring bolts in place to keep it on."
@@ -886,10 +1043,14 @@
 	max_complexity = IC_COMPLEXITY_BASE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/wallmount/proc/mount_assembly(turf/on_wall, mob/user) //Yeah, this is admittedly just an abridged and kitbashed version of the wallframe attach procs.
 =======
 /obj/item/electronic_assembly/wallmount/proc/mount_assembly(turf/on_wall, mob/user) //Yeah, this is admittedly just an abridged and kitbashed version of the wallframe attach procs.
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/wallmount/proc/mount_assembly(turf/on_wall, mob/user) //Yeah, this is admittedly just an abridged and kitbashed version of the wallframe attach procs.
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(get_dist(on_wall,user)>1)
 		return
 	var/ndir = get_dir(on_wall, user)

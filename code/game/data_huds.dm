@@ -422,10 +422,14 @@
 	Circutry!
 ~~~~~~~~~~~~~*/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/diag_hud_set_circuithealth(hide = FALSE)
 =======
 /obj/item/electronic_assembly/proc/diag_hud_set_circuithealth(hide = FALSE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/proc/diag_hud_set_circuithealth(hide = FALSE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/image/holder = hud_list[DIAG_CIRCUIT_HUD]
 	var/icon/I = icon(icon, icon_state, dir)
 	holder.pixel_y = I.Height() - world.icon_size
@@ -435,10 +439,14 @@
 		holder.icon_state = "huddiag[RoundDiagBar(obj_integrity/max_integrity)]"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/diag_hud_set_circuitcell(hide = FALSE)
 =======
 /obj/item/electronic_assembly/proc/diag_hud_set_circuitcell(hide = FALSE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/proc/diag_hud_set_circuitcell(hide = FALSE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/image/holder = hud_list[DIAG_BATT_HUD]
 	var/icon/I = icon(icon, icon_state, dir)
 	holder.pixel_y = I.Height() - world.icon_size
@@ -451,10 +459,14 @@
 		holder.icon_state = "hudnobatt"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/diag_hud_set_circuitstat(hide = FALSE) //On, On and dangerous, or Off
 =======
 /obj/item/electronic_assembly/proc/diag_hud_set_circuitstat(hide = FALSE) //On, On and dangerous, or Off
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/proc/diag_hud_set_circuitstat(hide = FALSE) //On, On and dangerous, or Off
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/image/holder = hud_list[DIAG_STAT_HUD]
 	var/icon/I = icon(icon, icon_state, dir)
 	holder.pixel_y = I.Height() - world.icon_size
@@ -470,10 +482,14 @@
 		holder.icon_state = prefered_hud_icon
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/diag_hud_set_circuittracking(hide = FALSE)
 =======
 /obj/item/electronic_assembly/proc/diag_hud_set_circuittracking(hide = FALSE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/proc/diag_hud_set_circuittracking(hide = FALSE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/image/holder = hud_list[DIAG_TRACK_HUD]
 	var/icon/I = icon(icon, icon_state, dir)
 	holder.pixel_y = I.Height() - world.icon_size

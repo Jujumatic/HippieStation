@@ -11,14 +11,19 @@
 	var/loop = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/timer/suicide_act(mob/living/user)
 =======
 /obj/item/assembly/timer/suicide_act(mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/timer/suicide_act(mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	user.visible_message("<span class='suicide'>[user] looks at the timer and decides [user.p_their()] fate! It looks like [user.p_theyre()] going to commit suicide!</span>")
 	activate()//doesnt rely on timer_end to prevent weird metas where one person can control the timer and therefore someone's life. (maybe that should be how it works...)
 	addtimer(CALLBACK(src, .proc/manual_suicide, user), time*10)//kill yourself once the time runs out
 	return MANUAL_SUICIDE
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 /obj/item/device/assembly/timer/proc/manual_suicide(mob/living/user)
@@ -27,6 +32,8 @@
 	user.death(0)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/assembly/timer/proc/manual_suicide(mob/living/user)
 	user.visible_message("<span class='suicide'>[user]'s time is up!</span>")
@@ -92,10 +99,14 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/timer/ui_interact(mob/user)//TODO: Have this use the wires
 =======
 /obj/item/assembly/timer/ui_interact(mob/user)//TODO: Have this use the wires
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/timer/ui_interact(mob/user)//TODO: Have this use the wires
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(is_secured(user))
 		var/second = time % 60

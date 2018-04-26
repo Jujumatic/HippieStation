@@ -25,6 +25,7 @@
 			//slowly heal liver damage
 			damage = max(0, damage - 0.1)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 			if(filterToxins)
 				//handle liver toxin filtration
@@ -40,6 +41,8 @@
 					damage += toxamount*toxLethality
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 			if(filterToxins && !owner.has_trait(TRAIT_TOXINLOVER))
 				//handle liver toxin filtration

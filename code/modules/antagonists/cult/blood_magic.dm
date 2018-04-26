@@ -10,9 +10,13 @@
 	button.screen_loc = "6:-29,4:-2"
 	button.moved = "6:-29,4:-2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	button.ordered = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	button.ordered = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/action/innate/cult/blood_magic/Remove()
 	for(var/X in spells)
@@ -108,9 +112,13 @@
 	..()
 	button.locked = TRUE
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	button.ordered = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	button.ordered = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/action/innate/cult/blood_spell/Remove()
 	if(all_magic)

@@ -304,6 +304,7 @@
 /mob/living/pointed(atom/A as mob|obj|turf in view())
 	if(incapacitated())
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return 0
 	if(src.has_trait(TRAIT_FAKEDEATH))
 		return 0
@@ -312,12 +313,18 @@
 	if(has_trait(TRAIT_FAKEDEATH))
 		return FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		return FALSE
+	if(has_trait(TRAIT_FAKEDEATH))
+		return FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!..())
 		return FALSE
 	visible_message("<b>[src]</b> points at [A].", "<span class='notice'>You point at [A].</span>")
 	return TRUE
 
 /mob/living/verb/succumb(whispered as null)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	set hidden = 1
 	//hippie start
@@ -327,6 +334,9 @@
 =======
 	set hidden = TRUE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	set hidden = TRUE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if (InCritical())
 		log_message("Has [whispered ? "whispered his final words" : "succumbed to death"] while in [InFullCritical() ? "hard":"soft"] critical with [round(health, 0.1)] points of health!", INDIVIDUAL_ATTACK_LOG)
 		adjustOxyLoss(health - HEALTH_THRESHOLD_DEAD)
@@ -860,6 +870,7 @@
 		to_chat(src, "<span class='warning'>You don't have the dexterity to do this!</span>")
 		return FALSE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/gun/shooty
 	if(istype(G, /obj/item/gun))
 		shooty = G
@@ -870,6 +881,8 @@
 		return FALSE
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	return TRUE
 
 /mob/living/proc/update_stamina()

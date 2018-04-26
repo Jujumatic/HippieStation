@@ -44,18 +44,24 @@
 	//FREQ_BROADCASTING = 2
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] starts bouncing [src] off their head! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return BRUTELOSS
 
 /obj/item/device/radio/proc/set_frequency(new_frequency)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/radio/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] starts bouncing [src] off their head! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return BRUTELOSS
 
 /obj/item/radio/proc/set_frequency(new_frequency)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	remove_radio(src, frequency)
 	frequency = add_radio(src, new_frequency)
 
@@ -245,10 +251,14 @@
 	// Nearby active jammers severely gibberish the message
 	var/turf/position = get_turf(src)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	for(var/obj/item/device/jammer/jammer in GLOB.active_jammers)
 =======
 	for(var/obj/item/jammer/jammer in GLOB.active_jammers)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	for(var/obj/item/jammer/jammer in GLOB.active_jammers)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		var/turf/jammer_turf = get_turf(jammer)
 		if(position.z == jammer_turf.z && (get_dist(position, jammer_turf) < jammer.range))
 			message = Gibberish(message,100)

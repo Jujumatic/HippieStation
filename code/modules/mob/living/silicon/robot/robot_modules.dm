@@ -243,10 +243,14 @@
 		/obj/item/extinguisher,
 		/obj/item/pickaxe,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/t_scanner/adv_mining_scanner,
 =======
 		/obj/item/t_scanner/adv_mining_scanner,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/t_scanner/adv_mining_scanner,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/soap/nanotrasen,
 		/obj/item/borg/cyborghug)
@@ -303,18 +307,24 @@
 		/obj/item/crowbar/cyborg,
 		/obj/item/wirecutters/cyborg,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/multitool/cyborg,
 		/obj/item/device/t_scanner,
 		/obj/item/device/analyzer,
 		/obj/item/device/geiger_counter/cyborg,
 		/obj/item/device/assembly/signaler/cyborg,
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/multitool/cyborg,
 		/obj/item/t_scanner,
 		/obj/item/analyzer,
 		/obj/item/geiger_counter/cyborg,
 		/obj/item/assembly/signaler/cyborg,
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/areaeditor/blueprints/cyborg,
 		/obj/item/electroadaptive_pseudocircuit,
 		/obj/item/stack/sheet/metal/cyborg,
@@ -336,10 +346,14 @@
 	name = "Security"
 	basic_modules = list(
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/assembly/flash/cyborg,
 =======
 		/obj/item/assembly/flash/cyborg,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/assembly/flash/cyborg,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/melee/baton/loaded,
 		/obj/item/gun/energy/disabler/cyborg,

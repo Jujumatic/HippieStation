@@ -7,10 +7,14 @@ All ShuttleMove procs go here
 // Called on every turf in the shuttle region, returns a bitflag for allowed movements of that turf
 // returns the new move_mode (based on the old)
 <<<<<<< HEAD
+<<<<<<< HEAD
 /turf/proc/fromShuttleMove(turf/newT, turf_type, list/baseturf_cache, move_mode)
 =======
 /turf/proc/fromShuttleMove(turf/newT, move_mode)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/turf/proc/fromShuttleMove(turf/newT, move_mode)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!(move_mode & MOVE_AREA) || !isshuttleturf(src))
 		return move_mode
 
@@ -76,11 +80,15 @@ All ShuttleMove procs go here
 	var/shuttle_boundary = baseturfs.Find(/turf/baseturf_skipover/shuttle)
 	if(shuttle_boundary)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/depth = baseturfs.len - shuttle_boundary + 1
 		oldT.ScrapeAway(depth)
 =======
 		oldT.ScrapeAway(baseturfs.len - shuttle_boundary + 1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		oldT.ScrapeAway(baseturfs.len - shuttle_boundary + 1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	if(rotation)
 		shuttleRotate(rotation) //see shuttle_rotate.dm

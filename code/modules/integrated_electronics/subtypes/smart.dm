@@ -74,6 +74,7 @@
 /obj/item/integrated_circuit/smart/advanced_pathfinder
 	name = "advanced pathfinder"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	desc = "This complex circuit using complex processor for path planning."
 	extended_desc = "This circuit uses global coordinates for target. It will count as obstacle turf with given ref.Passkey\
 	is the same as used in door remotes."
@@ -82,6 +83,11 @@
 	extended_desc = "This circuit uses absolute coordinates for target. A path will be generated taking obstacle input into account, \
 	pathing around any instances of said input. The passkey provided from a card reader is used to create a valid path through doorways."
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	desc = "This circuit uses a complex processor for long-range pathfinding."
+	extended_desc = "This circuit uses absolute coordinates for target. A path will be generated taking obstacle input into account, \
+	pathing around any instances of said input. The passkey provided from a card reader is used to create a valid path through doorways."
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	icon_state = "numberpad"
 	complexity = 40
 	cooldown_per_use = 50
@@ -107,11 +113,16 @@
 	if(Pl&&islist(Pl))
 		idc.access = Pl
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/list/P = cir_get_path_to(assembly, locate(get_pin_data(IC_INPUT, 1),get_pin_data(IC_INPUT, 2),assembly.z), /turf/proc/Distance_cardinal, 0, 200, id=idc, exclude=get_turf(get_pin_data_as_type(IC_INPUT,3, /atom)), simulated_only = 0)
 =======
 	var/turf/a_loc = get_turf(assembly)
 	var/list/P = cir_get_path_to(assembly, locate(get_pin_data(IC_INPUT, 1),get_pin_data(IC_INPUT, 2),a_loc.z), /turf/proc/Distance_cardinal, 0, 200, id=idc, exclude=get_turf(get_pin_data_as_type(IC_INPUT,3, /atom)), simulated_only = 0)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/turf/a_loc = get_turf(assembly)
+	var/list/P = cir_get_path_to(assembly, locate(get_pin_data(IC_INPUT, 1),get_pin_data(IC_INPUT, 2),a_loc.z), /turf/proc/Distance_cardinal, 0, 200, id=idc, exclude=get_turf(get_pin_data_as_type(IC_INPUT,3, /atom)), simulated_only = 0)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	if(!P)
 		activate_pin(3)

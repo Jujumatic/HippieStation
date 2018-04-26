@@ -1,10 +1,14 @@
 /obj/machinery/jukebox
 	name = "jukebox"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	desc = "A classic music player.."
 =======
 	desc = "A classic music player."
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	desc = "A classic music player."
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "jukebox"
 	anchored = TRUE
@@ -49,6 +53,7 @@
 /obj/machinery/jukebox/Initialize()
 	. = ..()
 	var/list/tracks = flist("config/jukebox_music/sounds/")
+<<<<<<< HEAD
 
 	for(var/S in tracks)
 		var/datum/track/T = new()
@@ -62,6 +67,21 @@
 	if(songs.len)
 		selection = pick(songs)
 
+=======
+
+	for(var/S in tracks)
+		var/datum/track/T = new()
+		T.song_path = file("config/jukebox_music/sounds/[S]")
+		var/list/L = splittext(S,"+")
+		T.song_name = L[1]
+		T.song_length = text2num(L[2])
+		T.song_beat = text2num(L[3])
+		songs |= T
+
+	if(songs.len)
+		selection = pick(songs)
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/jukebox/Destroy()
 	dance_over()
 	return ..()
@@ -88,10 +108,15 @@
 /obj/machinery/jukebox/ui_interact(mob/user)
 	. = ..()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	if(!user.canUseTopic(src, !issilicon(user)))
 		return
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(!user.canUseTopic(src, !issilicon(user)))
+		return
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if (!anchored)
 		to_chat(user,"<span class='warning'>This device must be anchored by a wrench!</span>")
 		return
@@ -104,12 +129,15 @@
 		playsound(src,'sound/misc/compiler-failure.ogg', 25, 1)
 		return
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(!songs.len)
 		to_chat(user,"<span class='warning'>Error: No music tracks have been authorized for your station. Petition Central Command to resolve this issue.</span>")
 		playsound(src,'sound/misc/compiler-failure.ogg', 25, 1)
 		return
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/list/dat = list()
 	dat +="<div class='statusDisplay' style='text-align:center'>"
 	dat += "<b><A href='?src=[REF(src)];action=toggle'>[!active ? "BREAK IT DOWN" : "SHUT IT DOWN"]<b></A><br>"
@@ -171,10 +199,14 @@
 	FOR_DVIEW(var/turf/t, 3, get_turf(src),INVISIBILITY_LIGHTING)
 		if(t.x == cen.x && t.y > cen.y)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_RED
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1+get_dist(src, L)
@@ -182,10 +214,14 @@
 			continue
 		if(t.x == cen.x && t.y < cen.y)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_PURPLE
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1+get_dist(src, L)
@@ -193,10 +229,14 @@
 			continue
 		if(t.x > cen.x && t.y == cen.y)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_YELLOW
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1+get_dist(src, L)
@@ -204,10 +244,14 @@
 			continue
 		if(t.x < cen.x && t.y == cen.y)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_GREEN
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1+get_dist(src, L)
@@ -215,10 +259,14 @@
 			continue
 		if((t.x+1 == cen.x && t.y+1 == cen.y) || (t.x+2==cen.x && t.y+2 == cen.y))
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_ORANGE
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1.4+get_dist(src, L)
@@ -226,10 +274,14 @@
 			continue
 		if((t.x-1 == cen.x && t.y-1 == cen.y) || (t.x-2==cen.x && t.y-2 == cen.y))
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_CYAN
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1.4+get_dist(src, L)
@@ -237,10 +289,14 @@
 			continue
 		if((t.x-1 == cen.x && t.y+1 == cen.y) || (t.x-2==cen.x && t.y+2 == cen.y))
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_BLUEGREEN
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1.4+get_dist(src, L)
@@ -248,10 +304,14 @@
 			continue
 		if((t.x+1 == cen.x && t.y-1 == cen.y) || (t.x+2==cen.x && t.y-2 == cen.y))
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var/obj/item/device/flashlight/spotlight/L = new /obj/item/device/flashlight/spotlight(t)
 =======
 			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			var/obj/item/flashlight/spotlight/L = new /obj/item/flashlight/spotlight(t)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			L.light_color = LIGHT_COLOR_BLUE
 			L.light_power = 30-(get_dist(src,L)*8)
 			L.range = 1.4+get_dist(src, L)

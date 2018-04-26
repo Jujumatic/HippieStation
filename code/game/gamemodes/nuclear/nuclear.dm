@@ -135,10 +135,14 @@
 	var/tc = 25
 	var/command_radio = FALSE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/uplink_type = /obj/item/device/radio/uplink/nuclear
 =======
 	var/uplink_type = /obj/item/radio/uplink/nuclear
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/uplink_type = /obj/item/radio/uplink/nuclear
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 
 /datum/outfit/syndicate/leader
@@ -159,10 +163,14 @@
 
 	if(tc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/obj/item/device/radio/uplink/U = new uplink_type(H, H.key, tc)
 =======
 		var/obj/item/radio/uplink/U = new uplink_type(H, H.key, tc)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		var/obj/item/radio/uplink/U = new uplink_type(H, H.key, tc)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		H.equip_to_slot_or_del(U, slot_in_backpack)
 
 	var/obj/item/implant/weapons_auth/W = new/obj/item/implant/weapons_auth(H)

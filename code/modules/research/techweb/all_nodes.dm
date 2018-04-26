@@ -19,10 +19,14 @@
 	description = "What makes us tick."	//the MC, silly!
 	prereq_ids = list("base")
 <<<<<<< HEAD
+<<<<<<< HEAD
 	design_ids = list("chem_heater", "chem_master", "chem_dispenser", "sleeper", "pandemic", "defibmount", "operating")
 =======
 	design_ids = list("chem_heater", "chem_master", "chem_dispenser", "sleeper", "pandemic", "defibmount", "operating", "soda_dispenser", "beer_dispenser")
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	design_ids = list("chem_heater", "chem_master", "chem_dispenser", "sleeper", "pandemic", "defibmount", "operating", "soda_dispenser", "beer_dispenser")
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	research_cost = 2500
 	export_price = 5000
 
@@ -98,10 +102,14 @@
 	prereq_ids = list("base")
 	design_ids = list("solarcontrol", "recharger", "powermonitor", "rped", "pacman", "adv_capacitor", "adv_scanning", "emitter", "high_cell", "adv_matter_bin",
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"atmosalerts", "atmos_control", "recycler", "autolathe", "high_micro_laser", "nano_mani", "mesons", "thermomachine", "tesla_coil", "grounding_rod", "apc_control", "cell_charger")
 =======
 	"atmosalerts", "atmos_control", "recycler", "autolathe", "high_micro_laser", "nano_mani", "mesons", "thermomachine", "rad_collector", "tesla_coil", "grounding_rod", "apc_control", "cell_charger")
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	"atmosalerts", "atmos_control", "recycler", "autolathe", "high_micro_laser", "nano_mani", "mesons", "thermomachine", "rad_collector", "tesla_coil", "grounding_rod", "apc_control", "cell_charger")
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	research_cost = 7500
 	export_price = 5000
 
@@ -865,12 +873,17 @@
 	prereq_ids = list("alientech", "adv_engi")
 	design_ids = list("alien_wrench", "alien_wirecutters", "alien_screwdriver", "alien_crowbar", "alien_welder", "alien_multitool")
 <<<<<<< HEAD
+<<<<<<< HEAD
 	boost_item_paths = list(/obj/item/screwdriver/abductor = 0, /obj/item/wrench/abductor = 0, /obj/item/crowbar/abductor = 0, /obj/item/device/multitool/abductor = 0,
 	/obj/item/weldingtool/abductor = 0, /obj/item/wirecutters/abductor = 0, /obj/item/circuitboard/machine/abductor = 0, /obj/item/abductor_baton = 0, /obj/item/device/abductor = 0)
 =======
 	boost_item_paths = list(/obj/item/screwdriver/abductor = 0, /obj/item/wrench/abductor = 0, /obj/item/crowbar/abductor = 0, /obj/item/multitool/abductor = 0,
 	/obj/item/weldingtool/abductor = 0, /obj/item/wirecutters/abductor = 0, /obj/item/circuitboard/machine/abductor = 0, /obj/item/abductor_baton = 0, /obj/item/abductor = 0)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	boost_item_paths = list(/obj/item/screwdriver/abductor = 0, /obj/item/wrench/abductor = 0, /obj/item/crowbar/abductor = 0, /obj/item/multitool/abductor = 0,
+	/obj/item/weldingtool/abductor = 0, /obj/item/wirecutters/abductor = 0, /obj/item/circuitboard/machine/abductor = 0, /obj/item/abductor_baton = 0, /obj/item/abductor = 0)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	research_cost = 2500
 	export_price = 20000
 	hidden = TRUE

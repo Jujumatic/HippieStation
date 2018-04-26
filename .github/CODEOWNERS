@@ -2,8 +2,11 @@
 # when a PR that modifies the file in question is opened
 <<<<<<< HEAD
 # This list is alphabetized by User -> Filename KEEP IT THAT WAY
+<<<<<<< HEAD
 =======
 # This list is alphabetized by User -> Filename KEEP IT THAT WAY
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 # In the event that multiple org members are to be informed of changes
 # to the same file or dir, add them to the end under Multiple Owners
 
@@ -71,4 +74,7 @@
 
 /code/controllers/subsystem/air.dm @duncathan @MrStonedOne
 /icons/ @ShizCalev @WJohn
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

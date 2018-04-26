@@ -275,7 +275,28 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	#endif
 =======
 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if (byond_version >= 512)
+		if (!byond_build || byond_build < 1386)
+			message_admins("<span class='adminnotice'>[key_name(src)] has been detected as spoofing their byond version. Connection rejected.</span>")
+			add_system_note("Spoofed-Byond-Version", "Detected as using a spoofed byond version.")
+			log_access("Failed Login: [key] - Spoofed byond version")
+			qdel(src)
+
+		if (num2text(byond_build) in GLOB.blacklisted_builds)
+			log_access("Failed login: [key] - blacklisted byond version")
+			to_chat(src, "<span class='userdanger'>Your version of byond is blacklisted.</span>")
+			to_chat(src, "<span class='danger'>Byond build [byond_build] ([byond_version].[byond_build]) has been blacklisted for the following reason: [GLOB.blacklisted_builds[num2text(byond_build)]].</span>")
+			to_chat(src, "<span class='danger'>Please download a new version of byond. if [byond_build] is the latest, you can go to http://www.byond.com/download/build/ to download other versions.</span>")
+			if(connecting_admin)
+				to_chat(src, "As an admin, you are being allowed to continue using this version, but please consider changing byond versions")
+			else
+				qdel(src)
+				return
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(SSinput.initialized)
 		set_macros()
 
@@ -632,10 +653,14 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 /client/proc/note_randomizer_user()
 	add_system_note("CID-Error", "Detected as using a cid randomizer.")
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /client/proc/add_system_note(system_ckey, message)
 	var/sql_system_ckey = sanitizeSQL(system_ckey)
 	var/sql_ckey = sanitizeSQL(ckey)

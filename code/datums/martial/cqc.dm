@@ -118,6 +118,7 @@
 
 /datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(just_a_cook)
 		if(!is_type_in_typecache(get_area(A), areas_under_siege))
 			return 0
@@ -125,6 +126,10 @@
 	if(!can_use(A))
 		return FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(!can_use(A))
+		return FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	add_to_streak("G",D)
 	if(check_streak(A,D))
 		return TRUE
@@ -141,6 +146,7 @@
 
 /datum/martial_art/cqc/harm_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(just_a_cook)
 		if(!is_type_in_typecache(get_area(A), areas_under_siege))
 			return 0
@@ -148,6 +154,10 @@
 	if(!can_use(A))
 		return FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(!can_use(A))
+		return FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	add_to_streak("H",D)
 	if(check_streak(A,D))
 		return TRUE
@@ -177,6 +187,7 @@
 
 /datum/martial_art/cqc/disarm_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(just_a_cook)
 		if(!is_type_in_typecache(get_area(A), areas_under_siege))
 			return 0
@@ -184,6 +195,10 @@
 	if(!can_use(A))
 		return FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(!can_use(A))
+		return FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	add_to_streak("D",D)
 	var/obj/item/I = null
 	if(check_streak(A,D))

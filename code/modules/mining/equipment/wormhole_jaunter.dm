@@ -29,10 +29,14 @@
 	var/list/destinations = list()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	for(var/obj/item/device/beacon/B in GLOB.teleportbeacons)
 =======
 	for(var/obj/item/beacon/B in GLOB.teleportbeacons)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	for(var/obj/item/beacon/B in GLOB.teleportbeacons)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		var/turf/T = get_turf(B)
 		if(is_station_level(T.z))
 			destinations += B

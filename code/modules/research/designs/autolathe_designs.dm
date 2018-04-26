@@ -169,10 +169,14 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 50, MAT_GLASS = 100)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	build_path = /obj/item/device/camera
 =======
 	build_path = /obj/item/camera
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	build_path = /obj/item/camera
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	category = list("initial", "Misc")
 
 /datum/design/camera_film
@@ -181,10 +185,14 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 10, MAT_GLASS = 10)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	build_path = /obj/item/device/camera_film
 =======
 	build_path = /obj/item/camera_film
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	build_path = /obj/item/camera_film
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	category = list("initial", "Misc")
 
 /datum/design/earmuffs
@@ -437,6 +445,7 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 20, MAT_GLASS = 100)
 	build_path = /obj/item/storage/pill_bottle
+<<<<<<< HEAD
 	category = list("initial", "Medical")
 
 /datum/design/pillbottle
@@ -445,6 +454,8 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 20, MAT_GLASS = 100)
 	build_path = /obj/item/storage/pill_bottle
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	category = list("initial", "Medical")
 
 /datum/design/beanbag_slug
@@ -485,10 +496,14 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 20, MAT_GLASS = 5)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	build_path = /obj/item/device/tape/random
 =======
 	build_path = /obj/item/tape/random
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	build_path = /obj/item/tape/random
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	category = list("initial", "Misc")
 
 /datum/design/igniter

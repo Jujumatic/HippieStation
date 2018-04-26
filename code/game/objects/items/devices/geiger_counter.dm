@@ -120,10 +120,14 @@
 	loop.start()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/geiger_counter/rad_act(amount)
 =======
 /obj/item/geiger_counter/rad_act(amount)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/geiger_counter/rad_act(amount)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(amount <= RAD_BACKGROUND_RADIATION || !scanning)
 		return
@@ -170,10 +174,14 @@
 		to_chat(user, "<span class='notice'>[icon2html(src, user)] Subject is free of radioactive contamination.</span>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/geiger_counter/attackby(obj/item/I, mob/user, params)
 =======
 /obj/item/geiger_counter/attackby(obj/item/I, mob/user, params)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/geiger_counter/attackby(obj/item/I, mob/user, params)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(istype(I, /obj/item/screwdriver) && (obj_flags & EMAGGED))
 		if(scanning)
 			to_chat(user, "<span class='warning'>Turn off [src] before you perform this action!</span>")
@@ -190,10 +198,14 @@
 		return ..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/geiger_counter/AltClick(mob/living/user)
 =======
 /obj/item/geiger_counter/AltClick(mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/geiger_counter/AltClick(mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE))
 		return ..()
 	if(!scanning)
@@ -204,10 +216,14 @@
 	update_icon()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/geiger_counter/emag_act(mob/user)
 =======
 /obj/item/geiger_counter/emag_act(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/geiger_counter/emag_act(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(obj_flags & EMAGGED)
 		return
 	if(scanning)
@@ -217,16 +233,22 @@
 	obj_flags |= EMAGGED
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/geiger_counter/cyborg
 	var/datum/component/mobhook
 
 /obj/item/device/geiger_counter/cyborg/equipped(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/geiger_counter/cyborg
 	var/datum/component/mobhook
 
 /obj/item/geiger_counter/cyborg/equipped(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if (mobhook && mobhook.parent != user)
 		QDEL_NULL(mobhook)
@@ -234,10 +256,14 @@
 		mobhook = user.AddComponent(/datum/component/redirect, list(COMSIG_ATOM_RAD_ACT), CALLBACK(src, /atom.proc/rad_act))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/geiger_counter/cyborg/dropped()
 =======
 /obj/item/geiger_counter/cyborg/dropped()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/geiger_counter/cyborg/dropped()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	QDEL_NULL(mobhook)
 

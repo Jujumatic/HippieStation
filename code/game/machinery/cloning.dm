@@ -31,12 +31,17 @@
 
 	var/internal_radio = TRUE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/radio/radio
 	var/radio_key = /obj/item/device/encryptionkey/headset_med
 =======
 	var/obj/item/radio/radio
 	var/radio_key = /obj/item/encryptionkey/headset_med
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/radio/radio
+	var/radio_key = /obj/item/encryptionkey/headset_med
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/radio_channel = "Medical"
 
 	var/obj/effect/countdown/clonepod/countdown

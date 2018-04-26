@@ -94,10 +94,14 @@
 	return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/prox_sensor/ui_interact(mob/user)//TODO: Change this to the wires thingy
 =======
 /obj/item/assembly/prox_sensor/ui_interact(mob/user)//TODO: Change this to the wires thingy
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/prox_sensor/ui_interact(mob/user)//TODO: Change this to the wires thingy
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(is_secured(user))
 		var/second = time % 60

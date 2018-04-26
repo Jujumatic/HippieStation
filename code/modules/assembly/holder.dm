@@ -68,9 +68,12 @@
 		a_right.on_found(finder)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly_holder/Move()
 	..()
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/assembly_holder/Move()
 	. = ..()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
@@ -80,10 +83,14 @@
 	return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly_holder/attack_hand()//Perhapse this should be a holder_pickup proc instead, can add if needbe I guess
 =======
 /obj/item/assembly_holder/attack_hand()//Perhapse this should be a holder_pickup proc instead, can add if needbe I guess
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly_holder/attack_hand()//Perhapse this should be a holder_pickup proc instead, can add if needbe I guess
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(.)
 		return

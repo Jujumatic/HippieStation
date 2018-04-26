@@ -709,6 +709,7 @@ world
 // Creates a single icon from a given /atom or /image.  Only the first argument is required.
 /proc/getFlatIcon(image/A, defdir, deficon, defstate, defblend, start = TRUE, no_anim = FALSE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// We start with a blank canvas, otherwise some icon procs crash silently
 	var/icon/flat = icon('icons/effects/effects.dmi', "nothing") // Final flattened icon
 	if(!A)
@@ -743,6 +744,32 @@ world
 
 	var/noIcon = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	//Define... defines.
+	var/static/icon/flat_template = icon('icons/effects/effects.dmi', "nothing")
+
+	#define BLANK icon(flat_template)
+	#define SET_SELF(SETVAR) var/icon/SELF_ICON=icon(icon(curicon, curstate, base_icon_dir),"",SOUTH,no_anim?1:null);if(A.alpha<255)SELF_ICON.Blend(rgb(255,255,255,A.alpha),ICON_MULTIPLY);if(A.color)SELF_ICON.Blend(A.color,ICON_MULTIPLY);;##SETVAR=SELF_ICON;
+
+	#define INDEX_X_LOW 1
+	#define INDEX_X_HIGH 2
+	#define INDEX_Y_LOW 3
+	#define INDEX_Y_HIGH 4
+
+	#define flatX1 flat_size[INDEX_X_LOW]
+	#define flatX2 flat_size[INDEX_X_HIGH]
+	#define flatY1 flat_size[INDEX_Y_LOW]
+	#define flatY2 flat_size[INDEX_Y_HIGH]
+	#define addX1 add_size[INDEX_X_LOW]
+	#define addX2 add_size[INDEX_X_HIGH]
+	#define addY1 add_size[INDEX_Y_LOW]
+	#define addY2 add_size[INDEX_Y_HIGH]
+
+	if(!A || A.alpha <= 0)
+		return BLANK
+
+	var/noIcon = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(start)
 		if(!defdir)
 			defdir = A.dir
@@ -754,12 +781,15 @@ world
 			defblend = A.blend_mode
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/curicon
 	if(A.icon)
 		curicon = A.icon
 	else
 		curicon = deficon
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/curicon = A.icon || deficon
 	var/curstate = A.icon_state || defstate
 
@@ -770,7 +800,10 @@ world
 				curstate = ""
 			else
 				noIcon = TRUE // Do not render this object.
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	var/curdir
 	var/base_icon_dir	//We'll use this to get the icon state to display if not null BUT NOT pass it to overlays as the dir we have
@@ -779,6 +812,7 @@ world
 	if(!A.dir || A.dir == SOUTH)
 		curdir = defdir
 	else
+<<<<<<< HEAD
 <<<<<<< HEAD
 		curstate = defstate
 
@@ -969,17 +1003,84 @@ world
 		addY1 = min(flatY1, I.pixel_y+1)
 		addY2 = max(flatY2, I.pixel_y+add.Height())
 =======
+=======
+		curdir = A.dir
+
+	//Try to remove/optimize this section ASAP, CPU hog.
+	//Determines if there's directionals.
+	if(!noIcon && curdir != SOUTH)
+		var/exist = FALSE
+		var/static/list/checkdirs = list(NORTH, EAST, WEST)
+		for(var/i in checkdirs)		//Not using GLOB for a reason.
+			if(length(icon_states(icon(curicon, curstate, i))))
+				exist = TRUE
+				break
+		if(!exist)
+			base_icon_dir = SOUTH
+	//
+
+	if(!base_icon_dir)
+		base_icon_dir = curdir
+
+	ASSERT(!BLEND_DEFAULT)		//I might just be stupid but lets make sure this define is 0.
+
+	var/curblend = A.blend_mode || defblend
+
+	if(A.overlays.len || A.underlays.len)
+		var/icon/flat = BLANK
+		// Layers will be a sorted list of icons/overlays, based on the order in which they are displayed
+		var/list/layers = list()
+		var/image/copy
+		// Add the atom's icon itself, without pixel_x/y offsets.
+		if(!noIcon)
+			copy = image(icon=curicon, icon_state=curstate, layer=A.layer, dir=base_icon_dir)
+			copy.color = A.color
+			copy.alpha = A.alpha
+			copy.blend_mode = curblend
+			layers[copy] = A.layer
+
+		// Loop through the underlays, then overlays, sorting them into the layers list
+		for(var/process_set in 0 to 1)
+			var/list/process = process_set? A.overlays : A.underlays
+			for(var/i in 1 to process.len)
+				var/image/current = process[i]
+				if(!current)
+					continue
+				if(current.plane != FLOAT_PLANE && current.plane != A.plane)
+					continue
+				var/current_layer = current.layer
+				if(current_layer < 0)
+					if(current_layer <= -1000)
+						return flat
+					current_layer = process_set + A.layer + current_layer / 1000
+
+				for(var/p in 1 to layers.len)
+					var/image/cmp = layers[p]
+					if(current_layer < layers[cmp])
+						layers.Insert(p, current)
+						break
+				layers[current] = current_layer
+
+		//sortTim(layers, /proc/cmp_image_layer_asc)
+
+		var/icon/add // Icon of overlay being added
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		// Current dimensions of flattened icon
 		var/list/flat_size = list(1, flat.Width(), 1, flat.Height())
 		// Dimensions of overlay being added
 		var/list/add_size[4]
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 		for(var/V in layers)
 			var/image/I = V
 			if(I.alpha == 0)
 				continue
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	if(no_anim)
 		//Clean up repeated frames
@@ -989,6 +1090,8 @@ world
 	else
 		return icon(flat, "", SOUTH)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(I == copy) // 'I' is an /image based on the object being flattened.
 				curblend = BLEND_OVERLAY
 				add = icon(I.icon, I.icon_state, base_icon_dir)
@@ -1050,7 +1153,10 @@ world
 
 	#undef BLANK
 	#undef SET_SELF
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /proc/getIconMask(atom/A)//By yours truly. Creates a dynamic mask for a mob/whatever. /N
 	var/icon/alpha_mask = new(A.icon,A.icon_state)//So we want the default icon and icon state of A.

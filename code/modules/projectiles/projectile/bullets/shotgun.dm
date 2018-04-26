@@ -2,10 +2,14 @@
 	name = "12g shotgun slug"
 	damage = 60
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/projectile/bullet/shotgun_slug/tengauge
 	name = "10g shotgun slug"
 	damage = 72.5
@@ -47,10 +51,14 @@
 		var/atom/movable/M = target
 		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
 <<<<<<< HEAD
+<<<<<<< HEAD
 		M.throw_at(throw_target, 3, 2)
 =======
 		M.safe_throw_at(throw_target, 3, 2)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		M.safe_throw_at(throw_target, 3, 2)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/projectile/bullet/shotgun_meteorslug/Initialize()
 	. = ..()

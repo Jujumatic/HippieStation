@@ -92,10 +92,14 @@
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/mousetrap/attack_hand(mob/living/carbon/human/user)
 =======
 /obj/item/assembly/mousetrap/attack_hand(mob/living/carbon/human/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/mousetrap/attack_hand(mob/living/carbon/human/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(armed)
 		if((user.has_trait(TRAIT_DUMB) || user.has_trait(TRAIT_CLUMSY)) && prob(50))
 			var/which_hand = BODY_ZONE_PRECISE_L_HAND

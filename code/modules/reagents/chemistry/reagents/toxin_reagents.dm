@@ -163,6 +163,7 @@
 	taste_description = "death"
 
 /datum/reagent/toxin/zombiepowder/on_mob_add(mob/M)
+<<<<<<< HEAD
 	..()
 	if(isliving(M))
 		var/mob/living/L = M
@@ -179,9 +180,22 @@
 /datum/reagent/toxin/zombiepowder/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(0.5*REM, 0)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
-	. = 1
+	if(isliving(M))
+		var/mob/living/L = M
+		L.fakedeath(id)
 
+<<<<<<< HEAD
+=======
+/datum/reagent/toxin/zombiepowder/on_mob_delete(mob/M)
+	if(isliving(M))
+		var/mob/living/L = M
+		L.cure_fakedeath(id)
+	..()
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /datum/reagent/toxin/zombiepowder/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(0.5*REM, 0)
 	..()
@@ -852,6 +866,7 @@
 	M.adjustFireLoss(current_cycle/10, 0)
 	. = 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 	..()
 
 /datum/reagent/toxin/peaceborg/confuse
@@ -887,6 +902,8 @@
 		to_chat(M, "You should sit down and take a rest...")
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 
 /datum/reagent/toxin/delayed

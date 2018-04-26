@@ -26,6 +26,7 @@
 	var/next_activate = 0 //When we're next allowed to activate - for spam control
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/get_part_rating()
 	return 1
 
@@ -39,6 +40,15 @@
 
 /obj/item/assembly/proc/on_detach()
 
+=======
+/obj/item/assembly/get_part_rating()
+	return 1
+
+/obj/item/assembly/proc/on_attach()
+
+/obj/item/assembly/proc/on_detach()
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/assembly/proc/holder_movement()							//Called when the holder is moved
 	return
 
@@ -123,8 +133,12 @@
 	return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/interact(mob/user)
 =======
 /obj/item/assembly/interact(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/interact(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	return ui_interact(user)

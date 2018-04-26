@@ -20,18 +20,24 @@ GAS ANALYZER
 	materials = list(MAT_METAL=150)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/t_scanner/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins to emit terahertz-rays into [user.p_their()] brain with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return TOXLOSS
 
 /obj/item/device/t_scanner/attack_self(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/t_scanner/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins to emit terahertz-rays into [user.p_their()] brain with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return TOXLOSS
 
 /obj/item/t_scanner/attack_self(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	on = !on
 	icon_state = copytext(icon_state, 1, length(icon_state))+"[on]"
@@ -40,15 +46,20 @@ GAS ANALYZER
 		START_PROCESSING(SSobj, src)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/t_scanner/process()
 =======
 /obj/item/t_scanner/process()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/t_scanner/process()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!on)
 		STOP_PROCESSING(SSobj, src)
 		return null
 	scan()
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /obj/item/device/t_scanner/proc/scan()
 	t_ray_scan(loc)
@@ -74,6 +85,10 @@ GAS ANALYZER
 /obj/item/t_scanner/proc/scan()
 	t_ray_scan(loc)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/t_scanner/proc/scan()
+	t_ray_scan(loc)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /proc/t_ray_scan(mob/viewer, flick_time = 8, distance = 2)
 	if(!ismob(viewer) || !viewer.client)
@@ -113,18 +128,24 @@ GAS ANALYZER
 	var/advanced = FALSE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/healthanalyzer/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins to analyze [user.p_them()]self with [src]! The display shows that [user.p_theyre()] dead!</span>")
 	return BRUTELOSS
 
 /obj/item/device/healthanalyzer/attack_self(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/healthanalyzer/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins to analyze [user.p_them()]self with [src]! The display shows that [user.p_theyre()] dead!</span>")
 	return BRUTELOSS
 
 /obj/item/healthanalyzer/attack_self(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!scanmode)
 		to_chat(user, "<span class='notice'>You switch the health analyzer to scan chemical contents.</span>")
 		scanmode = 1
@@ -381,10 +402,14 @@ GAS ANALYZER
 	advanced = TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/analyzer
 =======
 /obj/item/analyzer
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/analyzer
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	desc = "A hand-held environmental scanner which reports current gas levels. Alt-Click to use the built in barometer function."
 	name = "analyzer"
 	icon = 'icons/obj/device.dmi'
@@ -405,10 +430,14 @@ GAS ANALYZER
 	var/accuracy // 0 is the best accuracy.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/analyzer/suicide_act(mob/living/carbon/user)
 =======
 /obj/item/analyzer/suicide_act(mob/living/carbon/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/analyzer/suicide_act(mob/living/carbon/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	user.visible_message("<span class='suicide'>[user] begins to analyze [user.p_them()]self with [src]! The display shows that [user.p_theyre()] dead!</span>")
 	return BRUTELOSS
 
@@ -472,10 +501,14 @@ GAS ANALYZER
 		to_chat(user, "<span class='info'>Temperature: [round(environment.temperature-T0C)] &deg;C</span>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/analyzer/AltClick(mob/user) //Barometer output for measuring when the next storm happens
 =======
 /obj/item/analyzer/AltClick(mob/user) //Barometer output for measuring when the next storm happens
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/analyzer/AltClick(mob/user) //Barometer output for measuring when the next storm happens
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 
 	if(user.canUseTopic(src))
@@ -487,6 +520,7 @@ GAS ANALYZER
 		var/turf/T = get_turf(user)
 		if(!T)
 			return
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 		playsound(src, 'sound/effects/pop.ogg', 100)
@@ -575,6 +609,42 @@ GAS ANALYZER
 		addtimer(CALLBACK(src,/obj/item/analyzer/proc/ping), cooldown_time)
 
 
+=======
+
+		playsound(src, 'sound/effects/pop.ogg', 100)
+		var/area/user_area = T.loc
+		var/datum/weather/ongoing_weather = null
+
+		if(!user_area.outdoors)
+			to_chat(user, "<span class='warning'>[src]'s barometer function won't work indoors!</span>")
+			return
+
+		for(var/V in SSweather.processing)
+			var/datum/weather/W = V
+			if(W.barometer_predictable && (T.z in W.impacted_z_levels) && W.area_type == user_area.type && !(W.stage == END_STAGE))
+				ongoing_weather = W
+				break
+
+		if(ongoing_weather)
+			if((ongoing_weather.stage == MAIN_STAGE) || (ongoing_weather.stage == WIND_DOWN_STAGE))
+				to_chat(user, "<span class='warning'>[src]'s barometer function can't trace anything while the storm is [ongoing_weather.stage == MAIN_STAGE ? "already here!" : "winding down."]</span>")
+				return
+
+			to_chat(user, "<span class='notice'>The next [ongoing_weather] will hit in [butchertime(ongoing_weather.next_hit_time - world.time)].</span>")
+			if(ongoing_weather.aesthetic)
+				to_chat(user, "<span class='warning'>[src]'s barometer function says that the next storm will breeze on by.</span>")
+		else
+			var/next_hit = SSweather.next_hit_by_zlevel["[T.z]"]
+			var/fixed = next_hit ? next_hit - world.time : -1
+			if(fixed < 0)
+				to_chat(user, "<span class='warning'>[src]'s barometer function was unable to trace any weather patterns.</span>")
+			else
+				to_chat(user, "<span class='warning'>[src]'s barometer function says a storm will land in approximately [butchertime(fixed)].</span>")
+		cooldown = TRUE
+		addtimer(CALLBACK(src,/obj/item/analyzer/proc/ping), cooldown_time)
+
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/analyzer/proc/ping()
 	if(isliving(loc))
 		var/mob/living/L = loc

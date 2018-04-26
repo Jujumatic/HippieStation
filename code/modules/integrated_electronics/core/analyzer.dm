@@ -7,12 +7,17 @@
 	w_class = WEIGHT_CLASS_SMALL
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/integrated_electronics/analyzer/afterattack(var/atom/A, var/mob/living/user)
 	if(istype(A, /obj/item/device/electronic_assembly))
 =======
 /obj/item/integrated_electronics/analyzer/afterattack(var/atom/A, var/mob/living/user)
 	if(istype(A, /obj/item/electronic_assembly))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/integrated_electronics/analyzer/afterattack(var/atom/A, var/mob/living/user)
+	if(istype(A, /obj/item/electronic_assembly))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		var/saved = "[A.name] analyzed! On circuit printers with cloning enabled, you may use the code below to clone the circuit:<br><br><code>[SScircuit.save_electronic_assembly(A)]</code>"
 		if(saved)
 			to_chat(user, "<span class='notice'>You scan [A].</span>")

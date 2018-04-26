@@ -94,10 +94,14 @@
 		. = hearers(vision_range, targets_from) - src //Remove self, so we don't suicide
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/static/hostile_machines = typecacheof(list(/obj/machinery/porta_turret, /obj/mecha, /obj/structure/destructible/clockwork/ocular_warden,/obj/item/device/electronic_assembly))
 =======
 		var/static/hostile_machines = typecacheof(list(/obj/machinery/porta_turret, /obj/mecha, /obj/structure/destructible/clockwork/ocular_warden,/obj/item/electronic_assembly))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		var/static/hostile_machines = typecacheof(list(/obj/machinery/porta_turret, /obj/mecha, /obj/structure/destructible/clockwork/ocular_warden,/obj/item/electronic_assembly))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 		for(var/HM in typecache_filter_list(range(vision_range, targets_from), hostile_machines))
 			if(can_see(targets_from, HM, vision_range))
@@ -201,12 +205,17 @@
 			return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(istype(the_target, /obj/item/device/electronic_assembly))
 			var/obj/item/device/electronic_assembly/O = the_target
 =======
 		if(istype(the_target, /obj/item/electronic_assembly))
 			var/obj/item/electronic_assembly/O = the_target
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		if(istype(the_target, /obj/item/electronic_assembly))
+			var/obj/item/electronic_assembly/O = the_target
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(O.combat_circuits)
 				return TRUE
 

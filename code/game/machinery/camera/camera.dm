@@ -176,10 +176,14 @@
 	// UPGRADES
 	if(panel_open)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(istype(I, /obj/item/device/analyzer))
 =======
 		if(istype(I, /obj/item/analyzer))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		if(istype(I, /obj/item/analyzer))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(!isXRay())
 				if(!user.temporarilyRemoveItemFromInventory(I))
 					return
@@ -200,10 +204,14 @@
 			return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		else if(istype(I, /obj/item/device/assembly/prox_sensor))
 =======
 		else if(istype(I, /obj/item/assembly/prox_sensor))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		else if(istype(I, /obj/item/assembly/prox_sensor))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(!isMotion())
 				if(!user.temporarilyRemoveItemFromInventory(I))
 					return
@@ -216,10 +224,14 @@
 
 	// OTHER
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if((istype(I, /obj/item/paper) || istype(I, /obj/item/device/pda)) && isliving(user))
 =======
 	if((istype(I, /obj/item/paper) || istype(I, /obj/item/pda)) && isliving(user))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if((istype(I, /obj/item/paper) || istype(I, /obj/item/pda)) && isliving(user))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		var/mob/living/U = user
 		var/obj/item/paper/X = null
 		var/obj/item/pda/P = null
@@ -252,10 +264,14 @@
 		return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	else if(istype(I, /obj/item/device/camera_bug))
 =======
 	else if(istype(I, /obj/item/camera_bug))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	else if(istype(I, /obj/item/camera_bug))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(!can_use())
 			to_chat(user, "<span class='notice'>Camera non-functional.</span>")
 			return

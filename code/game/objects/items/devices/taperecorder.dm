@@ -56,10 +56,14 @@
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/taperecorder/attack_hand(mob/user)
 =======
 /obj/item/taperecorder/attack_hand(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/taperecorder/attack_hand(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(loc == user)
 		if(mytape)
 			if(!user.is_holding(src))
@@ -280,10 +284,14 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/tape/attackby(obj/item/I, mob/user, params)
 =======
 /obj/item/tape/attackby(obj/item/I, mob/user, params)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/tape/attackby(obj/item/I, mob/user, params)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(ruined && istype(I, /obj/item/screwdriver) || istype(I, /obj/item/pen))
 		to_chat(user, "<span class='notice'>You start winding the tape back in...</span>")
 		if(I.use_tool(src, user, 120))

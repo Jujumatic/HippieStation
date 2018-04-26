@@ -26,10 +26,14 @@
 	new /obj/item/storage/box/teargas(src)
 	new /obj/item/storage/backpack/duffelbag/syndie/med(src)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	new /obj/item/device/pda/syndicate(src)
 =======
 	new /obj/item/pda/syndicate(src)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	new /obj/item/pda/syndicate(src)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/structure/closet/syndicate/resources
 	desc = "An old, dusty locker."

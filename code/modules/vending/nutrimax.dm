@@ -14,10 +14,14 @@
 					/obj/item/cultivator = 3,
 					/obj/item/shovel/spade = 3,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					/obj/item/device/plant_analyzer = 4)
 =======
 					/obj/item/plant_analyzer = 4)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+					/obj/item/plant_analyzer = 4)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	contraband = list(/obj/item/reagent_containers/glass/bottle/ammonia = 10,
 		              /obj/item/reagent_containers/glass/bottle/diethylamine = 5)
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 50)

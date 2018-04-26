@@ -29,18 +29,24 @@
 	disrupt()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/chameleon/attack_self(mob/user)
 	if (isturf(user.loc) || istype(user.loc, /obj/structure) || active_dummy)
 		toggle(user)
 	else
 		to_chat(user, "<span class='userwarning'>You can't use [src] while inside something.</span>")
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/chameleon/attack_self(mob/user)
 	if (isturf(user.loc) || istype(user.loc, /obj/structure) || active_dummy)
 		toggle(user)
 	else
 		to_chat(user, "<span class='warning'>You can't use [src] while inside something!</span>")
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/chameleon/afterattack(atom/target, mob/user , proximity)
 	if(!proximity)

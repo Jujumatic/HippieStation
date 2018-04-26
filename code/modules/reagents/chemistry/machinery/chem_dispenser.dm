@@ -414,9 +414,13 @@ obj/machinery/chem_dispenser/proc/work_animation()
 	pixel_y = 6
 	layer = WALL_OBJ_LAYER
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	working_state = null
 	nopower_state = null
 	dispensable_reagents = list(

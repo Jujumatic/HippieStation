@@ -162,6 +162,7 @@
 	pixel_y = -32
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/gps/computer/wrench_act(mob/living/user, obj/item/I)
 	if(flags_1 & NODECONSTRUCT_1)
 		return TRUE
@@ -179,6 +180,12 @@
 	if(flags_1 & NODECONSTRUCT_1)
 		return TRUE
 
+=======
+/obj/item/gps/computer/wrench_act(mob/living/user, obj/item/I)
+	if(flags_1 & NODECONSTRUCT_1)
+		return TRUE
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	user.visible_message("<span class='warning'>[user] disassembles [src].</span>",
 		"<span class='notice'>You start to disassemble [src]...</span>", "You hear clanking and banging noises.")
 	if(I.use_tool(src, user, 20, volume=50))
@@ -187,7 +194,10 @@
 	return TRUE
 
 /obj/item/gps/computer/attack_hand(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(.)
 		return

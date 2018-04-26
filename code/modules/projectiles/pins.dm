@@ -37,10 +37,14 @@
 				to_chat(user, "<span class ='notice'>This firearm already has a firing pin installed.</span>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/firing_pin/emag_act(mob/user)
 =======
 /obj/item/firing_pin/emag_act(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/firing_pin/emag_act(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(obj_flags & EMAGGED)
 		return
 	obj_flags |= EMAGGED

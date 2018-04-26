@@ -17,20 +17,29 @@
 /datum/dna/New(mob/living/carbon/new_holder)
 =======
 /datum/dna/New(mob/living/new_holder)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(istype(new_holder))
 		holder = new_holder
 
 /datum/dna/Destroy()
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(holder.dna == src)
 		holder.dna = null
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(iscarbon(holder))
 		var/mob/living/carbon/cholder = holder
 		if(cholder.dna == src)
 			cholder.dna = null
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	holder = null
 	QDEL_NULL(species)
 

@@ -24,6 +24,7 @@ SUBSYSTEM_DEF(nightshift)
 	priority_announce(message, sound='sound/misc/notice2.ogg', sender_override="Automated Lighting System Announcement")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /datum/controller/subsystem/nightshift/proc/check_nightshift(force_set = FALSE)
 	var/emergency = GLOB.security_level >= SEC_LEVEL_RED
 	var/nightshift = FALSE
@@ -44,6 +45,8 @@ SUBSYSTEM_DEF(nightshift)
 	if((nightshift_active != nightshift) || force_set)
 		update_nightshift(nightshift, announcing)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /datum/controller/subsystem/nightshift/proc/check_nightshift()
 	var/emergency = GLOB.security_level >= SEC_LEVEL_RED
 	var/announcing = TRUE
@@ -61,7 +64,10 @@ SUBSYSTEM_DEF(nightshift)
 		night_time = FALSE
 	if(nightshift_active != night_time)
 		update_nightshift(night_time, announcing)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/controller/subsystem/nightshift/proc/update_nightshift(active, announce = TRUE)
 	nightshift_active = active

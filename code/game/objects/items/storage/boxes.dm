@@ -360,14 +360,20 @@
 	icon_state = "donkpocketbox"
 	illustration=null
 <<<<<<< HEAD
+<<<<<<< HEAD
 	can_hold = list(/obj/item/reagent_containers/food/snacks/donkpocket)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/box/donkpockets/ComponentInitialize()
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/food/snacks/donkpocket))
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/box/donkpockets/PopulateContents()
 	for(var/i in 1 to 6)

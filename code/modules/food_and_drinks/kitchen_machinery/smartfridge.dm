@@ -130,17 +130,23 @@
 			return TRUE
 	else
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(istype(O.loc, /obj/item/storage))
 			var/obj/item/storage/S = O.loc
 			S.remove_from_storage(O,src)
 		O.forceMove(src)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(O.loc.SendSignal(COMSIG_CONTAINS_STORAGE))
 			return O.loc.SendSignal(COMSIG_TRY_STORAGE_TAKE, O, src)
 		else
 			O.forceMove(src)
 			return TRUE
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/machinery/smartfridge/attack_ai(mob/user)
 	return FALSE

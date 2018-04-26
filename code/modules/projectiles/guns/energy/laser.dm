@@ -119,10 +119,14 @@
 	item_flags = NONE
 	clumsy_check = FALSE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	pin = /obj/item/device/firing_pin/tag/blue
 =======
 	pin = /obj/item/firing_pin/tag/blue
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	pin = /obj/item/firing_pin/tag/blue
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	ammo_x_offset = 2
 	selfcharge = TRUE
 
@@ -137,10 +141,14 @@
 	item_flags = NONE
 	clumsy_check = FALSE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	pin = /obj/item/device/firing_pin/tag/red
 =======
 	pin = /obj/item/firing_pin/tag/red
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	pin = /obj/item/firing_pin/tag/red
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	ammo_x_offset = 2
 	selfcharge = TRUE
 

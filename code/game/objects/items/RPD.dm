@@ -195,9 +195,13 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	var/static/datum/pipe_info/first_disposal
 	var/static/datum/pipe_info/first_transit
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	var/autowrench = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/autowrench = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/pipe_dispenser/New()
 	. = ..()
@@ -363,10 +367,15 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					var/obj/item/pipe_meter/PM = new /obj/item/pipe_meter(get_turf(A))
 					PM.setAttachLayer(temp_piping_layer)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 					if(autowrench)
 						PM.wrench_act(user, src)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+					if(autowrench)
+						PM.wrench_act(user, src)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			else
 				to_chat(user, "<span class='notice'>You start building a pipe...</span>")
 				if(do_after(user, 2, target = A))
@@ -384,12 +393,18 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					P.setPipingLayer(temp_piping_layer)
 					P.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 =======
 					if(autowrench)
 						P.wrench_act(user, src)
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+					if(autowrench)
+						P.wrench_act(user, src)
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(DISPOSALS_MODE) //Making disposals pipes
 			if(!can_make_pipe)
 				return ..()

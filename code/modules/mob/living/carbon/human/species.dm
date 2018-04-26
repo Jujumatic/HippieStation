@@ -632,10 +632,13 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if("caps")
 					S = GLOB.caps_list[H.dna.features["caps"]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 				else
 					S = hippie_mutant_bodyparts(bodypart, H)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(!S || S.icon_state == "none")
 				continue
 
@@ -740,18 +743,24 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(slot_wear_mask)
 			if(H.wear_mask)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				return 0
 			if( !(I.slot_flags & SLOT_MASK) )
 				return 0
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return 0
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				return FALSE
 			if(!(I.slot_flags & SLOT_MASK))
 				return FALSE
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return FALSE
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(slot_neck)
 			if(H.wear_neck)
@@ -807,6 +816,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(slot_glasses)
 			if(H.glasses)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				return 0
 			if( !(I.slot_flags & SLOT_EYES) )
 				return 0
@@ -845,12 +855,33 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(slot_ears)
 			if(H.ears)
+=======
+				return FALSE
+			if(!(I.slot_flags & SLOT_EYES))
+				return FALSE
+			if(!H.get_bodypart(BODY_ZONE_HEAD))
+				return FALSE
+			return equip_delay_self_check(I, H, bypass_equip_delay_self)
+		if(slot_head)
+			if(H.head)
+				return FALSE
+			if(!(I.slot_flags & SLOT_HEAD))
+				return FALSE
+			if(!H.get_bodypart(BODY_ZONE_HEAD))
+				return FALSE
+			return equip_delay_self_check(I, H, bypass_equip_delay_self)
+		if(slot_ears)
+			if(H.ears)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				return FALSE
 			if(!(I.slot_flags & SLOT_EARS))
 				return FALSE
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return FALSE
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(slot_w_uniform)
 			if(H.w_uniform)
@@ -1187,12 +1218,15 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 /datum/species/proc/help(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 <<<<<<< HEAD
+<<<<<<< HEAD
 //hippie edit - martial arts check because this was never implemented. sorry not sorry
 	if(attacker_style && attacker_style.help_act(user,target))
 		return 1
 //hippie edit end
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(target.health >= 0 && !(target.has_trait(TRAIT_FAKEDEATH)))
 		target.help_shake_act(user)
 		if(target != user)

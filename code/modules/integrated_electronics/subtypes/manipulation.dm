@@ -138,10 +138,14 @@
 	w_class = WEIGHT_CLASS_SMALL
 	complexity = 10
 <<<<<<< HEAD
+<<<<<<< HEAD
 	cooldown_per_use = 8
 =======
 	cooldown_per_use = 1
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	cooldown_per_use = 1
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	ext_cooldown = 1
 	inputs = list("direction" = IC_PINTYPE_DIR)
 	outputs = list("obstacle" = IC_PINTYPE_REF)
@@ -247,6 +251,7 @@
 	desc = "Used to uproot weeds and harvest/plant trays."
 	icon_state = "plant_m"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	extended_desc = "The circuit accepts a reference to a hydroponic tray in an adjacent tile. \
 	Mode(0- harvest, 1-uproot weeds, 2-uproot plant) determinies action."
 	cooldown_per_use = 10
@@ -255,6 +260,11 @@
 	Mode input(0-harvest, 1-uproot weeds, 2-uproot plant, 3-plant seed) determines action. \
 	Harvesting returns a list of the harvested plants."
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	extended_desc = "The circuit accepts a reference to a hydroponic tray or an item in an adjacent tile. \
+	Mode input(0-harvest, 1-uproot weeds, 2-uproot plant, 3-plant seed) determines action. \
+	Harvesting returns a list of the harvested plants."
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	w_class = WEIGHT_CLASS_TINY
 	complexity = 10
 	inputs = list("tray" = IC_PINTYPE_REF,"mode" = IC_PINTYPE_NUMBER,"item" = IC_PINTYPE_REF)
@@ -530,19 +540,25 @@
 /obj/item/integrated_circuit/manipulation/matman
 	name = "material manager"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	desc = "It's module, designed to automatic storage and distribution of materials"
 	extended_desc = "The first input is ref to object of interaction.Second input used for interaction with stacks of materials.\
 					It accepts amount of sheets to insert.Inputs 3-13 used to direct mat transer between containers of machines.\
 					It accepts amount of material to transfer.Positive values means, that circuit will drain another machine.\
 					Negative ones means, that machine needs to be filled.Outputs shows current stored amounts of mats."
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	desc = "This circuit is designed for automatic storage and distribution of materials."
 	extended_desc = "The first input takes a ref of a machine with a material container. \
 					Second input is used for inserting material stacks into the internal material storage. \
 					Inputs 3-13 are used to transfer materials between target machine and circuit storage. \
 					Positive values will take that number of materials from another machine. \
 					Negative values will fill another machine from internal storage. Outputs show current stored amounts of mats."
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	icon_state = "grabber"
 	complexity = 16
 	inputs = list(
@@ -647,16 +663,22 @@
 			else
 				activate_pin(4)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(4)
 			AfterMaterialInsert()
 			set_pin_data(IC_OUTPUT, 1, WEAKREF(src))
 			activate_pin(5)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(5)
 			set_pin_data(IC_OUTPUT, 1, WEAKREF(src))
 			AfterMaterialInsert()
 			activate_pin(6)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/integrated_circuit/manipulation/matman/Destroy()
 	GET_COMPONENT(materials, /datum/component/material_container)

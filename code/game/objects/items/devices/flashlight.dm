@@ -39,10 +39,14 @@
 	return 1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flashlight/suicide_act(mob/living/carbon/human/user)
 =======
 /obj/item/flashlight/suicide_act(mob/living/carbon/human/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flashlight/suicide_act(mob/living/carbon/human/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if (user.eye_blind)
 		user.visible_message("<span class='suicide'>[user]  is putting [src] close to [user.p_their()] eyes and turning it on ... but [user.p_theyre()] blind!</span>")
 		return SHAME
@@ -50,10 +54,14 @@
 	return (FIRELOSS)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flashlight/attack(mob/living/carbon/M, mob/living/carbon/human/user)
 =======
 /obj/item/flashlight/attack(mob/living/carbon/M, mob/living/carbon/human/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flashlight/attack(mob/living/carbon/M, mob/living/carbon/human/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	add_fingerprint(user)
 	if(istype(M) && on && user.zone_selected in list(BODY_ZONE_PRECISE_EYES, BODY_ZONE_PRECISE_MOUTH))
 
@@ -383,10 +391,14 @@
 	return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flashlight/emp/attack(mob/living/M, mob/living/user)
 =======
 /obj/item/flashlight/emp/attack(mob/living/M, mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flashlight/emp/attack(mob/living/M, mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(on && user.zone_selected in list(BODY_ZONE_PRECISE_EYES, BODY_ZONE_PRECISE_MOUTH)) // call original attack when examining organs
 		..()
 	return

@@ -15,10 +15,14 @@ GLOBAL_REAL(GLOB, /datum/controller/global_vars)
 	var/datum/controller/exclude_these = new
 	gvars_datum_in_built_vars = exclude_these.vars + list(NAMEOF(src, gvars_datum_protected_varlist), NAMEOF(src, gvars_datum_in_built_vars), NAMEOF(src, gvars_datum_init_order))
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qdel(exclude_these)
 =======
 	QDEL_IN(exclude_these, 0)	//signal logging isn't ready
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	QDEL_IN(exclude_these, 0)	//signal logging isn't ready
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	log_world("[vars.len - gvars_datum_in_built_vars.len] global variables")
 

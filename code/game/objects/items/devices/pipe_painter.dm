@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/pipe_painter
 =======
 /obj/item/pipe_painter
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/pipe_painter
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "pipe painter"
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "labeler1"

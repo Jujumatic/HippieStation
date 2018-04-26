@@ -14,11 +14,15 @@
 /datum/component/construction/Initialize()
 	if(!isatom(parent))
 <<<<<<< HEAD
+<<<<<<< HEAD
 		. = COMPONENT_INCOMPATIBLE
 		CRASH("A construction component was applied incorrectly to non-atom: [parent.type].")
 =======
 		return COMPONENT_INCOMPATIBLE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		return COMPONENT_INCOMPATIBLE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	RegisterSignal(COMSIG_PARENT_EXAMINE, .proc/examine)
 	RegisterSignal(COMSIG_PARENT_ATTACKBY,.proc/action)

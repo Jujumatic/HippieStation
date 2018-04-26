@@ -45,10 +45,14 @@
 				break
 			if(!S.junkiness)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				T.remove_from_storage(S, src)
 =======
 				T.SendSignal(COMSIG_TRY_STORAGE_TAKE, S, src, TRUE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				T.SendSignal(COMSIG_TRY_STORAGE_TAKE, S, src, TRUE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				food_load(S)
 				loaded++
 			else

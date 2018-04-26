@@ -148,11 +148,17 @@
 	return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /obj/vehicle/ridden/scooter/skateboard/wrench_act(mob/living/user, obj/item/I)
 	return
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/vehicle/ridden/scooter/skateboard/wrench_act(mob/living/user, obj/item/I)
+	return
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 //Wheelys
 /obj/vehicle/ridden/scooter/wheelys
 	name = "Wheely-Heels"
@@ -194,7 +200,11 @@
 			H.updatehealth()
 		visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying!</span>")
 <<<<<<< HEAD
+<<<<<<< HEAD
 		playsound(src, 'sound/effects/bang.ogg', 50, 1)
 =======
 		playsound(src, 'sound/effects/bang.ogg', 50, 1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		playsound(src, 'sound/effects/bang.ogg', 50, 1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

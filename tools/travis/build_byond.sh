@@ -50,6 +50,7 @@ if [ "$BUILD_TOOLS" = false ]; then
     source $HOME/BYOND-${BYOND_MAJOR}.${BYOND_MINOR}/byond/bin/byondsetup
 	if [ "$BUILD_TESTING" = true ]; then
 <<<<<<< HEAD
+<<<<<<< HEAD
 		tools/travis/dm.sh -DTRAVISBUILDING -DTRAVISTESTING -DALL_MAPS hippiestation.dme
 	else
 		tools/travis/dm.sh -DTRAVISBUILDING hippiestation.dme && DreamDaemon hippiestation.dmb -close -trusted -params "test-run&log-directory=travis"
@@ -58,6 +59,11 @@ if [ "$BUILD_TOOLS" = false ]; then
 	else
 		tools/travis/dm.sh -DTRAVISBUILDING tgstation.dme && DreamDaemon tgstation.dmb -close -trusted -params "test-run&log-directory=travis"
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		tools/travis/dm.sh -DTRAVISBUILDING -DTRAVISTESTING -DALL_MAPS tgstation.dme
+	else
+		tools/travis/dm.sh -DTRAVISBUILDING tgstation.dme && DreamDaemon tgstation.dmb -close -trusted -params "test-run&log-directory=travis"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		cat data/logs/travis/clean_run.lk
 	fi;
 fi;

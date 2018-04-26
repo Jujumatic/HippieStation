@@ -15,10 +15,13 @@
 
 	var/msg = "<span class='info'>*---------*\nThis is <EM>[!obscure_name ? name : "Unknown"]</EM>!\n"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	var/is_ghost = isobserver(user) // hippie: added this var back
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	var/list/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
@@ -271,11 +274,14 @@
 			msg += "[t_He] [t_is] moving [t_his] body in an unnatural and blatantly inhuman manner.\n"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if((!skipface || is_ghost) && is_thrall(src) && (in_range(user,src) || is_ghost))
 		msg += "Their features seem unnaturally tight and drawn.\n"
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/traitstring = get_trait_string()
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
@@ -330,8 +336,11 @@
 
 	to_chat(user, msg)
 	return msg
+<<<<<<< HEAD
 
 	return msg // Hippie - To allow for disguises
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /mob/living/proc/status_effect_examines(pronoun_replacement) //You can include this in any mob's examine() to show the examine texts of status effects!
 	var/list/dat = list()

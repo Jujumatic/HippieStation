@@ -11,9 +11,13 @@
 /obj/item/ammo_casing/energy/flora
 	fire_sound = 'sound/effects/stealthoff.ogg'
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	harmful = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	harmful = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/ammo_casing/energy/flora/yield
 	projectile_type = /obj/item/projectile/energy/florayield
@@ -43,17 +47,25 @@
 	pellets = 6
 	variance = 40
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	harmful = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	harmful = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/ammo_casing/energy/trap
 	projectile_type = /obj/item/projectile/energy/trap
 	select_name = "snare"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	harmful = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	harmful = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/ammo_casing/energy/instakill
 	projectile_type = /obj/item/projectile/beam/instakill

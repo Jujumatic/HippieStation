@@ -13,6 +13,7 @@
 
 //bitflag damage defines used for suicide_act
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define BRUTELOSS 1
 #define FIRELOSS 2
 #define TOXLOSS 4
@@ -20,13 +21,18 @@
 #define SHAME 16
 #define MANUAL_SUICIDE 32	//suicide_act will do the actual killing.
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define BRUTELOSS 		(1<<0)
 #define FIRELOSS 		(1<<1)
 #define TOXLOSS 		(1<<2)
 #define OXYLOSS 		(1<<3)
 #define SHAME 			(1<<4)
 #define MANUAL_SUICIDE	(1<<5)	//suicide_act will do the actual killing.
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 #define EFFECT_STUN		"stun"
 #define EFFECT_KNOCKDOWN		"knockdown"
@@ -40,18 +46,24 @@
 
 //Bitflags defining which status effects could be or are inflicted on a mob
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CANSTUN		1
 #define CANKNOCKDOWN	2
 #define CANUNCONSCIOUS	4
 #define CANPUSH		8
 #define GODMODE		16
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define CANSTUN			(1<<0)
 #define CANKNOCKDOWN	(1<<1)
 #define CANUNCONSCIOUS	(1<<2)
 #define CANPUSH			(1<<3)
 #define GODMODE			(1<<4)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 //Health Defines
 #define HEALTH_THRESHOLD_CRIT 0

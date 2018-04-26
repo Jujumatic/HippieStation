@@ -31,9 +31,13 @@
 
 /obj/machinery/food_cart/ui_interact(mob/user)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	. = ..()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	. = ..()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/dat
 	dat += "<br><b>STORED INGREDIENTS AND DRINKS</b><br><div class='statusDisplay'>"
 	dat += "Remaining glasses: [glasses]<br>"

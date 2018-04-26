@@ -32,10 +32,14 @@
 	dir = 8
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/intercom{
 =======
 /obj/item/radio/intercom{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/radio/intercom{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "Station Intercom";
 	pixel_y = 24
 	},
@@ -237,10 +241,14 @@
 	pixel_y = 3
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/intercom{
 =======
 /obj/item/radio/intercom{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/radio/intercom{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "Station Intercom";
 	pixel_x = 26
 	},
@@ -494,10 +502,14 @@
 	pixel_y = 3
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/healthanalyzer{
 =======
 /obj/item/healthanalyzer{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/healthanalyzer{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -533,10 +545,14 @@
 	dir = 8
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/intercom{
 =======
 /obj/item/radio/intercom{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/radio/intercom{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "Station Intercom";
 	pixel_x = 26
 	},
@@ -574,28 +590,38 @@
 /obj/item/storage/toolbox/emergency,
 /obj/item/storage/toolbox/emergency,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flashlight/flare{
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /obj/item/device/flashlight/flare{
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/flashlight/flare{
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /obj/item/flashlight/flare{
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	pixel_x = -6;
 	pixel_y = -2
 	},
 /obj/item/crowbar,
 /obj/item/wrench,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio,
 =======
 /obj/item/radio,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/radio,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -635,10 +661,14 @@
 	pixel_x = -32
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/intercom{
 =======
 /obj/item/radio/intercom{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/radio/intercom{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "Station Intercom";
 	pixel_y = -26
 	},

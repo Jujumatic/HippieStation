@@ -528,10 +528,14 @@
 	pixel_y = 9
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/voice{
 =======
 /obj/item/assembly/voice{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/voice{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	pixel_y = 3
 	},
 /obj/structure/table/reinforced,
@@ -540,10 +544,14 @@
 "bz" = (
 /obj/item/wrench,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra,
 =======
 /obj/item/assembly/infra,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/infra,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/table/reinforced,
 /obj/machinery/light{
 	dir = 1
@@ -551,6 +559,7 @@
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
 "bA" = (
+<<<<<<< HEAD
 <<<<<<< HEAD
 /obj/item/device/assembly/signaler,
 /obj/item/device/assembly/signaler,
@@ -560,6 +569,8 @@
 	},
 /obj/item/device/assembly/prox_sensor{
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/assembly/signaler,
 /obj/item/assembly/signaler,
 /obj/item/assembly/prox_sensor{
@@ -567,7 +578,10 @@
 	pixel_y = 4
 	},
 /obj/item/assembly/prox_sensor{
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	pixel_x = -8;
 	pixel_y = 4
 	},
@@ -579,10 +593,14 @@
 	pixel_y = 3
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool,
 =======
 /obj/item/multitool,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/multitool,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
@@ -769,16 +787,22 @@
 /area/shuttle/syndicate/hallway)
 "ce" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/sbeacondrop/bomb{
 	pixel_y = 5
 	},
 /obj/item/device/sbeacondrop/bomb,
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/sbeacondrop/bomb{
 	pixel_y = 5
 	},
 /obj/item/sbeacondrop/bomb,
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/vault/side,
 /area/shuttle/syndicate/armory)
@@ -821,10 +845,14 @@
 	},
 /obj/structure/table/reinforced,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/aicard,
 =======
 /obj/item/aicard,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/aicard,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/vault/side,
 /area/shuttle/syndicate/armory)
 "cj" = (

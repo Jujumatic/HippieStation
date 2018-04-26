@@ -51,6 +51,7 @@
 		/obj/item/geiger_counter,
 		/obj/item/extinguisher/mini,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/radio,
 		/obj/item/clothing/gloves,
 		/obj/item/holosign_creator,
@@ -58,13 +59,18 @@
 		)
 	content_overlays = TRUE
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
 		/obj/item/holosign_creator,
 		/obj/item/assembly/signaler
 		))
 	STR.can_hold = can_hold
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/belt/utility/chief
 	name = "\improper Chief Engineer's toolbelt" //"the Chief Engineer's toolbelt", because "Chief Engineer's toolbelt" is not a proper noun
@@ -171,6 +177,7 @@
 		/obj/item/reagent_containers/blood,
 		/obj/item/tank/internals/emergency_oxygen,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/pinpointer/crew,
 		/obj/item/gun/syringe/syndicate,
 		/obj/item/implantcase,
@@ -179,13 +186,18 @@
 		)
 
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/gun/syringe/syndicate,
 		/obj/item/implantcase,
 		/obj/item/implant,
 		/obj/item/implanter,
 		/obj/item/pinpointer/crew
 		))
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/belt/security
 	name = "security belt"
@@ -214,6 +226,7 @@
 		/obj/item/flashlight/seclite,
 		/obj/item/melee/classic_baton/telescopic,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/radio,
 		/obj/item/clothing/gloves,
 		/obj/item/restraints/legcuffs/bola,
@@ -221,11 +234,16 @@
 		)
 	content_overlays = TRUE
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
 		/obj/item/restraints/legcuffs/bola
 		))
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/belt/security/full/PopulateContents()
 	new /obj/item/reagent_containers/spray/pepper(src)
@@ -255,12 +273,17 @@
 		/obj/item/wirecutters,
 		/obj/item/wrench,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/multitool,
 		/obj/item/device/flashlight,
 =======
 		/obj/item/multitool,
 		/obj/item/flashlight,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/multitool,
+		/obj/item/flashlight,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/item/stack/cable_coil,
 		/obj/item/analyzer,
 		/obj/item/extinguisher/mini,
@@ -332,10 +355,13 @@
 /obj/item/storage/belt/soulstone/full/chappy/PopulateContents()
 	for(var/i in 1 to 6)
 		new /obj/item/soulstone/anybody/chaplain(src)
+<<<<<<< HEAD
 
 /obj/item/storage/belt/soulstone/full/chappy/PopulateContents()
 	for(var/i in 1 to 6)
 		new /obj/item/device/soulstone/anybody/chaplain(src)
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/belt/champion
 	name = "championship belt"
@@ -496,12 +522,17 @@
 		/obj/item/clothing/gloves,
 		/obj/item/melee/flyswatter,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/assembly/mousetrap
 		)
 =======
 		/obj/item/assembly/mousetrap
 		))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/assembly/mousetrap
+		))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/belt/bandolier
 	name = "bandolier"

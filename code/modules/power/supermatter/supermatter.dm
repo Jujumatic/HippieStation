@@ -142,6 +142,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	var/datum/looping_sound/supermatter/soundloop
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/moveable = TRUE
 
 /obj/machinery/power/supermatter_shard/Initialize()
@@ -150,6 +151,11 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 
 /obj/machinery/power/supermatter_crystal/Initialize()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/moveable = FALSE
+
+/obj/machinery/power/supermatter_crystal/Initialize()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	uid = gl_uid++
 	SSair.atmos_machinery += src
@@ -331,10 +337,14 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		if(takes_damage)
 			//causing damage
 <<<<<<< HEAD
+<<<<<<< HEAD
 			damage = max(damage + (max(removed.temperature - ((T0C + HEAT_PENALTY_THRESHOLD)*dynamic_heat_resistance), 0) * mole_heat_penalty / 150 ) * DAMAGE_INCREASE_MULTIPLIER, 0)
 =======
 			damage = max(damage + (max(CLAMP(removed.total_moles() / 200, 0.5, 1) * removed.temperature - ((T0C + HEAT_PENALTY_THRESHOLD)*dynamic_heat_resistance), 0) * mole_heat_penalty / 150 ) * DAMAGE_INCREASE_MULTIPLIER, 0)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			damage = max(damage + (max(CLAMP(removed.total_moles() / 200, 0.5, 1) * removed.temperature - ((T0C + HEAT_PENALTY_THRESHOLD)*dynamic_heat_resistance), 0) * mole_heat_penalty / 150 ) * DAMAGE_INCREASE_MULTIPLIER, 0)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			damage = max(damage + (max(power - POWER_PENALTY_THRESHOLD, 0)/500) * DAMAGE_INCREASE_MULTIPLIER, 0)
 			damage = max(damage + (max(combined_gas - MOLE_PENALTY_THRESHOLD, 0)/80) * DAMAGE_INCREASE_MULTIPLIER, 0)
 
@@ -480,6 +490,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 
 		if(damage > explosion_point)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			for(var/mob in GLOB.alive_mob_list)
 				var/mob/living/L = mob
 				if(istype(L) && L.z == z)
@@ -494,6 +505,9 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 =======
 			countdown()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			countdown()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	return 1
 
@@ -570,20 +584,28 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/power/supermatter_shard/attack_hand(mob/living/user)
 =======
 /obj/machinery/power/supermatter_crystal/attack_hand(mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/power/supermatter_crystal/attack_hand(mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(.)
 		return
 	dust_mob(user, cause = "hand")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/power/supermatter_shard/proc/dust_mob(mob/living/nom, vis_msg, mob_msg, cause)
 =======
 /obj/machinery/power/supermatter_crystal/proc/dust_mob(mob/living/nom, vis_msg, mob_msg, cause)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/power/supermatter_crystal/proc/dust_mob(mob/living/nom, vis_msg, mob_msg, cause)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(nom.incorporeal_move || nom.status_flags & GODMODE)
 		return
 	if(!vis_msg)
@@ -619,10 +641,14 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		radiation_pulse(src, 150, 4)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/power/supermatter_shard/wrench_act(mob/user, obj/item/tool)
 =======
 /obj/machinery/power/supermatter_crystal/wrench_act(mob/user, obj/item/tool)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/power/supermatter_crystal/wrench_act(mob/user, obj/item/tool)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if (moveable)
 		default_unfasten_wrench(user, tool, time = 20)
 	return TRUE
@@ -694,6 +720,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	moveable = FALSE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/power/supermatter_shard/crystal
 	name = "supermatter crystal"
 	desc = "A strangely translucent and iridescent crystal."
@@ -711,6 +738,9 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 =======
 /obj/machinery/power/supermatter_crystal/proc/supermatter_pull(turf/center, pull_range = 10)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/power/supermatter_crystal/proc/supermatter_pull(turf/center, pull_range = 10)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	playsound(src.loc, 'sound/weapons/marauder.ogg', 100, 1, extrarange = 7)
 	for(var/atom/P in orange(pull_range,center))
 		if(ismovableatom(P))

@@ -16,6 +16,7 @@
 					/obj/item/crowbar = 12,
 					/obj/item/wirecutters = 12,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					/obj/item/device/multitool = 12,
 					/obj/item/wrench = 12,
 					/obj/item/device/t_scanner = 12,
@@ -24,6 +25,11 @@
 					/obj/item/wrench = 12,
 					/obj/item/t_scanner = 12,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+					/obj/item/multitool = 12,
+					/obj/item/wrench = 12,
+					/obj/item/t_scanner = 12,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					/obj/item/stock_parts/cell = 8,
 					/obj/item/weldingtool = 8,
 					/obj/item/clothing/head/welding = 8,

@@ -10,11 +10,16 @@
 	max_integrity = 200
 	resistance_flags = FIRE_PROOF
 <<<<<<< HEAD
+<<<<<<< HEAD
 	interaction_flags_machine = INTERACT_MACHINE_OPEN
 =======
 	interaction_flags_machine = INTERACT_MACHINE_OPEN | INTERACT_MACHINE_WIRES_IF_OPEN | INTERACT_MACHINE_ALLOW_SILICON | INTERACT_MACHINE_OPEN_SILICON
 	obj_flags = CAN_BE_HIT | USES_TGUI
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	interaction_flags_machine = INTERACT_MACHINE_OPEN | INTERACT_MACHINE_WIRES_IF_OPEN | INTERACT_MACHINE_ALLOW_SILICON | INTERACT_MACHINE_OPEN_SILICON
+	obj_flags = CAN_BE_HIT | USES_TGUI
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/datum/gas_mixture/air_contents	// internal reservoir
 	var/full_pressure = FALSE
 	var/pressure_charging = TRUE

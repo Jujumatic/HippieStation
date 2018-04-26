@@ -11,18 +11,24 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF | INDESTRUCTIBLE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/paicard/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] is staring sadly at [src]! [user.p_they()] can't keep living without real human intimacy!</span>")
 	return OXYLOSS
 
 /obj/item/device/paicard/Initialize()
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/paicard/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] is staring sadly at [src]! [user.p_they()] can't keep living without real human intimacy!</span>")
 	return OXYLOSS
 
 /obj/item/paicard/Initialize()
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	SSpai.pai_card_list += src
 	add_overlay("pai-off")
 	return ..()

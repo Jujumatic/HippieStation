@@ -12,9 +12,13 @@
 #define BOSS_MEDAL_LEGION	  "Legion"
 #define BOSS_MEDAL_TENDRIL	  "Tendril"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #define BOSS_MEDAL_SWARMERS   "Swarmer Beacon"
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define BOSS_MEDAL_SWARMERS   "Swarmer Beacon"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 // Score names
 #define HIEROPHANT_SCORE 	 "Hierophants Killed"

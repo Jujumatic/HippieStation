@@ -48,10 +48,14 @@
 		qdel(I)
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/kilt/highlander(H), slot_w_uniform)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	H.equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/captain(H), slot_ears)
 =======
 	H.equip_to_slot_or_del(new /obj/item/radio/headset/heads/captain(H), slot_ears)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	H.equip_to_slot_or_del(new /obj/item/radio/headset/heads/captain(H), slot_ears)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/beret/highlander(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/combat(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/pinpointer/nuke(H), slot_l_store)

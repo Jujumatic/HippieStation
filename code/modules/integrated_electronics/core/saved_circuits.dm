@@ -139,10 +139,14 @@
 // Verifies a list of assembly parameters
 // Returns null on success, error name on failure
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/electronic_assembly/proc/verify_save(list/assembly_params)
 =======
 /obj/item/electronic_assembly/proc/verify_save(list/assembly_params)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/electronic_assembly/proc/verify_save(list/assembly_params)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	// Validate name and color
 	if(assembly_params["name"] && !reject_bad_name(assembly_params["name"], TRUE))
 		return "Bad assembly name."

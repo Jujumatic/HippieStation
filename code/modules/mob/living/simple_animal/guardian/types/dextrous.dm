@@ -8,6 +8,7 @@
 	tech_fluff_string = "<span class='holoparasite'>Boot sequence complete. Dextrous combat modules loaded. Holoparasite swarm online.</span>"
 	carp_fluff_string = "<span class='holoparasite'>CARP CARP CARP! You caught one! It can hold stuff in its fins, sort of.</span>"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	dextrous = 1
 	held_items = list(null, null)
 	environment_target_typecache = list(
@@ -23,6 +24,10 @@
 	dextrous = TRUE
 	held_items = list(null, null)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	dextrous = TRUE
+	held_items = list(null, null)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/obj/item/internal_storage //what we're storing within ourself
 
 /mob/living/simple_animal/hostile/guardian/dextrous/death(gibbed)

@@ -91,9 +91,13 @@ Chaplain
 	belt = /obj/item/pda/chaplain
 	uniform = /obj/item/clothing/under/rank/chaplain
 <<<<<<< HEAD
+<<<<<<< HEAD
 	backpack_contents = list(/obj/item/device/camera/spooky = 1)
 =======
 	backpack_contents = list(/obj/item/camera/spooky = 1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	backpack_contents = list(/obj/item/camera/spooky = 1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack

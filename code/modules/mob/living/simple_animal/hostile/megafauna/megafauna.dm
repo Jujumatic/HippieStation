@@ -26,6 +26,7 @@
 	layer = LARGE_MOB_LAYER //Looks weird with them slipping under mineral walls and cameras and shit otherwise
 	mouse_opacity = MOUSE_OPACITY_OPAQUE // Easier to click on in melee, they're giant targets anyway
 <<<<<<< HEAD
+<<<<<<< HEAD
 	environment_target_typecache = list(
 	/obj/machinery/door/window,
 	/obj/structure/window,
@@ -39,6 +40,8 @@
 	/obj/machinery/power/emitter)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/list/crusher_loot
 	var/medal_type
 	var/score_type = BOSS_SCORE
@@ -139,7 +142,11 @@
 		SSmedals.SetScore(BOSS_SCORE, C, 1)
 		SSmedals.SetScore(score_type, C, 1)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return TRUE
 =======
 	return TRUE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	return TRUE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

@@ -1818,6 +1818,7 @@
 	..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /datum/reagent/pax/borg
 	name = "synth-pax"
 	id = "synthpax"
@@ -1826,6 +1827,8 @@
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /datum/reagent/bz_metabolites
 	name = "BZ metabolites"
 	id = "bz_metabolites"
@@ -1849,7 +1852,10 @@
 			changeling.chem_charges = max(changeling.chem_charges-2, 0)
 	return ..()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/reagent/pax/peaceborg
 	name = "synth-pax"
@@ -1887,4 +1893,7 @@
 	if(prob(30))
 		to_chat(M, "You should sit down and take a rest...")
 	..()
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

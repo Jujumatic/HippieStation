@@ -45,10 +45,14 @@
 
 // This thing is not meant to be used on it's own, get topic data from our machinery owner.
 <<<<<<< HEAD
+<<<<<<< HEAD
 //obj/item/device/modular_computer/processor/canUseTopic(atom/movable/M, be_close=FALSE, no_dextery=FALSE)
 =======
 //obj/item/modular_computer/processor/canUseTopic(atom/movable/M, be_close=FALSE, no_dextery=FALSE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+//obj/item/modular_computer/processor/canUseTopic(atom/movable/M, be_close=FALSE, no_dextery=FALSE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 //	if(!machinery_computer)
 //		return 0
 

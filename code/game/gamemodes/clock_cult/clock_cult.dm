@@ -46,10 +46,14 @@ Credit where due:
 
 /proc/is_servant_of_ratvar(mob/M)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return isliving(M) && M.mind && M.mind.has_antag_datum(/datum/antagonist/clockcult)
 =======
 	return istype(M) && !isobserver(M) && M.mind && M.mind.has_antag_datum(/datum/antagonist/clockcult)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	return istype(M) && !isobserver(M) && M.mind && M.mind.has_antag_datum(/datum/antagonist/clockcult)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /proc/is_eligible_servant(mob/M)
 	if(!istype(M))
@@ -79,10 +83,14 @@ Credit where due:
 	C.make_team = create_team
 	C.show_in_roundend = create_team //tutorial scarabs begone
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(iscyborg(L))
 		var/mob/living/silicon/robot/R = L
 		if(R.deployed)
@@ -90,10 +98,14 @@ Credit where due:
 			R.undeploy()
 			to_chat(AI, "<span class='userdanger'>Anomaly Detected. Returned to core!</span>") //The AI needs to be in its core to properly be converted
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = L.mind.add_antag_datum(C)
 
 	if(!silent && L)
@@ -112,10 +124,14 @@ Credit where due:
 			L.playsound_local(get_turf(L), 'sound/ambience/antag/clockcultalr.ogg', 40, TRUE, frequency = 100000, pressure_affected = FALSE)
 			flash_color(L, flash_color = list("#BE8700", "#BE8700", "#BE8700", rgb(0,0,0)), flash_time = 5)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 
 

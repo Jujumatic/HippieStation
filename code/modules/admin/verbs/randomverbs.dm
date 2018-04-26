@@ -1002,6 +1002,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 	usr << browse(dat, "window=dressup;size=550x600")
 
 /client/proc/toggle_combo_hud()
+<<<<<<< HEAD
 	set category = "Admin"
 	set name = "Toggle Combo HUD"
 	set desc = "Toggles the Admin Combo HUD (antag, sci, med, eng)"
@@ -1032,6 +1033,8 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 
 
 /client/proc/toggle_combo_hud()
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	set category = "Admin"
 	set name = "Toggle Combo HUD"
 	set desc = "Toggles the Admin Combo HUD (antag, sci, med, eng)"

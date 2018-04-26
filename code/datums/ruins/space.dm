@@ -270,6 +270,7 @@
 	description = "An abandoned but functional vessel parked in deep space, ripe for the taking."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /datum/map_template/ruin/space/scp_294
 	id = "scp_294"
 	suffix = "scp_294.dmm"
@@ -278,6 +279,8 @@
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /datum/map_template/ruin/space/cat_experiments
 	id = "meow"
 	suffix = "mrow_thats_right.dmm"
@@ -290,7 +293,11 @@
 	suffix = "cloning_facility.dmm"
 	name = "Ancient Cloning Lab"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	description = "An experimental cloning lab snapped off from an ancient ship. The cloner model inside lacks many modern functionalities and security measures."
 =======
 	description = "An experimental cloning lab snapped off from an ancient ship. The cloner model inside lacks many modern functionalities and security measures."
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	description = "An experimental cloning lab snapped off from an ancient ship. The cloner model inside lacks many modern functionalities and security measures."
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

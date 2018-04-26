@@ -878,6 +878,7 @@
 		//Alien
 		if(jobban_isbanned(M, ROLE_ALIEN) || isbanned_dept)
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=alien;jobban4=[REF(M)]'><font color=red>Alien</font></a></td>"
+<<<<<<< HEAD
 		else
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=alien;jobban4=[REF(M)]'>Alien</a></td>"
 <<<<<<< HEAD
@@ -899,6 +900,10 @@
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=cluwneban;jobban4=[REF(M)]'>Cluwneban</a></td>"
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		else
+			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=alien;jobban4=[REF(M)]'>Alien</a></td>"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 		dat += "</tr></table>"
 		usr << browse(dat, "window=jobban2;size=800x450")
@@ -1944,6 +1949,9 @@
 	else if(href_list["borgpanel"])
 		if(!check_rights(R_ADMIN))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			return
 
 		var/mob/M = locate(href_list["borgpanel"])
@@ -1954,6 +1962,7 @@
 
 	else if(href_list["initmind"])
 		if(!check_rights(R_ADMIN))
+<<<<<<< HEAD
 			return
 =======
 			return
@@ -1968,6 +1977,9 @@
 		if(!check_rights(R_ADMIN))
 			return
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			return
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		var/mob/M = locate(href_list["initmind"])
 		if(!ismob(M) || M.mind)
 			to_chat(usr, "This can only be used on instances on mindless mobs")

@@ -28,6 +28,7 @@
 		if (LAZYLEN(stack_overlays)-difference <= 0)
 			stack_overlays = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		else
 			stack_overlays.len += difference
 	else if(difference > 0)			//amount > stack_overlays, add some.
@@ -60,6 +61,8 @@
 	S.update_icon()
 	qdel(src)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		else
 			stack_overlays.len += difference
 	else if(difference > 0)			//amount > stack_overlays, add some.
@@ -95,7 +98,10 @@
 		else
 			new refined_type(drop_location(),amountrefined)
 			qdel(src)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/stack/ore/uranium
 	name = "uranium ore"
@@ -129,6 +135,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 		new /datum/stack_recipe("sandstone", /obj/item/stack/sheet/mineral/sandstone, 1, 1, 50)\
 		))
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /obj/item/stack/ore/glass/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.sand_recipes
@@ -141,6 +148,13 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	. = ..()
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+/obj/item/stack/ore/glass/Initialize(mapload, new_amount, merge = TRUE)
+	recipes = GLOB.sand_recipes
+	. = ..()
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/stack/ore/glass/throw_impact(atom/hit_atom)
 	if(..() || !ishuman(hit_atom))
 		return

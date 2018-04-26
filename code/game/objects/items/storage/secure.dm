@@ -47,10 +47,14 @@
 			if(open == 1)
 				to_chat(user, "<span class='danger'>Now attempting to reset internal memory, please hold.</span>")
 <<<<<<< HEAD
+<<<<<<< HEAD
 				src.l_hacking = 1
 =======
 				l_hacking = 1
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				l_hacking = 1
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				if (W.use_tool(src, user, 400))
 					to_chat(user, "<span class='danger'>Internal memory reset - lock has been disengaged.</span>")
 					l_set = 0

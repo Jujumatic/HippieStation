@@ -350,6 +350,7 @@ Possible to do for anyone motivated enough:
 				AI = null
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if(!QDELETED(master) && !master.incapacitated() && master.client && (!AI || AI.eyeobj))//If there is an AI attached, it's not incapacitated, it has a client, and the client eye is centered on the projector.
 				if(is_operational())//If the  machine has power.
 					if(AI)	//ais are range based
@@ -369,6 +370,10 @@ Possible to do for anyone motivated enough:
 			if(!is_operational() || !validate_user(master))
 				clear_holo(master)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			if(!is_operational() || !validate_user(master))
+				clear_holo(master)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	if(outgoing_call)
 		outgoing_call.Check()
@@ -520,6 +525,7 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 /obj/machinery/holopad/proc/move_hologram(mob/living/user, turf/new_turf)
 	if(LAZYLEN(masters) && masters[user])
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/area/holo_area = get_area(src)
 		if(new_turf.loc in holo_area.related)
 			var/obj/effect/overlay/holo_pad_hologram/holo = masters[user]
@@ -529,6 +535,8 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 		else
 			clear_holo(user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		var/obj/effect/overlay/holo_pad_hologram/holo = masters[user]
 		var/transfered = FALSE
 		if(!validate_location(new_turf))
@@ -541,7 +549,10 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 		holo.forceMove(new_turf)
 		if(!transfered)
 			update_holoray(user,new_turf)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	return TRUE
 
 

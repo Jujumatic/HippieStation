@@ -189,10 +189,14 @@
 
 		to_chat(user, "<span class='notice'>You begin fixing dents on the wall...</span>")
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(W.use_tool(src, user, slicing_duration, volume=100))
 =======
 		if(W.use_tool(src, user, 0, volume=100))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		if(W.use_tool(src, user, 0, volume=100))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			if(iswallturf(src) && LAZYLEN(dent_decals))
 				to_chat(user, "<span class='notice'>You fix some dents on the wall.</span>")
 				cut_overlay(dent_decals)
@@ -214,12 +218,17 @@
 		return TRUE
 	//wall mounted IC assembly stuff
 <<<<<<< HEAD
+<<<<<<< HEAD
 	else if(istype(W, /obj/item/device/electronic_assembly/wallmount))
 		var/obj/item/device/electronic_assembly/wallmount/A = W
 =======
 	else if(istype(W, /obj/item/electronic_assembly/wallmount))
 		var/obj/item/electronic_assembly/wallmount/A = W
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	else if(istype(W, /obj/item/electronic_assembly/wallmount))
+		var/obj/item/electronic_assembly/wallmount/A = W
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		A.mount_assembly(src, user)
 		return TRUE
 

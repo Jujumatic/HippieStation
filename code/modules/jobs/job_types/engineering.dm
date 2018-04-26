@@ -43,10 +43,14 @@ Chief Engineer
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black/ce
 <<<<<<< HEAD
+<<<<<<< HEAD
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/device/modular_computer/tablet/preset/advanced=1)
 =======
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -101,10 +105,14 @@ Station Engineer
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat
 <<<<<<< HEAD
+<<<<<<< HEAD
 	r_pocket = /obj/item/device/t_scanner
 =======
 	r_pocket = /obj/item/t_scanner
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	r_pocket = /obj/item/t_scanner
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -159,10 +167,14 @@ Atmospheric Technician
 	ears = /obj/item/radio/headset/headset_eng
 	uniform = /obj/item/clothing/under/rank/atmospheric_technician
 <<<<<<< HEAD
+<<<<<<< HEAD
 	r_pocket = /obj/item/device/analyzer
 =======
 	r_pocket = /obj/item/analyzer
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	r_pocket = /obj/item/analyzer
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng

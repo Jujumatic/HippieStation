@@ -12,6 +12,7 @@
 
 // Categories that help differentiate circuits that can do different tipes of actions
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define IC_ACTION_MOVEMENT			1 // If the circuit can move the assembly
 #define IC_ACTION_COMBAT			2 // If the circuit can cause harm
 #define IC_ACTION_LONG_RANGE		4 // If the circuit communicate with something outside of the assembly
@@ -20,6 +21,11 @@
 #define IC_ACTION_COMBAT		(1<<1) // If the circuit can cause harm
 #define IC_ACTION_LONG_RANGE	(1<<2) // If the circuit communicate with something outside of the assembly
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define IC_ACTION_MOVEMENT		(1<<0) // If the circuit can move the assembly
+#define IC_ACTION_COMBAT		(1<<1) // If the circuit can cause harm
+#define IC_ACTION_LONG_RANGE	(1<<2) // If the circuit communicate with something outside of the assembly
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 // Displayed along with the pin name to show what type of pin it is.
 #define IC_FORMAT_ANY			"\<ANY\>"

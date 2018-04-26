@@ -72,11 +72,16 @@
 		return message
 	for(var/word in trigger_words)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/reg = regex("\[^\\l\][REGEX_QUOTE(word)]*s\[^\\l\]")
 =======
 		var/reg = regex("(\\b|\\A)[REGEX_QUOTE(word)]'?s*(\\b|\\Z)", "i")
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		var/reg = regex("(\\b|\\A)[REGEX_QUOTE(word)]'?s*(\\b|\\Z)", "i")
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(findtext(raw_message, reg))
 			addtimer(CALLBACK(src, .proc/freak_out, null, word), 10) //to react AFTER the chat message
 			break
@@ -85,11 +90,16 @@
 /datum/brain_trauma/mild/phobia/on_say(message)
 	for(var/word in trigger_words)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/reg = regex("\[^\\l\][REGEX_QUOTE(word)]*s\[^\\l\]")
 =======
 		var/reg = regex("(\\b|\\A)[REGEX_QUOTE(word)]'?s*(\\b|\\Z)", "i")
 		
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		var/reg = regex("(\\b|\\A)[REGEX_QUOTE(word)]'?s*(\\b|\\Z)", "i")
+		
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(findtext(message, reg))
 			to_chat(owner, "<span class='warning'>You can't bring yourself to say the word \"[word]\"!</span>")
 			return ""

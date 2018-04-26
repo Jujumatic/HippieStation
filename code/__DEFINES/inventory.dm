@@ -101,6 +101,7 @@
 
 //bitflags for clothing coverage - also used for limbs
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define HEAD		1
 #define CHEST		2
 #define GROIN		4
@@ -119,6 +120,8 @@
 #define NECK		2048
 #define FULL_BODY	4095
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define HEAD		(1<<0)
 #define CHEST		(1<<1)
 #define GROIN		(1<<2)
@@ -136,7 +139,10 @@
 #define HANDS		(HAND_LEFT | HAND_RIGHT)
 #define NECK		(1<<11)
 #define FULL_BODY	(~0)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 //flags for female outfits: How much the game can safely "take off" the uniform without it looking weird
 #define NO_FEMALE_UNIFORM			0

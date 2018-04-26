@@ -5,10 +5,14 @@ GLOBAL_VAR(restart_counter)
 GLOBAL_PROTECT(security_mode)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //This happens after the Master subsystem news (it's a global datum)
 =======
 //This happens after the Master subsystem new(s) (it's a global datum)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+//This happens after the Master subsystem new(s) (it's a global datum)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 //So subsystems globals exist, but are not initialised
 /world/New()
 	log_world("World loaded at [time_stamp()]!")
@@ -87,6 +91,7 @@ GLOBAL_PROTECT(security_mode)
 	else
 		GLOB.log_directory = "data/logs/[override_dir]"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	GLOB.world_game_log = file("[GLOB.log_directory]/game.log")
 	GLOB.world_attack_log = file("[GLOB.log_directory]/attack.log")
 	GLOB.world_runtime_log = file("[GLOB.log_directory]/runtime.log")
@@ -106,6 +111,8 @@ GLOBAL_PROTECT(security_mode)
 	WRITE_FILE(GLOB.manifest_log, "\n\nStarting up round ID [GLOB.round_id]. [time_stamp()]\n---------------------")
 	GLOB.changelog_hash = md5('html/changelog.html')					//used for telling if the changelog has changed recently
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	GLOB.world_game_log = "[GLOB.log_directory]/game.log"
 	GLOB.world_attack_log = "[GLOB.log_directory]/attack.log"
@@ -129,7 +136,10 @@ GLOBAL_PROTECT(security_mode)
 	start_log(GLOB.world_runtime_log)
 
 	GLOB.changelog_hash = md5('html/changelog.html') //for telling if the changelog has changed recently
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(fexists(GLOB.config_error_log))
 		fcopy(GLOB.config_error_log, "[GLOB.log_directory]/config_error.log")
 		fdel(GLOB.config_error_log)

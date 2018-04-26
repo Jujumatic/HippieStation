@@ -10,6 +10,7 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	w_class = WEIGHT_CLASS_HUGE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	storage_slots = 50
 	use_to_pickup = 1
 	allow_quick_gather = 1
@@ -30,6 +31,10 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 	component_type = /datum/component/storage/concrete/rped
 	var/works_from_distance = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	component_type = /datum/component/storage/concrete/rped
+	var/works_from_distance = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/pshoom_or_beepboopblorpzingshadashwoosh = 'sound/items/rped.ogg'
 	var/alt_sound = null
 
@@ -65,6 +70,7 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 	item_state = "RPED"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
+<<<<<<< HEAD
 
 /obj/item/storage/part_replacer/cyborg
 	name = "rapid part exchange device"
@@ -73,6 +79,8 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 	item_state = "RPED"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 //Sorts stock parts inside an RPED by their rating.
 /proc/cmp_rped_sort(obj/item/A, obj/item/B)
@@ -93,9 +101,13 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 /obj/item/stock_parts/get_part_rating()
 	return rating
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 //Rating 1
 
 /obj/item/stock_parts/capacitor

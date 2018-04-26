@@ -1321,6 +1321,7 @@
 	set waitfor = FALSE
 	nightshift_lights = on
 <<<<<<< HEAD
+<<<<<<< HEAD
 	for(var/area/A in area.related)
 		for(var/obj/machinery/light/L in A)
 			if(L.nightshift_allowed)
@@ -1328,12 +1329,17 @@
 				L.update(FALSE)
 			CHECK_TICK
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	for(var/obj/machinery/light/L in area)
 		if(L.nightshift_allowed)
 			L.nightshift_enabled = nightshift_lights
 			L.update(FALSE)
 		CHECK_TICK
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 #undef UPSTATE_CELL_IN
 #undef UPSTATE_OPENED1

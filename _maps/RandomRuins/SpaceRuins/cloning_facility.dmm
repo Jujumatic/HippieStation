@@ -25,10 +25,14 @@
 "g" = (
 /obj/structure/table,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp,
 =======
 /obj/item/flashlight/lamp,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flashlight/lamp,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel/whiteblue,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
@@ -230,10 +234,14 @@
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/regular,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/healthanalyzer{
 =======
 /obj/item/healthanalyzer{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/healthanalyzer{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	desc = "A prototype hand-held body scanner able to distinguish vital signs of the subject.";
 	name = "prototype health analyzer"
 	},

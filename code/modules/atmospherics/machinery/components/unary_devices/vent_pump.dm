@@ -118,6 +118,7 @@
 	name = "toxins mixing output inlet"
 	id_tag = ATMOS_GAS_MONITOR_OUTPUT_TOXINS_LAB
 	frequency = FREQ_ATMOS_CONTROL
+<<<<<<< HEAD
 
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos
 	frequency = FREQ_ATMOS_STORAGE
@@ -150,6 +151,8 @@
 	name = "toxins mixing output inlet"
 	id_tag = ATMOS_GAS_MONITOR_OUTPUT_TOXINS_LAB
 	frequency = FREQ_ATMOS_CONTROL
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/machinery/atmospherics/components/unary/vent_pump/New()
 	..()
@@ -231,6 +234,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/atmos/air_output
 	name = "air mix tank output inlet"
 	id_tag = ATMOS_GAS_MONITOR_OUTPUT_AIR
+<<<<<<< HEAD
 
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/atmos
 	frequency = FREQ_ATMOS_STORAGE
@@ -240,6 +244,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/atmos/air_output
 	name = "air mix tank output inlet"
 	id_tag = ATMOS_GAS_MONITOR_OUTPUT_AIR
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume/New()
 	..()

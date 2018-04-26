@@ -142,12 +142,17 @@
 
 /obj/machinery/computer/prototype_cloning/attackby(obj/item/W, mob/user, params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(W, /obj/item/device/multitool))
 		var/obj/item/device/multitool/P = W
 =======
 	if(istype(W, /obj/item/multitool))
 		var/obj/item/multitool/P = W
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(W, /obj/item/multitool))
+		var/obj/item/multitool/P = W
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 		if(istype(P.buffer, /obj/machinery/clonepod/experimental))
 			if(get_area(P.buffer) != get_area(src))

@@ -120,9 +120,12 @@
 #define SCREWYHUD_HEALTHY 3
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 //Moods levels for humans
 #define MOOD_LEVEL_HAPPY4 15
 #define MOOD_LEVEL_HAPPY3 10
@@ -159,10 +162,14 @@
 #define NUTRITION_LEVEL_STARVING 150
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define NUTRITION_LEVEL_START_MIN 400 // hippie
 =======
 #define NUTRITION_LEVEL_START_MIN 250
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define NUTRITION_LEVEL_START_MIN 250
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define NUTRITION_LEVEL_START_MAX 400
 
 //Disgust levels for humans
@@ -204,6 +211,7 @@
 
 //determines if a mob can smash through it
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define ENVIRONMENT_SMASH_NONE 0
 #define ENVIRONMENT_SMASH_STRUCTURES 1 //crates, lockers, ect
 #define ENVIRONMENT_SMASH_WALLS 2   //walls
@@ -214,6 +222,8 @@
 #define GALOSHES_DONT_HELP 4
 #define SLIDE_ICE 8
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define ENVIRONMENT_SMASH_NONE			0
 #define ENVIRONMENT_SMASH_STRUCTURES	(1<<0) 	//crates, lockers, ect
 #define ENVIRONMENT_SMASH_WALLS			(1<<1)  //walls
@@ -223,7 +233,10 @@
 #define SLIDE					(1<<1)
 #define GALOSHES_DONT_HELP		(1<<2)
 #define SLIDE_ICE				(1<<3)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 #define MAX_CHICKENS 50
 

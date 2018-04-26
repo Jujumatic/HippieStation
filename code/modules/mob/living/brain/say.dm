@@ -15,12 +15,17 @@
 
 /mob/living/brain/radio(message, message_mode, list/spans, language)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(message_mode == MODE_HEADSET && istype(container, /obj/item/device/mmi))
 		var/obj/item/device/mmi/R = container
 =======
 	if(message_mode == MODE_HEADSET && istype(container, /obj/item/mmi))
 		var/obj/item/mmi/R = container
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(message_mode == MODE_HEADSET && istype(container, /obj/item/mmi))
+		var/obj/item/mmi/R = container
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(R.radio)
 			R.radio.talk_into(src, message, , get_spans(), language)
 			return ITALICS | REDUCE_RANGE

@@ -335,10 +335,14 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 		drop_part(robot_arm, Tsec)
 	new bikehorn(Tsec)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	new /obj/item/device/assembly/prox_sensor(Tsec)
 =======
 	new /obj/item/assembly/prox_sensor(Tsec)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	new /obj/item/assembly/prox_sensor(Tsec)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	var/datum/effect_system/spark_spread/s = new
 	s.set_up(3, 1, src)

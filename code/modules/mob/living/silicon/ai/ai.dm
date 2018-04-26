@@ -40,12 +40,17 @@
 	var/radio_enabled = TRUE //Determins if a carded AI can speak with its built in radio or not.
 	radiomod = ";" //AIs will, by default, state their laws on the internal radio.
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/pda/ai/aiPDA
 	var/obj/item/device/multitool/aiMulti
 =======
 	var/obj/item/pda/ai/aiPDA
 	var/obj/item/multitool/aiMulti
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/pda/ai/aiPDA
+	var/obj/item/multitool/aiMulti
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/mob/living/simple_animal/bot/Bot
 	var/tracking = FALSE //this is 1 if the AI is currently tracking somebody, but the track has not yet been completed.
 	var/datum/effect_system/spark_spread/spark_system//So they can initialize sparks whenever/N
@@ -327,10 +332,14 @@
 /mob/living/silicon/ai/can_interact_with(atom/A)
 	. = ..()
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return . || (istype(loc, /obj/item/device/aicard))? (ISINRANGE(A.x, x - interaction_range, x + interaction_range) && ISINRANGE(A.y, y - interaction_range, y + interaction_range)): GLOB.cameranet.checkTurfVis(get_turf(A))
 =======
 	return . || (istype(loc, /obj/item/aicard))? (ISINRANGE(A.x, x - interaction_range, x + interaction_range) && ISINRANGE(A.y, y - interaction_range, y + interaction_range)): GLOB.cameranet.checkTurfVis(get_turf(A))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	return . || (istype(loc, /obj/item/aicard))? (ISINRANGE(A.x, x - interaction_range, x + interaction_range) && ISINRANGE(A.y, y - interaction_range, y + interaction_range)): GLOB.cameranet.checkTurfVis(get_turf(A))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /mob/living/silicon/ai/cancel_camera()
 	view_core()

@@ -90,10 +90,13 @@
 	name = "egg box"
 	desc = "A carton for containing eggs."
 <<<<<<< HEAD
+<<<<<<< HEAD
 	storage_slots = 12
 	can_hold = list(/obj/item/reagent_containers/food/snacks/egg)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	spawn_type = /obj/item/reagent_containers/food/snacks/egg
 
 /obj/item/storage/fancy/egg_box/ComponentInitialize()
@@ -330,10 +333,13 @@
 	lefthand_file = 'icons/mob/inhands/misc/food_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/food_righthand.dmi'
 <<<<<<< HEAD
+<<<<<<< HEAD
 	storage_slots = 8
 	can_hold = list(/obj/item/reagent_containers/food/snacks/tinychocolate)
 	spawn_type = /obj/item/reagent_containers/food/snacks/tinychocolate
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	spawn_type = /obj/item/reagent_containers/food/snacks/tinychocolate
 
 /obj/item/storage/fancy/heart_box/ComponentInitialize()
@@ -341,4 +347,7 @@
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_items = 8
 	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/food/snacks/tinychocolate))
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

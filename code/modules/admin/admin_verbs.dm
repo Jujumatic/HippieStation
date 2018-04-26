@@ -61,6 +61,7 @@ GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 	/client/proc/cmd_change_command_name,
 	/client/proc/cmd_admin_check_player_exp, /* shows players by playtime */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/client/proc/toggle_antag_hud, 	/*toggle display of the admin antag hud*/
 	/client/proc/toggle_combo_hud, // toggle display of the combination pizza antag and taco sci/med/eng hud
 	/client/proc/toggle_AI_interact, /*toggle admin ability to interact with machines as an AI*/
@@ -71,16 +72,23 @@ GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 	/client/proc/toggle_combo_hud, // toggle display of the combination pizza antag and taco sci/med/eng hud
 	/client/proc/toggle_AI_interact, /*toggle admin ability to interact with machines as an AI*/
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	/client/proc/toggle_combo_hud, // toggle display of the combination pizza antag and taco sci/med/eng hud
+	/client/proc/toggle_AI_interact, /*toggle admin ability to interact with machines as an AI*/
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	/client/proc/open_shuttle_manipulator, /* Opens shuttle manipulator UI */
 	/client/proc/deadchat,
 	/client/proc/toggleprayers,
 	/client/proc/toggleadminhelpsound,
 	/client/proc/respawn_character,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/client/proc/kill_turf_chems,
 	/datum/admins/proc/restart,
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	/datum/admins/proc/open_borgopanel
 	)
 GLOBAL_PROTECT(admin_verbs_ban)
@@ -111,9 +119,12 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/show_tip,
 	/client/proc/smite,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/client/proc/spawn_floor_cluwne,
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	/client/proc/admin_away
 	))
 GLOBAL_PROTECT(admin_verbs_spawn)
@@ -246,9 +257,12 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 	/client/proc/toggle_nuke,
 	/client/proc/cmd_display_del_log,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/client/proc/toggle_antag_hud,
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	/client/proc/toggle_combo_hud,
 	/client/proc/debug_huds
 	))
@@ -623,6 +637,8 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 /client/proc/togglebuildmodeself()
 	set name = "Toggle Build Mode Self"
 	set category = "Special Verbs"
+	if (!(holder.rank.rights & R_BUILDMODE))
+		return
 	if(src.mob)
 		togglebuildmode(src.mob)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Toggle Build Mode") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

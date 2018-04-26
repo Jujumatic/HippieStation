@@ -231,6 +231,7 @@
 				L.embedded_objects -= I
 				L.receive_damage(I.embedding.embedded_unsafe_removal_pain_multiplier*I.w_class)//It hurts to rip it out, get surgery you dingus.
 <<<<<<< HEAD
+<<<<<<< HEAD
 				
 				// Hippie Start - Remove pinned item
 				if (I.pinned)
@@ -246,6 +247,8 @@
 				// Hippie End
 
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				I.forceMove(get_turf(src))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 				usr.put_in_hands(I)

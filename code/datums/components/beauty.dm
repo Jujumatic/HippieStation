@@ -4,11 +4,15 @@
 /datum/component/beauty/Initialize(beautyamount)
 	if(!ismovableatom(parent))
 <<<<<<< HEAD
+<<<<<<< HEAD
 		. = COMPONENT_INCOMPATIBLE
 		CRASH("Someone put a beauty component on a non-atom/movable, not everything can be pretty.")
 =======
 		return COMPONENT_INCOMPATIBLE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		return COMPONENT_INCOMPATIBLE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	beauty = beautyamount
 	RegisterSignal(COMSIG_ENTER_AREA, .proc/enter_area)
 	RegisterSignal(COMSIG_EXIT_AREA, .proc/exit_area)

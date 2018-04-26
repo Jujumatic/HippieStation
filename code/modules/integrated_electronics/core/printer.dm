@@ -1,10 +1,14 @@
 #define MAX_CIRCUIT_CLONE_TIME 3 MINUTES //circuit slow-clones can only take up this amount of time to complete
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/integrated_circuit_printer
 =======
 /obj/item/integrated_circuit_printer
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/integrated_circuit_printer
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "integrated circuit printer"
 	desc = "A portable(ish) machine made to print tiny modular circuitry out of metal."
 	icon = 'icons/obj/assemblies/electronic_tools.dmi'
@@ -21,9 +25,12 @@
 	var/list/program			// Currently loaded save, in form of list
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/integrated_circuit_printer/proc/check_interactivity(mob/user)
 	return user.canUseTopic(src, BE_CLOSE)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/integrated_circuit_printer/proc/check_interactivity(mob/user)
 	return user.canUseTopic(src, BE_CLOSE)
 
@@ -31,6 +38,7 @@
 	upgraded = TRUE
 	can_clone = TRUE
 	fast_clone = TRUE
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/integrated_circuit_printer/debug //translation: "integrated_circuit_printer/local_server"
@@ -42,16 +50,24 @@
 	fast_clone = TRUE
 
 /obj/item/device/integrated_circuit_printer/debug //translation: "integrated_circuit_printer/local_server"
+=======
+
+/obj/item/integrated_circuit_printer/debug //translation: "integrated_circuit_printer/local_server"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "debug circuit printer"
 	debug = TRUE
 	upgraded = TRUE
 	can_clone = TRUE
+<<<<<<< HEAD
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/integrated_circuit_printer/Initialize()
 	. = ..()
+<<<<<<< HEAD
 <<<<<<< HEAD
 	AddComponent(/datum/component/material_container, list(MAT_METAL), MINERAL_MATERIAL_AMOUNT * 25, TRUE, list(/obj/item/stack, /obj/item/integrated_circuit, /obj/item/device/electronic_assembly))
 
@@ -69,6 +85,15 @@
 
 /obj/item/integrated_circuit_printer/process()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	AddComponent(/datum/component/material_container, list(MAT_METAL), MINERAL_MATERIAL_AMOUNT * 25, TRUE, list(/obj/item/stack, /obj/item/integrated_circuit, /obj/item/electronic_assembly))
+
+/obj/item/integrated_circuit_printer/Destroy()
+	STOP_PROCESSING(SSprocessing, src)
+	return ..()
+
+/obj/item/integrated_circuit_printer/process()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!cloning)
 		STOP_PROCESSING(SSprocessing, src)
 	if(world.time >= clone_countdown || fast_clone)
@@ -80,10 +105,14 @@
 		STOP_PROCESSING(SSprocessing, src)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/integrated_circuit_printer/attackby(obj/item/O, mob/user)
 =======
 /obj/item/integrated_circuit_printer/attackby(obj/item/O, mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/integrated_circuit_printer/attackby(obj/item/O, mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(istype(O, /obj/item/disk/integrated_circuit/upgrade/advanced))
 		if(upgraded)
 			to_chat(user, "<span class='warning'>[src] already has this upgrade. </span>")
@@ -103,12 +132,17 @@
 		return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(O, /obj/item/device/electronic_assembly))
 		var/obj/item/device/electronic_assembly/EA = O //microtransactions not included
 =======
 	if(istype(O, /obj/item/electronic_assembly))
 		var/obj/item/electronic_assembly/EA = O //microtransactions not included
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(O, /obj/item/electronic_assembly))
+		var/obj/item/electronic_assembly/EA = O //microtransactions not included
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		if(EA.assembly_components.len)
 			if(recycling)
 				return
@@ -148,10 +182,14 @@
 	return ..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/integrated_circuit_printer/attack_self(mob/user)
 =======
 /obj/item/integrated_circuit_printer/attack_self(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/integrated_circuit_printer/attack_self(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	interact(user)
 
 /obj/item/integrated_circuit_printer/interact(mob/user)

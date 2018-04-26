@@ -545,12 +545,17 @@
 	SendSignal(COMSIG_ATOM_ENTERED, AM, oldLoc)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /atom/Exited(atom/movable/AM)
 	SendSignal(COMSIG_ATOM_EXITED, AM)
 =======
 /atom/Exited(atom/movable/AM, atom/newLoc)
 	SendSignal(COMSIG_ATOM_EXITED, AM, newLoc)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/atom/Exited(atom/movable/AM, atom/newLoc)
+	SendSignal(COMSIG_ATOM_EXITED, AM, newLoc)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /atom/proc/return_temperature()
 	return

@@ -9,9 +9,13 @@
 	var/lose_text
 	var/medical_record_text //This text will appear on medical records for the trait. Not yet implemented
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	var/mood_trait = FALSE //if true, this trait affects mood and is unavailable if moodlets are disabled
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/mood_trait = FALSE //if true, this trait affects mood and is unavailable if moodlets are disabled
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/mob_trait //if applicable, apply and remove this mob trait
 	var/mob/living/trait_holder
 
@@ -94,9 +98,13 @@
 		var/datum/trait/T = V
 		T.transfer_mob(to_mob)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /*
 
 Commented version of Nearsighted to help you add your own traits

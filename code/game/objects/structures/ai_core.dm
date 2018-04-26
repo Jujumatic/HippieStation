@@ -10,10 +10,14 @@
 	var/datum/ai_laws/laws
 	var/obj/item/circuitboard/circuit = null
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/mmi/brain = null
 =======
 	var/obj/item/mmi/brain = null
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/mmi/brain = null
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/can_deconstruct = TRUE
 
 /obj/structure/AIcore/Initialize()
@@ -66,10 +70,14 @@
 
 /obj/structure/AIcore/latejoin_inactive/attackby(obj/item/P, mob/user, params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(P, /obj/item/device/multitool))
 =======
 	if(istype(P, /obj/item/multitool))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(P, /obj/item/multitool))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		active = !active
 		to_chat(user, "You [active? "activate" : "deactivate"] [src]'s transimtters.")
 		return
@@ -319,10 +327,14 @@ That prevents a few funky behaviors.
 	return 1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/structure/AIcore/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/device/aicard/card)
 =======
 /obj/structure/AIcore/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/aicard/card)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/structure/AIcore/transfer_ai(interaction, mob/user, mob/living/silicon/ai/AI, obj/item/aicard/card)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(state != AI_READY_CORE || !..())
 		return
  //Transferring a carded AI to a core.

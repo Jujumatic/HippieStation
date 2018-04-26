@@ -1165,10 +1165,14 @@
 /area/hallway/secondary/entry)
 "afV" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -1275,6 +1279,7 @@
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "agq" = (
 /obj/docking_port/stationary{
 	area_type = /area/construction/mining/aux_base;
@@ -1291,6 +1296,8 @@
 /area/construction/mining/aux_base)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 "agB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -4814,10 +4821,14 @@
 "aqi" = (
 /obj/structure/table/wood,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp,
 =======
 /obj/item/flashlight/lamp,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flashlight/lamp,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/sign/warning/nosmoking{
 	pixel_x = 32
 	},
@@ -35233,10 +35244,14 @@
 	icon_state = "1-2"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
@@ -44783,10 +44798,14 @@
 	icon_state = "1-2"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
@@ -45836,10 +45855,14 @@
 	icon_state = "4-8"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
@@ -46624,10 +46647,14 @@
 /area/hallway/primary/starboard)
 "bXz" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
@@ -52941,10 +52968,14 @@
 /area/security/courtroom)
 "cjY" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/neutral/side{
 	dir = 8
 	},
@@ -57788,10 +57819,14 @@
 	icon_state = "1-8"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -60508,10 +60543,14 @@
 /area/ai_monitored/storage/eva)
 "czU" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/neutral,
 /area/ai_monitored/storage/eva)
 "czV" = (
@@ -76887,10 +76926,14 @@
 /area/science/research)
 "dhZ" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -77127,10 +77170,14 @@
 	icon_state = "4-8"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/whiteblue,
 /area/medical/medbay/central)
@@ -77440,10 +77487,14 @@
 "djn" = (
 /obj/structure/table/reinforced,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool,
 =======
 /obj/item/multitool,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/multitool,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/screwdriver,
 /obj/machinery/computer/security/telescreen{
 	desc = "Used for watching the RD's goons from the safety of his office.";
@@ -79645,10 +79696,14 @@
 "dog" = (
 /obj/structure/table/reinforced,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/intercom{
 =======
 /obj/item/radio/intercom{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/radio/intercom{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "Station Intercom";
 	pixel_x = -26
 	},
@@ -81347,10 +81402,14 @@
 "drz" = (
 /obj/structure/table/reinforced,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool,
 =======
 /obj/item/multitool,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/multitool,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/screwdriver,
 /obj/machinery/computer/security/telescreen{
 	desc = "Used for watching the RD's goons from the safety of his office.";
@@ -89448,10 +89507,14 @@
 	},
 /obj/effect/landmark/blobstart,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -89742,6 +89805,7 @@
 	dir = 8
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/mmi,
 /obj/item/device/mmi,
 /obj/item/device/mmi,
@@ -89750,6 +89814,11 @@
 /obj/item/mmi,
 /obj/item/mmi,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/mmi,
+/obj/item/mmi,
+/obj/item/mmi,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/sign/departments/medbay/alt{
 	pixel_y = -32
 	},
@@ -91148,10 +91217,14 @@
 /area/science/test_area)
 "dLF" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/airless,
 /area/science/test_area)
@@ -93522,10 +93595,14 @@
 /area/hallway/primary/aft)
 "dQR" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/neutral,
 /area/hallway/primary/aft)
 "dQU" = (
@@ -100418,12 +100495,15 @@
 	},
 /area/science/circuit)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "hic" = (
 /obj/structure/table/reinforced,
 /obj/item/device/integrated_electronics/analyzer,
 /obj/item/device/integrated_electronics/debugger,
 /obj/item/device/integrated_electronics/wirer,
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 "hdH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/conveyor{
@@ -100437,7 +100517,10 @@
 /obj/item/integrated_electronics/analyzer,
 /obj/item/integrated_electronics/debugger,
 /obj/item/integrated_electronics/wirer,
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/white/side{
 	dir = 10
 	},
@@ -100486,6 +100569,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 <<<<<<< HEAD
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -100508,6 +100592,8 @@
 "iQh" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 1
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	},
 /turf/open/floor/plasteel/vault{
 	dir = 8
@@ -100535,7 +100621,10 @@
 	dir = 1
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
@@ -100544,7 +100633,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
@@ -100568,10 +100660,14 @@
 	receive_ore_updates = 1
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/integrated_circuit_printer,
 =======
 /obj/item/integrated_circuit_printer,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/integrated_circuit_printer,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/white/side,
 /area/science/circuit)
 "jqM" = (
@@ -100596,7 +100692,10 @@
 /turf/open/floor/plasteel/neutral,
 /area/medical/morgue)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 "kam" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/conveyor{
@@ -100605,7 +100704,10 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 "kwx" = (
 /obj/effect/turf_decal/loading_area,
 /turf/open/floor/plasteel/whitepurple/corner,
@@ -100679,7 +100781,10 @@
 	},
 /area/science/circuit)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 "lTo" = (
 /obj/docking_port/stationary{
 	area_type = /area/construction/mining/aux_base;
@@ -100694,7 +100799,10 @@
 	},
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 "lXM" = (
 /obj/structure/target_stake,
 /turf/open/floor/plasteel/white/side{
@@ -100734,10 +100842,14 @@
 	pixel_y = -32
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/integrated_circuit_printer,
 =======
 /obj/item/integrated_circuit_printer,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/integrated_circuit_printer,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/white/side{
 	dir = 1
 	},
@@ -100767,6 +100879,7 @@
 /area/science/research/abandoned)
 "qhc" = (
 /obj/structure/table/reinforced,
+<<<<<<< HEAD
 <<<<<<< HEAD
 /obj/item/device/integrated_electronics/analyzer,
 /obj/item/device/integrated_electronics/debugger,
@@ -100822,6 +100935,24 @@
 	},
 =======
 	},
+=======
+/obj/item/integrated_electronics/analyzer,
+/obj/item/integrated_electronics/debugger,
+/obj/item/integrated_electronics/wirer,
+/turf/open/floor/plasteel/white/side{
+	dir = 9
+	},
+/area/science/circuit)
+"qpq" = (
+/turf/open/floor/plasteel/white/side{
+	dir = 5
+	},
+/area/science/circuit)
+"rhO" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/white/side{
 	dir = 9
 	},
@@ -100858,7 +100989,10 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Holodeck Access"
 	},
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -100881,10 +101015,14 @@
 /area/science/misc_lab)
 "uYS" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/door/airlock/atmos/glass{
 =======
 /obj/machinery/door/airlock/atmos/glass/critical{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/door/airlock/atmos/glass/critical{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	heat_proof = 1;
 	name = "Supermatter Chamber";
 	req_one_access_txt = "24;10"
@@ -128725,6 +128863,7 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 aaa
 aaa
 aaa
@@ -128749,6 +128888,8 @@ aaa
 aaa
 "}
 (109,1,1) = {"
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 aaa
 aaa
 aaa
@@ -128806,6 +128947,31 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 aaa
 aaa
 aaa
@@ -129327,6 +129493,39 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 aaa
 aaa
 aad
@@ -129582,6 +129781,36 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 aaa
 aaa
 aaa
@@ -140644,7 +140873,26 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+abj
+aaa
+aad
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 aaa
 aaa
 aaa
@@ -143984,10 +144232,14 @@ aeF
 aeF
 aeF
 <<<<<<< HEAD
+<<<<<<< HEAD
 agq
 =======
 aeF
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+aeF
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 aeF
 aeF
 aeF
@@ -145016,10 +145268,14 @@ aeF
 aeF
 aeF
 <<<<<<< HEAD
+<<<<<<< HEAD
 aeF
 =======
 lTo
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+lTo
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 aeF
 aeF
 aeF

@@ -24,6 +24,7 @@
 	var/zone_selected = null
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Hippie Start
 	var/macro_default = "default"
 	var/macro_hotkeys = "hotkeys"
@@ -31,6 +32,8 @@
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/computer_id = null
 	var/list/logging = list(INDIVIDUAL_ATTACK_LOG, INDIVIDUAL_SAY_LOG, INDIVIDUAL_EMOTE_LOG, INDIVIDUAL_OOC_LOG)
 	var/obj/machinery/machine = null
@@ -69,10 +72,14 @@
 	//held_items[active_hand_index] is the actively held item, but please use get_active_held_item() instead, because OOP
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/storage/s_active = null//Carbon
 =======
 	var/datum/component/storage/active_storage = null//Carbon
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/datum/component/storage/active_storage = null//Carbon
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	var/datum/hud/hud_used = null
 

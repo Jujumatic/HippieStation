@@ -82,10 +82,14 @@
 	name = "internal radio implant"
 	activated = TRUE
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/radio/radio
 =======
 	var/obj/item/radio/radio
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/radio/radio
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/radio_key
 	var/subspace_transmission = FALSE
 	icon = 'icons/obj/radio.dmi'
@@ -110,18 +114,24 @@
 
 /obj/item/implant/radio/mining
 <<<<<<< HEAD
+<<<<<<< HEAD
 	radio_key = /obj/item/device/encryptionkey/headset_cargo
 
 /obj/item/implant/radio/syndicate
 	desc = "Are you there God? It's me, Syndicate Comms Agent."
 	radio_key = /obj/item/device/encryptionkey/syndicate
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	radio_key = /obj/item/encryptionkey/headset_cargo
 
 /obj/item/implant/radio/syndicate
 	desc = "Are you there God? It's me, Syndicate Comms Agent."
 	radio_key = /obj/item/encryptionkey/syndicate
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	subspace_transmission = TRUE
 
 /obj/item/implant/radio/slime
@@ -129,10 +139,14 @@
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "adamantine_resonator"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	radio_key = /obj/item/device/encryptionkey/headset_sci
 =======
 	radio_key = /obj/item/encryptionkey/headset_sci
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	radio_key = /obj/item/encryptionkey/headset_sci
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	subspace_transmission = TRUE
 
 /obj/item/implant/radio/get_data()

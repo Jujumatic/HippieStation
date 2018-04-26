@@ -39,10 +39,14 @@
 		if(!istype(user.get_active_held_item(), /obj/item/multitool))
 			return
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/multitool/P = get_multitool(user)
 =======
 	var/obj/item/multitool/P = get_multitool(user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/multitool/P = get_multitool(user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/dat
 	dat = "<font face = \"Courier\"><HEAD><TITLE>[name]</TITLE></HEAD><center><H3>[name] Access</H3></center>"
 	dat += "<br>[temp]<br>"

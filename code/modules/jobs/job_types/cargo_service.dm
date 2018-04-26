@@ -57,10 +57,14 @@ Cargo Technician
 	ears = /obj/item/radio/headset/headset_cargo
 	uniform = /obj/item/clothing/under/rank/cargotech
 <<<<<<< HEAD
+<<<<<<< HEAD
 	l_hand = /obj/item/device/export_scanner
 =======
 	l_hand = /obj/item/export_scanner
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	l_hand = /obj/item/export_scanner
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /*
 Shaft Miner

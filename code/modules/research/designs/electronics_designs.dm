@@ -63,10 +63,14 @@
 	build_type = PROTOLATHE
 	materials = list(MAT_GLASS = 5000, MAT_METAL = 10000)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	build_path = /obj/item/device/integrated_circuit_printer
 =======
 	build_path = /obj/item/integrated_circuit_printer
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	build_path = /obj/item/integrated_circuit_printer
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	category = list("Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 

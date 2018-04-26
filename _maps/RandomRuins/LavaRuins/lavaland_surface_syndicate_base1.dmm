@@ -5097,10 +5097,14 @@
 /obj/structure/table,
 /obj/item/storage/toolbox/syndicate,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool,
 =======
 /obj/item/multitool,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/multitool,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/machinery/button/door{
 	id = "lavalandsyndi_telecomms";
 	name = "Telecomms Blast Door Control";
@@ -5900,10 +5904,14 @@
 "oj" = (
 /obj/structure/table/reinforced,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/radio/intercom{
 =======
 /obj/item/radio/intercom{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/radio/intercom{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	freerange = 1;
 	name = "Syndicate Radio Intercom"
 	},

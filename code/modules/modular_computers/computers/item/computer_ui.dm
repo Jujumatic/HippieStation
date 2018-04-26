@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/modular_computer/attack_self(mob/user)
 =======
 /obj/item/modular_computer/attack_self(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/modular_computer/attack_self(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	ui_interact(user)
 

@@ -36,16 +36,22 @@
 	interact(user)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/instrument/interact(mob/user)
 	ui_interact(user)
 
 /obj/item/device/instrument/ui_interact(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/instrument/interact(mob/user)
 	ui_interact(user)
 
 /obj/item/instrument/ui_interact(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!user)
 		return
 

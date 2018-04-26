@@ -156,9 +156,12 @@
 
 #undef NO_HOLE
 <<<<<<< HEAD
+<<<<<<< HEAD
 #undef SMALL_HOLE
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #undef MEDIUM_HOLE
 #undef LARGE_HOLE
 #undef MAX_HOLE_SIZE

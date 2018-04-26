@@ -194,6 +194,7 @@
 	if(T)
 			// Calculate new position (searches through beacons in world)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var/obj/item/device/beacon/chosen
 		var/list/possible = list()
 		for(var/obj/item/device/beacon/W in GLOB.teleportbeacons)
@@ -202,6 +203,11 @@
 		var/list/possible = list()
 		for(var/obj/item/beacon/W in GLOB.teleportbeacons)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		var/obj/item/beacon/chosen
+		var/list/possible = list()
+		for(var/obj/item/beacon/W in GLOB.teleportbeacons)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			possible += W
 
 		if(possible.len > 0)
@@ -225,10 +231,14 @@
 			var/x_distance = TO.x - FROM.x
 			for (var/atom/movable/A in urange(12, FROM )) // iterate thru list of mobs in the area
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if(istype(A, /obj/item/device/beacon))
 =======
 				if(istype(A, /obj/item/beacon))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				if(istype(A, /obj/item/beacon))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					continue // don't teleport beacons because that's just insanely stupid
 				if(A.anchored)
 					continue

@@ -160,10 +160,14 @@
 	slot_flags = SLOT_BELT
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/destTagger/suicide_act(mob/living/user)
 =======
 /obj/item/destTagger/suicide_act(mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/destTagger/suicide_act(mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	user.visible_message("<span class='suicide'>[user] begins tagging [user.p_their()] final destination!  It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	if (islizard(user))
 		to_chat(user, "<span class='notice'>*HELL*</span>")//lizard nerf
@@ -173,10 +177,14 @@
 	return BRUTELOSS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/destTagger/proc/openwindow(mob/user)
 =======
 /obj/item/destTagger/proc/openwindow(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/destTagger/proc/openwindow(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/dat = "<tt><center><h1><b>TagMaster 2.2</b></h1></center>"
 
 	dat += "<table style='width:100%; padding:4px;'><tr>"

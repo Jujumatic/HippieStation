@@ -310,10 +310,14 @@
 "ba" = (
 /obj/structure/table/wood,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/flashlight/lamp,
 =======
 /obj/item/flashlight/lamp,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/flashlight/lamp,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/carpet,
 /area/ruin/space/has_grav/powered/cat_man)
 "bb" = (
@@ -322,10 +326,14 @@
 	},
 /obj/structure/closet/cabinet,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/gps{
 =======
 /obj/item/gps{
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/gps{
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	gpstag = "kitty"
 	},
 /turf/open/floor/carpet,

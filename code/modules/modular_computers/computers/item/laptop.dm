@@ -53,10 +53,14 @@
 	try_toggle_open(usr)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/modular_computer/laptop/MouseDrop(obj/over_object, src_location, over_location)
 =======
 /obj/item/modular_computer/laptop/MouseDrop(obj/over_object, src_location, over_location)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/modular_computer/laptop/MouseDrop(obj/over_object, src_location, over_location)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(over_object == usr || over_object == src)
 		try_toggle_open(usr)
@@ -70,10 +74,14 @@
 			M.put_in_hand(src, H.held_index)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/modular_computer/laptop/attack_hand(mob/user)
 =======
 /obj/item/modular_computer/laptop/attack_hand(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/modular_computer/laptop/attack_hand(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(.)
 		return
@@ -81,10 +89,14 @@
 		return attack_self(user)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/modular_computer/laptop/proc/try_toggle_open(mob/living/user)
 =======
 /obj/item/modular_computer/laptop/proc/try_toggle_open(mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/modular_computer/laptop/proc/try_toggle_open(mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(issilicon(user))
 		return
 	if(!isturf(loc) && !ismob(loc)) // No opening it in backpack.

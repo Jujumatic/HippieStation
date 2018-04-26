@@ -365,9 +365,13 @@
 		list(
 			"key" = /obj/item/stock_parts/capacitor,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			"action" = ITEM_MOVE_INSIDE,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			"action" = ITEM_MOVE_INSIDE,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			"back_key" = TOOL_SCREWDRIVER,
 			"desc" = "Advanced scanner module is secured."
 		),
@@ -1413,10 +1417,14 @@
 		//26
 		list(
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"key" = /obj/item/device/assembly/signaler/anomaly,
 =======
 			"key" = /obj/item/assembly/signaler/anomaly,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			"key" = /obj/item/assembly/signaler/anomaly,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			"action" = ITEM_DELETE,
 			"back_key" = TOOL_WELDER,
 			"desc" = "Anomaly core socket is open.",

@@ -7,16 +7,22 @@
 	products = list(/obj/item/clothing/glasses/meson/engine = 2, 
 					/obj/item/clothing/glasses/welding = 3,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					/obj/item/device/multitool = 4, 
 					/obj/item/construction/rcd/loaded = 3, 
 					/obj/item/grenade/chem_grenade/smart_metal_foam = 10,
 					/obj/item/device/geiger_counter = 5, 
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					/obj/item/multitool = 4, 
 					/obj/item/construction/rcd/loaded = 3, 
 					/obj/item/grenade/chem_grenade/smart_metal_foam = 10,
 					/obj/item/geiger_counter = 5, 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					/obj/item/stock_parts/cell/high = 10,
 					/obj/item/electronics/airlock = 10, 
 					/obj/item/electronics/apc = 10, 

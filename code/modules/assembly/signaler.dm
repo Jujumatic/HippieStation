@@ -15,6 +15,7 @@
 	var/datum/radio_frequency/radio_connection
 	var/suicider = null
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /obj/item/device/assembly/signaler/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] eats \the [src]! If it is signaled, [user.p_they()] will die!</span>")
@@ -29,6 +30,8 @@
 	user.death(0)
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/assembly/signaler/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] eats \the [src]! If it is signaled, [user.p_they()] will die!</span>")
@@ -64,10 +67,14 @@
 	return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/signaler/ui_interact(mob/user, flag1)
 =======
 /obj/item/assembly/signaler/ui_interact(mob/user, flag1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/signaler/ui_interact(mob/user, flag1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(is_secured(user))
 		var/t1 = "-------"

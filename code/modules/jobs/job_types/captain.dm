@@ -100,9 +100,13 @@ Head of Personnel
 	head = /obj/item/clothing/head/hopcap
 	backpack_contents = list(/obj/item/storage/box/ids=1,\
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/melee/classic_baton/telescopic=1, /obj/item/device/modular_computer/tablet/preset/advanced = 1)
 	implants = list(/obj/item/implant/mindshield)
 
 =======
 		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

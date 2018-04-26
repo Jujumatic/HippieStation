@@ -47,10 +47,14 @@
 /datum/crafting_recipe/strobeshield
 	name = "Strobe Shield"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	result = /obj/item/device/assembly/flash/shield
 =======
 	result = /obj/item/assembly/flash/shield
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	result = /obj/item/assembly/flash/shield
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	reqs = list(/obj/item/wallframe/flasher = 1,
 				/obj/item/assembly/flash/handheld = 1,
 				/obj/item/shield/riot = 1)
@@ -84,10 +88,14 @@
 	reqs = list(/obj/item/restraints/handcuffs/cable = 1,
 				/obj/item/stack/rods = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				/obj/item/device/assembly/igniter = 1,
 =======
 				/obj/item/assembly/igniter = 1,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				/obj/item/assembly/igniter = 1,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				/obj/item/stack/ore/bluespace_crystal = 1)
 	time = 40
 	category = CAT_WEAPONRY
@@ -142,10 +150,14 @@
 				/obj/item/gun/energy/e_gun/advtaser = 1,
 				/obj/item/stock_parts/cell = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				/obj/item/device/assembly/prox_sensor = 1)
 =======
 				/obj/item/assembly/prox_sensor = 1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+				/obj/item/assembly/prox_sensor = 1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	tools = list(TOOL_WELDER, TOOL_SCREWDRIVER)
 	time = 60
 	category = CAT_ROBOT

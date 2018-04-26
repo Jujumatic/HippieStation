@@ -370,10 +370,14 @@
 	var/cooldown = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/immortality_talisman/Initialize()
 =======
 /obj/item/immortality_talisman/Initialize()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/immortality_talisman/Initialize()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	AddComponent(/datum/component/anti_magic, TRUE, TRUE)
 
@@ -945,10 +949,14 @@
 	var/mob/living/L = choice
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	message_admins("<span class='adminnotice'>[L] has been marked for death!</span>")
 =======
 	message_admins("<span class='adminnotice'>[key_name_admin(L)][ADMIN_FLW(L)] has been marked for death by [key_name_admin(user)]!</span>")
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	message_admins("<span class='adminnotice'>[key_name_admin(L)][ADMIN_FLW(L)] has been marked for death by [key_name_admin(user)]!</span>")
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	var/datum/objective/survive/survive = new
 	survive.owner = L.mind

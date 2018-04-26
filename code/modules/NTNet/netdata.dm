@@ -15,12 +15,18 @@
 	// Decrypt the passkey.
 	if(encrypted_passkey && !passkey)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		passkey = json_decode(XorEncrypt(hextostr(encrypted_passkey, TRUE), SScircuit.cipherkey))
 =======
 		var/result = XorEncrypt(hextostr(encrypted_passkey, TRUE), SScircuit.cipherkey)
 		if(length(result) > 1)
 			passkey = json_decode(XorEncrypt(hextostr(encrypted_passkey, TRUE), SScircuit.cipherkey))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		var/result = XorEncrypt(hextostr(encrypted_passkey, TRUE), SScircuit.cipherkey)
+		if(length(result) > 1)
+			passkey = json_decode(XorEncrypt(hextostr(encrypted_passkey, TRUE), SScircuit.cipherkey))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	// Encrypt the passkey.
 	if(!encrypted_passkey && passkey)

@@ -201,10 +201,14 @@
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 <<<<<<< HEAD
+<<<<<<< HEAD
 	ears = /obj/item/device/radio/headset
 =======
 	ears = /obj/item/radio/headset
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	ears = /obj/item/radio/headset
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	back = /obj/item/storage/backpack/satchel/med
 	id = /obj/item/card/id
 	glasses = /obj/item/clothing/glasses/hud/health

@@ -335,10 +335,14 @@
 	. = ..()
 	if (!ovens)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		ovens = typecacheof(list(/obj/singularity, /obj/machinery/power/supermatter_shard/crystal, /obj/structure/bonfire, /obj/structure/destructible/clockwork/massive/ratvar))
 =======
 		ovens = typecacheof(list(/obj/singularity, /obj/machinery/power/supermatter_crystal, /obj/structure/bonfire, /obj/structure/destructible/clockwork/massive/ratvar))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		ovens = typecacheof(list(/obj/singularity, /obj/machinery/power/supermatter_crystal, /obj/structure/bonfire, /obj/structure/destructible/clockwork/massive/ratvar))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/melee/roastingstick/attack_self(mob/user)
 	on = !on

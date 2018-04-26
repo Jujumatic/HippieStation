@@ -243,6 +243,7 @@
 		mobhook = M.AddComponent(/datum/component/redirect, list(COMSIG_ATOM_DIR_CHANGE), CALLBACK(src, .proc/update_visuals))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/organ/eyes/robotic/glow/Insert(var/mob/living/carbon/M)
 	. = ..()
 	if (mobhook && mobhook.parent != M)
@@ -260,6 +261,12 @@
 	QDEL_NULL(mobhook)
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/organ/eyes/robotic/glow/Remove(mob/living/carbon/M)
+	. = ..()
+	QDEL_NULL(mobhook)
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/organ/eyes/robotic/glow/Destroy()
 	QDEL_NULL(mobhook) // mobhook is not our component
 	return ..()

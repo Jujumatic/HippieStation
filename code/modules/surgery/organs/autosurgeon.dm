@@ -57,6 +57,7 @@
 	else
 		return ..()
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /obj/item/device/autosurgeon/screwdriver_act(mob/living/user, obj/item/I)
 	if(!storedorgan)
@@ -77,6 +78,8 @@
 	return TRUE
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/autosurgeon/screwdriver_act(mob/living/user, obj/item/I)
 	if(!storedorgan)

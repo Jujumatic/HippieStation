@@ -167,10 +167,14 @@
 	return attack_self(user)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/modular_computer/attack_ghost(mob/dead/observer/user)
 =======
 /obj/item/modular_computer/attack_ghost(mob/dead/observer/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/modular_computer/attack_ghost(mob/dead/observer/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(.)
 		return
@@ -182,10 +186,14 @@
 			turn_on(user)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/modular_computer/emag_act(mob/user)
 =======
 /obj/item/modular_computer/emag_act(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/modular_computer/emag_act(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(obj_flags & EMAGGED)
 		to_chat(user, "<span class='warning'>\The [src] was already emagged.</span>")
 		return 0
@@ -219,10 +227,14 @@
 
 // On-click handling. Turns on the computer if it's off and opens the GUI.
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/modular_computer/interact(mob/user)
 =======
 /obj/item/modular_computer/interact(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/modular_computer/interact(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(enabled)
 		ui_interact(user)
 	else

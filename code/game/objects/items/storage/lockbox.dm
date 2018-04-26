@@ -113,10 +113,14 @@
 /obj/item/storage/lockbox/medal/AltClick(mob/user)
 	if(user.canUseTopic(src, BE_CLOSE))
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(!locked)
 =======
 		if(!SendSignal(COMSIG_IS_STORAGE_LOCKED))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		if(!SendSignal(COMSIG_IS_STORAGE_LOCKED))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			open = (open ? FALSE : TRUE)
 			update_icon()
 		..()

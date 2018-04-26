@@ -210,10 +210,14 @@
 	..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/camera/attack_self(mob/user)
 =======
 /obj/item/camera/attack_self(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/camera/attack_self(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!disk)
 		return
 	to_chat(user, "<span class='notice'>You eject [disk] out the back of [src].</span>")
@@ -226,10 +230,14 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/camera/proc/camera_get_icon(list/turfs, turf/center)
 =======
 /obj/item/camera/proc/camera_get_icon(list/turfs, turf/center)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/camera/proc/camera_get_icon(list/turfs, turf/center)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/list/atoms = list()
 	for(var/turf/T in turfs)
 		atoms.Add(T)

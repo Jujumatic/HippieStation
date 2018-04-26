@@ -15,10 +15,14 @@
 	var/overrides_aicore_laws = FALSE // Whether the laws on the MMI, if any, override possible pre-existing laws loaded on the AI core.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/mmi/update_icon()
 =======
 /obj/item/mmi/update_icon()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/mmi/update_icon()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!brain)
 		icon_state = "mmi_off"
 		return
@@ -201,10 +205,14 @@
 			to_chat(user, "<span class='notice'>The MMI indicates the brain is active.</span>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/mmi/relaymove(mob/user)
 =======
 /obj/item/mmi/relaymove(mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/mmi/relaymove(mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	return //so that the MMI won't get a warning about not being able to move if it tries to move
 
 /obj/item/mmi/syndie

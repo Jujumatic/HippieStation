@@ -235,10 +235,14 @@
 		processing_list += A.contents
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /proc/get_mobs_in_radio_ranges(list/obj/item/device/radio/radios)
 =======
 /proc/get_mobs_in_radio_ranges(list/obj/item/radio/radios)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/proc/get_mobs_in_radio_ranges(list/obj/item/radio/radios)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = list()
 	// Returns a list of mobs who can hear any of the radios given in @radios
 	for(var/obj/item/radio/R in radios)

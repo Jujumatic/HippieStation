@@ -7,19 +7,27 @@
 	heat = 1000
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/igniter/suicide_act(mob/living/carbon/user)
 =======
 /obj/item/assembly/igniter/suicide_act(mob/living/carbon/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/igniter/suicide_act(mob/living/carbon/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	user.visible_message("<span class='suicide'>[user] is trying to ignite [user.p_them()]self with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	user.IgniteMob()
 	return FIRELOSS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/igniter/New()
 =======
 /obj/item/assembly/igniter/New()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/igniter/New()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 	sparks.set_up(2, 0, src)
 	sparks.attach(src)

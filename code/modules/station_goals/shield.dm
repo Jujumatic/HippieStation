@@ -122,10 +122,14 @@
 
 /obj/machinery/satellite/attackby(obj/item/I, mob/user, params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(I, /obj/item/device/multitool))
 =======
 	if(istype(I, /obj/item/multitool))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(I, /obj/item/multitool))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		to_chat(user, "<span class='notice'>// NTSAT-[id] // Mode : [active ? "PRIMARY" : "STANDBY"] //[(obj_flags & EMAGGED) ? "DEBUG_MODE //" : ""]</span>")
 	else
 		return ..()

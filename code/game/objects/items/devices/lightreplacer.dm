@@ -149,10 +149,14 @@
 		to_chat(user, "<span class='notice'>You fill \the [src] with lights from \the [S]. " + status_string() + "</span>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/lightreplacer/emag_act()
 =======
 /obj/item/lightreplacer/emag_act()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/lightreplacer/emag_act()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(obj_flags & EMAGGED)
 		return
 	Emag()
@@ -161,10 +165,14 @@
 	to_chat(user, status_string())
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/lightreplacer/update_icon()
 =======
 /obj/item/lightreplacer/update_icon()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/lightreplacer/update_icon()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	icon_state = "lightreplacer[(obj_flags & EMAGGED ? 1 : 0)]"
 
 /obj/item/lightreplacer/proc/status_string()
@@ -231,10 +239,14 @@
 		return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/lightreplacer/proc/Emag()
 =======
 /obj/item/lightreplacer/proc/Emag()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/lightreplacer/proc/Emag()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	obj_flags ^= EMAGGED
 	playsound(src.loc, "sparks", 100, 1)
 	if(obj_flags & EMAGGED)

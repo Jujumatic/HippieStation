@@ -125,12 +125,15 @@ GLOBAL_VAR_INIT(total_runtimes_skipped, 0)
 		GLOB.current_test.Fail("[main_line]\n[desclines.Join("\n")]")
 #endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /* This logs the runtime in the old format */
 
 	E.name = "\n\[[time2text(world.timeofday,"hh:mm:ss")]\][E.name]"
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 
 	// This writes the regular format (unwrapping newlines and inserting timestamps as needed).

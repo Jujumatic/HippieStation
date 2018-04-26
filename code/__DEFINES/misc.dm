@@ -81,6 +81,7 @@ Will print: "/mob/living/carbon/human/death" (you can optionally embed it in a s
 //Because I *KNOW* somebody will think layer+1 means "above"
 //IT DOESN'T OK, IT MEANS "UNDER"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define UNDER_SUIT_LAYER			SUIT_LAYER+1
 
 //AND -1 MEANS "ABOVE", OK?, OK!?!
@@ -93,6 +94,13 @@ Will print: "/mob/living/carbon/human/death" (you can optionally embed it in a s
 #define ABOVE_SHOES_LAYER			(SHOES_LAYER-1)
 #define ABOVE_BODY_FRONT_LAYER		(BODY_FRONT_LAYER-1)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+#define UNDER_SUIT_LAYER			(SUIT_LAYER+1)
+
+//AND -1 MEANS "ABOVE", OK?, OK!?!
+#define ABOVE_SHOES_LAYER			(SHOES_LAYER-1)
+#define ABOVE_BODY_FRONT_LAYER		(BODY_FRONT_LAYER-1)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 
 //Security levels
@@ -194,9 +202,15 @@ GLOBAL_LIST_EMPTY(bloody_footprints_cache)
 #define TURF_WET_PERMAFROST	2
 #define TURF_WET_ICE 4
 #define TURF_WET_LUBE	8
+<<<<<<< HEAD
 
 #define IS_WET_OPEN_TURF(O) O.GetComponent(/datum/component/wet_floor)
 
+=======
+
+#define IS_WET_OPEN_TURF(O) O.GetComponent(/datum/component/wet_floor)
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 //Maximum amount of time, (in deciseconds) a tile can be wet for.
 #define MAXIMUM_WET_TIME 5 MINUTES
 

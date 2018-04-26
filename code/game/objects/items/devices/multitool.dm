@@ -33,18 +33,24 @@
 	var/mode = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] puts the [src] to [user.p_their()] chest. It looks like [user.p_theyre()] trying to pulse [user.p_their()] heart off!</span>")
 	return OXYLOSS//theres a reason it wasnt recommended by doctors
 
 /obj/item/device/multitool/attack_self(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/multitool/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] puts the [src] to [user.p_their()] chest. It looks like [user.p_theyre()] trying to pulse [user.p_their()] heart off!</span>")
 	return OXYLOSS//theres a reason it wasnt recommended by doctors
 
 /obj/item/multitool/attack_self(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(selected_io)
 		selected_io = null
 		to_chat(user, "<span class='notice'>You clear the wired connection from the multitool.</span>")

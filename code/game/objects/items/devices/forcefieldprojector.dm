@@ -82,10 +82,14 @@
 	CanAtmosPass = ATMOS_PASS_DENSITY
 	armor = list("melee" = 0, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/forcefield/generator
 =======
 	var/obj/item/forcefield/generator
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/forcefield/generator
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/structure/projected_forcefield/Initialize(mapload, obj/item/forcefield/origin)
 	. = ..()

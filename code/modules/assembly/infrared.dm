@@ -12,19 +12,27 @@
 	var/datum/component/redirect/listener
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/Initialize()
 =======
 /obj/item/assembly/infra/Initialize()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/infra/Initialize()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	beams = list()
 	START_PROCESSING(SSobj, src)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/Destroy()
 =======
 /obj/item/assembly/infra/Destroy()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/infra/Destroy()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	QDEL_LIST(beams)
 	return ..()
 
@@ -60,25 +68,35 @@
 	return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/dropped()
 	refreshBeam()
 
 /obj/item/device/assembly/infra/process()
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/assembly/infra/dropped()
 	refreshBeam()
 
 /obj/item/assembly/infra/process()
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!on || !secured)
 		refreshBeam()
 		return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/proc/refreshBeam()
 =======
 /obj/item/assembly/infra/proc/refreshBeam()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/infra/proc/refreshBeam()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	QDEL_LIST(beams)
 	if(throwing || !on || !secured || !(isturf(loc) || holder && isturf(holder.loc)))
 		return
@@ -103,6 +121,7 @@
 			CHECK_TICK
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/attack_hand()
 	. = ..()
 	refreshBeam()
@@ -123,6 +142,8 @@
 	setDir(olddir)
 	olddir = null
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/assembly/infra/attack_hand()
 	. = ..()
 	refreshBeam()
@@ -131,6 +152,7 @@
 	var/t = dir
 	. = ..()
 	setDir(t)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
 
 /obj/item/assembly/infra/throw_at()
@@ -144,6 +166,20 @@
 	setDir(olddir)
 	olddir = null
 
+=======
+
+/obj/item/assembly/infra/throw_at()
+	. = ..()
+	olddir = dir
+
+/obj/item/assembly/infra/throw_impact()
+	. = ..()
+	if(!olddir)
+		return
+	setDir(olddir)
+	olddir = null
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/assembly/infra/holder_movement()
 	if(!holder)
 		return 0
@@ -151,10 +187,14 @@
 	return 1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/proc/trigger_beam(atom/movable/AM, turf/location)
 =======
 /obj/item/assembly/infra/proc/trigger_beam(atom/movable/AM, turf/location)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/infra/proc/trigger_beam(atom/movable/AM, turf/location)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	refreshBeam()
 	switchListener(location)
 	if(!secured || !on || next_activate > world.time)
@@ -164,27 +204,37 @@
 	next_activate =  world.time + 30
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/proc/switchListener(turf/newloc)
 	QDEL_NULL(listener)
 	listener = newloc.AddComponent(/datum/component/redirect, COMSIG_ATOM_EXITED, CALLBACK(src, .proc/check_exit))
 
 /obj/item/device/assembly/infra/proc/check_exit(atom/movable/offender)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/assembly/infra/proc/switchListener(turf/newloc)
 	QDEL_NULL(listener)
 	listener = newloc.AddComponent(/datum/component/redirect, COMSIG_ATOM_EXITED, CALLBACK(src, .proc/check_exit))
 
 /obj/item/assembly/infra/proc/check_exit(atom/movable/offender)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(offender && ((offender.flags_1 & ABSTRACT_1) || offender == src))
 		return
 	return refreshBeam()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/ui_interact(mob/user)//TODO: change this this to the wire control panel
 =======
 /obj/item/assembly/infra/ui_interact(mob/user)//TODO: change this this to the wire control panel
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/infra/ui_interact(mob/user)//TODO: change this this to the wire control panel
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(is_secured(user))
 		user.set_machine(src)
@@ -232,10 +282,14 @@
 		rotate()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/infra/setDir()
 =======
 /obj/item/assembly/infra/setDir()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/infra/setDir()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	refreshBeam()
 
@@ -246,10 +300,14 @@
 	icon = 'icons/obj/projectiles.dmi'
 	icon_state = "ibeam"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/assembly/infra/master
 =======
 	var/obj/item/assembly/infra/master
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/assembly/infra/master
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	anchored = TRUE
 	density = FALSE
 	flags_1 = ABSTRACT_1

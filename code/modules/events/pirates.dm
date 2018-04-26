@@ -175,10 +175,14 @@
 	return ..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/gps/internal/pirate
 =======
 /obj/item/gps/internal/pirate
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/gps/internal/pirate
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	gpstag = "Nautical Signal"
 	desc = "You can hear shanties over the static."
 

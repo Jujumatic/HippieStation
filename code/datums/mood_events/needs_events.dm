@@ -1,10 +1,14 @@
 //nutrition
 /datum/mood_event/nutrition/fat
 <<<<<<< HEAD
+<<<<<<< HEAD
 	description = "<span class='warning'><B>I'm so fat..</B></span>\n" //muh fatshaming
 =======
 	description = "<span class='warning'><B>I'm so fat...</B></span>\n" //muh fatshaming
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	description = "<span class='warning'><B>I'm so fat...</B></span>\n" //muh fatshaming
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	mood_change = -4
 
 /datum/mood_event/nutrition/wellfed

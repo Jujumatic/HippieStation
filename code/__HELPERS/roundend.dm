@@ -286,9 +286,13 @@
 			if(ded.len)
 				parts += "[GLOB.TAB]First Death: <b>[ded["name"]], [ded["role"]], at [ded["area"]]. Damage taken: [ded["damage"]].[ded["last_words"] ? " Their last words were: \"[ded["last_words"]]\"" : ""]</b>"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			//ignore this comment, it fixes the broken sytax parsing caused by the " above
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			//ignore this comment, it fixes the broken sytax parsing caused by the " above
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			else
 				parts += "[GLOB.TAB]<i>Nobody died this shift!</i>"
 	return parts.Join("<br>")

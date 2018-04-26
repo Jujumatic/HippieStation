@@ -82,10 +82,15 @@
 /obj/item/organ/tongue/abductor/TongueSpeech(var/message)
 	//Hacks
 	var/mob/living/carbon/human/user = usr
+<<<<<<< HEAD
 	var/rendered_abductor = "<span class='abductor'><b>[user.name]:</b> [message]</span>"
 	var/rendered_else = "<span class='abductor'><b>[user.name]:</b> [message]</span>"
 	log_talk(user,"ABDUCTOR:[key_name(user)] : [rendered_abductor]",LOGSAY)
 	log_talk(user,"ABDUCTOR:[key_name(user)] : [rendered_else]",LOGSAY)
+=======
+	var/rendered = "<span class='abductor'><b>[user.name]:</b> [message]</span>"
+	log_talk(user,"ABDUCTOR:[key_name(user)] : [rendered]",LOGSAY)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	for(var/mob/living/carbon/human/H in GLOB.alive_mob_list)
 		var/obj/item/organ/tongue/T = H.getorganslot(ORGAN_SLOT_TONGUE)
 		if(!T || T.type != type)

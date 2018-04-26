@@ -46,6 +46,7 @@
 	resistance_flags = FIRE_PROOF
 	flags_2 = NO_MAT_REDEMPTION_2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/pshoom = 'sound/items/pshoom.ogg'
 	var/alt_sound = 'sound/items/pshoom_2.ogg'
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 50)
@@ -53,6 +54,10 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 50)
 	component_type = /datum/component/storage/concrete/bluespace/bag_of_holding
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 50)
+	component_type = /datum/component/storage/concrete/bluespace/bag_of_holding
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/backpack/holding/ComponentInitialize()
 	. = ..()
@@ -256,6 +261,7 @@
 	w_class = WEIGHT_CLASS_NORMAL //Can fit in backpacks itself.
 	level = 1
 	component_type = /datum/component/storage/concrete/secret_satchel
+<<<<<<< HEAD
 
 /obj/item/storage/backpack/stachel/flat/Initialize()
 	. = ..()
@@ -267,6 +273,19 @@
 	STR.max_combined_w_class = 15
 	STR.cant_hold = typecacheof(list(/obj/item/storage/backpack/satchel/flat)) //muh recursive backpacks
 
+=======
+
+/obj/item/storage/backpack/stachel/flat/Initialize()
+	. = ..()
+	SSpersistence.new_secret_satchels += src
+
+/obj/item/storage/backpack/satchel/flat/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_combined_w_class = 15
+	STR.cant_hold = typecacheof(list(/obj/item/storage/backpack/satchel/flat)) //muh recursive backpacks
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/storage/backpack/satchel/flat/hide(intact)
 	if(intact)
 		invisibility = INVISIBILITY_MAXIMUM
@@ -305,12 +324,15 @@
 		for(var/R in reward_all_of_these)
 			new R(src)
 		revealed = TRUE
+<<<<<<< HEAD
 
 /obj/item/storage/backpack/satchel/flat/can_be_inserted(obj/item/W, stop_messages = 0, mob/user)
 	if(SSpersistence.spawned_objects[W])
 		to_chat(user, "<span class='warning'>[W] is unstable after its journey through space and time, it wouldn't survive another trip.</span>")
 		return FALSE
 	return ..()
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/item/storage/backpack/duffelbag
 	name = "duffel bag"
@@ -548,6 +570,7 @@
 
 // For ClownOps.
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/storage/backpack/duffelbag/clown/syndie
 	slowdown = 0
 	silent = TRUE
@@ -555,6 +578,8 @@
 /obj/item/storage/backpack/duffelbag/clown/syndie/PopulateContents()
 	new /obj/item/device/pda/clown(src)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/storage/backpack/duffelbag/clown/syndie/ComponentInitialize()
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
@@ -563,7 +588,10 @@
 
 /obj/item/storage/backpack/duffelbag/clown/syndie/PopulateContents()
 	new /obj/item/pda/clown(src)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	new /obj/item/clothing/under/rank/clown(src)
 	new /obj/item/clothing/shoes/clown_shoes(src)
 	new /obj/item/clothing/mask/gas/clown_hat(src)

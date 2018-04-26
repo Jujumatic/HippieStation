@@ -8,6 +8,7 @@
 			new /obj/item/card/id/syndicate(src) // 2 tc
 			new /obj/item/clothing/shoes/chameleon/noslip(src) // 2 tc
 <<<<<<< HEAD
+<<<<<<< HEAD
 			new /obj/item/device/camera_bug(src) // 1 tc
 			new /obj/item/device/multitool/ai_detect(src) // 1 tc
 			new /obj/item/device/encryptionkey/syndicate(src) // 2 tc
@@ -16,6 +17,11 @@
 			new /obj/item/multitool/ai_detect(src) // 1 tc
 			new /obj/item/encryptionkey/syndicate(src) // 2 tc
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			new /obj/item/camera_bug(src) // 1 tc
+			new /obj/item/multitool/ai_detect(src) // 1 tc
+			new /obj/item/encryptionkey/syndicate(src) // 2 tc
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			new /obj/item/reagent_containers/syringe/mulligan(src) // 4 tc
 			new /obj/item/switchblade(src) //I'll count this as 2 tc
 			new /obj/item/storage/fancy/cigarettes/cigpack_syndicate (src) // 2 tc this shit heals
@@ -63,10 +69,14 @@
 			new /obj/item/card/emag(src)
 			new /obj/item/clothing/shoes/chameleon/noslip(src)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			new /obj/item/device/encryptionkey/syndicate(src)
 =======
 			new /obj/item/encryptionkey/syndicate(src)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			new /obj/item/encryptionkey/syndicate(src)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 			new /obj/item/grenade/syndieminibomb(src)
 
 		if("implant") // 55+ tc holy shit what the fuck this is a lottery disguised as fun boxes isn't it?
@@ -332,16 +342,22 @@
 	new /obj/item/clothing/shoes/sneakers/black(src)
 	new /obj/item/clothing/gloves/color/black(src)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	new /obj/item/device/radio/headset/headset_cent/empty(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/storage/backpack/satchel(src)
 	new /obj/item/device/pda/heads(src)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	new /obj/item/radio/headset/headset_cent/empty(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/storage/backpack/satchel(src)
 	new /obj/item/pda/heads(src)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	new /obj/item/clipboard(src)
 
 /obj/item/storage/box/syndie_kit/chameleon/broken/PopulateContents()
@@ -354,6 +370,7 @@
 	new /obj/item/clothing/mask/chameleon/broken(src)
 	new /obj/item/storage/backpack/chameleon/broken(src)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	new /obj/item/device/radio/headset/chameleon/broken(src)
 	new /obj/item/stamp/chameleon/broken(src)
 	new /obj/item/device/pda/chameleon/broken(src)
@@ -362,4 +379,9 @@
 	new /obj/item/stamp/chameleon/broken(src)
 	new /obj/item/pda/chameleon/broken(src)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	new /obj/item/radio/headset/chameleon/broken(src)
+	new /obj/item/stamp/chameleon/broken(src)
+	new /obj/item/pda/chameleon/broken(src)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	// No chameleon laser, they can't randomise for //REASONS//

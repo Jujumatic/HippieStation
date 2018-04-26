@@ -319,11 +319,14 @@
 
 /mob/dead/new_player/proc/AttemptLateSpawn(rank)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(jobban_isbanned(src, CATBAN) || jobban_isbanned(src, CLUWNEBAN))
 		rank = "Assistant"
 	
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/error = IsJobUnavailable(rank)
 	if(error != JOB_AVAILABLE)
 		alert(src, get_job_unavailable_error_message(error, rank))
@@ -363,10 +366,14 @@
 			var/obj/screen/splash/Spl = new(character.client, TRUE)
 			Spl.Fade(TRUE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			character.playsound_local(get_turf(character), 'hippiestation/sound/voice/approaching.ogg', 25)
 =======
 			character.playsound_local(get_turf(character), 'sound/voice/ApproachingTG.ogg', 25)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+			character.playsound_local(get_turf(character), 'sound/voice/ApproachingTG.ogg', 25)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 		character.update_parallax_teleport()
 

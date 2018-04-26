@@ -95,6 +95,7 @@ The previous code made compliant:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Use the "hippiestation" folder
 
 See [the README.md](/hippiestation/README.md) in the folder for further details.
@@ -104,6 +105,9 @@ See [the README.md](/hippiestation/README.md) in the folder for further details.
 =======
 ### No overriding type safety checks
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+### No overriding type safety checks
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 The use of the : operator to override type safety checks is not allowed. You must cast the variable to the proper type.
 
 ### Type paths must began with a /
@@ -294,6 +298,10 @@ The former is faster than the latter, as shown by the following profile results:
 https://file.house/zy7H.png
 Code used for the test in a readable format:
 https://pastebin.com/w50uERkG
+<<<<<<< HEAD
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 
 * Istypeless for loops: a name for a differing syntax for writing for-each style loops in DM, however it is NOT DM's standard syntax hence why this is considered a quirk. Take a look at this:
@@ -367,9 +375,12 @@ There is no strict process when it comes to merging pull requests, pull requests
 * Please explain why you are submitting the pull request, and how you think your change will be beneficial to the game. Failure to do so will be grounds for rejecting the PR.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## A word on git
 Yes we know that the files have a tonne of mixed windows and linux line endings, attempts to fix this have been met with less than stellar success and as such we have decided to give up caring until such a time as it matters.
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 ## Porting features/sprites/sounds/tools from other codebases
 
 If you are porting features/tools from other codebases, you must give them credit where it's due. Typically, crediting them in your pull request and the changelog is the recommended way of doing it. Take note of what license they use though, porting stuff from AGPLv3 and GPLv3 codebases are allowed.

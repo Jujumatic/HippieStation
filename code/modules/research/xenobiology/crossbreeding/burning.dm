@@ -156,10 +156,14 @@ Burning extracts:
 /obj/item/slimecross/burning/sepia/do_effect(mob/user)
 	user.visible_message("<span class='notice'>[src] shapes itself into a camera!</span>")
 <<<<<<< HEAD
+<<<<<<< HEAD
 	new /obj/item/device/camera/timefreeze(get_turf(user))
 =======
 	new /obj/item/camera/timefreeze(get_turf(user))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	new /obj/item/camera/timefreeze(get_turf(user))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	..()
 
 /obj/item/slimecross/burning/cerulean
@@ -295,20 +299,28 @@ Burning extracts:
 //Misc. things added
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/camera/timefreeze
 =======
 /obj/item/camera/timefreeze
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/camera/timefreeze
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "sepia-tinted camera"
 	desc = "They say a picture is like a moment stopped in time."
 	pictures_left = 1
 	pictures_max = 1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/camera/timefreeze/afterattack(atom/target, mob/user, flag)
 =======
 /obj/item/camera/timefreeze/afterattack(atom/target, mob/user, flag)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/camera/timefreeze/afterattack(atom/target, mob/user, flag)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!on || !pictures_left || !isturf(target.loc))
 		return
 	new /obj/effect/timestop(get_turf(target), 2, 50, list(user))

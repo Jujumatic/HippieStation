@@ -64,12 +64,17 @@ SUBSYSTEM_DEF(traumas)
 
 					  "clowns"    = typecacheof(list(/obj/item/clothing/under/rank/clown, /obj/item/clothing/shoes/clown_shoes,
 <<<<<<< HEAD
+<<<<<<< HEAD
 												 /obj/item/clothing/mask/gas/clown_hat, /obj/item/device/instrument/bikehorn,
 												 /obj/item/device/pda/clown, /obj/item/grown/bananapeel)),
 =======
 												 /obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
 												 /obj/item/pda/clown, /obj/item/grown/bananapeel)),
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+												 /obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
+												 /obj/item/pda/clown, /obj/item/grown/bananapeel)),
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 					  "greytide"  = typecacheof(list(/obj/item/clothing/under/color/grey, /obj/item/melee/baton/cattleprod,
 												 /obj/item/twohanded/spear, /obj/item/clothing/mask/gas)),
@@ -88,31 +93,44 @@ SUBSYSTEM_DEF(traumas)
 												 /obj/item/clothing/under/captainparade, /obj/item/clothing/under/hosparademale, /obj/item/clothing/under/hosparadefem,
 												 /obj/item/clothing/head/helmet/abductor, /obj/item/clothing/suit/armor/abductor/vest, /obj/item/abductor_baton,
 <<<<<<< HEAD
+<<<<<<< HEAD
 												 /obj/item/storage/belt/military/abductor, /obj/item/gun/energy/alien, /obj/item/device/abductor/silencer,
 												 /obj/item/device/abductor/gizmo, /obj/item/clothing/under/rank/centcom_officer,
 =======
 												 /obj/item/storage/belt/military/abductor, /obj/item/gun/energy/alien, /obj/item/abductor/silencer,
 												 /obj/item/abductor/gizmo, /obj/item/clothing/under/rank/centcom_officer,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+												 /obj/item/storage/belt/military/abductor, /obj/item/gun/energy/alien, /obj/item/abductor/silencer,
+												 /obj/item/abductor/gizmo, /obj/item/clothing/under/rank/centcom_officer,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 												 /obj/item/clothing/suit/space/hardsuit/ert, /obj/item/clothing/suit/space/hardsuit/ert/sec,
 												 /obj/item/clothing/suit/space/hardsuit/ert/engi, /obj/item/clothing/suit/space/hardsuit/ert/med,
 												 /obj/item/clothing/suit/space/hardsuit/deathsquad, /obj/item/clothing/head/helmet/space/hardsuit/deathsquad,
 												 /obj/machinery/door/airlock/centcom)),
 						"robots"   = typecacheof(list(/obj/machinery/computer/upload, /obj/item/aiModule/, /obj/machinery/recharge_station,
 <<<<<<< HEAD
+<<<<<<< HEAD
 						/obj/item/device/aicard, /obj/item/device/deactivated_swarmer, /obj/effect/mob_spawn/swarmer)),
 =======
 						/obj/item/aicard, /obj/item/deactivated_swarmer, /obj/effect/mob_spawn/swarmer)),
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+						/obj/item/aicard, /obj/item/deactivated_swarmer, /obj/effect/mob_spawn/swarmer)),
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 						"doctors"   = typecacheof(list(/obj/item/clothing/under/rank/medical, /obj/item/clothing/under/rank/chemist,
 						/obj/item/clothing/under/rank/nursesuit, /obj/item/clothing/under/rank/chief_medical_officer,
 						/obj/item/reagent_containers/syringe, /obj/item/reagent_containers/pill/, /obj/item/reagent_containers/hypospray,
 <<<<<<< HEAD
+<<<<<<< HEAD
 						/obj/item/storage/firstaid, /obj/item/storage/pill_bottle, /obj/item/device/healthanalyzer,
 =======
 						/obj/item/storage/firstaid, /obj/item/storage/pill_bottle, /obj/item/healthanalyzer,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+						/obj/item/storage/firstaid, /obj/item/storage/pill_bottle, /obj/item/healthanalyzer,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 						/obj/structure/sign/departments/medbay, /obj/machinery/door/airlock/medical, /obj/machinery/sleeper,
 						/obj/machinery/dna_scannernew, /obj/machinery/atmospherics/components/unary/cryo_cell, /obj/item/surgical_drapes,
 						/obj/item/retractor, /obj/item/hemostat, /obj/item/cautery, /obj/item/surgicaldrill, /obj/item/scalpel, /obj/item/circular_saw,
@@ -131,10 +149,14 @@ SUBSYSTEM_DEF(traumas)
 						/obj/item/clothing/suit/hooded/cultrobes, /obj/item/clothing/head/hooded/cult_hoodie, /obj/effect/rune,
 						/obj/item/stack/sheet/runed_metal, /obj/machinery/door/airlock/cult, /obj/singularity/narsie,
 <<<<<<< HEAD
+<<<<<<< HEAD
 						/obj/item/device/soulstone,
 =======
 						/obj/item/soulstone,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+						/obj/item/soulstone,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 						/obj/structure/destructible/clockwork, /obj/item/clockwork, /obj/item/clothing/suit/armor/clockwork,
 						/obj/item/clothing/glasses/judicial_visor, /obj/effect/clockwork/sigil/, /obj/item/stack/tile/brass,
 						/obj/machinery/door/airlock/clockwork,
@@ -146,12 +168,17 @@ SUBSYSTEM_DEF(traumas)
 						"aliens"   = typecacheof(list(/obj/item/clothing/mask/facehugger, /obj/item/organ/body_egg/alien_embryo,
 						/obj/structure/alien, /obj/item/toy/toy_xeno,
 <<<<<<< HEAD
+<<<<<<< HEAD
 						/obj/item/clothing/suit/armor/abductor, /obj/item/device/abductor, /obj/item/gun/energy/alien,
 						/obj/item/abductor_baton, /obj/item/device/radio/headset/abductor, /obj/item/scalpel/alien, /obj/item/hemostat/alien,
 =======
 						/obj/item/clothing/suit/armor/abductor, /obj/item/abductor, /obj/item/gun/energy/alien,
 						/obj/item/abductor_baton, /obj/item/radio/headset/abductor, /obj/item/scalpel/alien, /obj/item/hemostat/alien,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+						/obj/item/clothing/suit/armor/abductor, /obj/item/abductor, /obj/item/gun/energy/alien,
+						/obj/item/abductor_baton, /obj/item/radio/headset/abductor, /obj/item/scalpel/alien, /obj/item/hemostat/alien,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 						/obj/item/retractor/alien, /obj/item/circular_saw/alien, /obj/item/surgicaldrill/alien, /obj/item/cautery/alien,
 						/obj/item/clothing/head/helmet/abductor, /obj/structure/bed/abductor, /obj/structure/table_frame/abductor,
 						/obj/structure/table/abductor, /obj/structure/table/optable/abductor, /obj/structure/closet/abductor, /obj/item/organ/heart/gland,

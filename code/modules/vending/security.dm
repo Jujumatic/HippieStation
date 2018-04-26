@@ -9,16 +9,22 @@
 		            /obj/item/restraints/handcuffs/cable/zipties = 10,
 		            /obj/item/grenade/flashbang = 4,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		            /obj/item/device/assembly/flash/handheld = 5,
 					/obj/item/reagent_containers/food/snacks/donut = 12,
 					/obj/item/storage/box/evidence = 6,
 				    /obj/item/device/flashlight/seclite = 4,
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		            /obj/item/assembly/flash/handheld = 5,
 					/obj/item/reagent_containers/food/snacks/donut = 12,
 					/obj/item/storage/box/evidence = 6,
 				    /obj/item/flashlight/seclite = 4,
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 				    /obj/item/restraints/legcuffs/bola/energy = 7)
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,
 		              /obj/item/storage/fancy/donut_box = 2)
@@ -31,11 +37,16 @@
 		var/obj/item/grenade/G = I
 		G.preprime()
 <<<<<<< HEAD
+<<<<<<< HEAD
 	else if(istype(I, /obj/item/device/flashlight))
 		var/obj/item/device/flashlight/F = I
 =======
 	else if(istype(I, /obj/item/flashlight))
 		var/obj/item/flashlight/F = I
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	else if(istype(I, /obj/item/flashlight))
+		var/obj/item/flashlight/F = I
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		F.on = TRUE
 		F.update_brightness()

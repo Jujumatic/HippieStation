@@ -157,9 +157,13 @@
 
 /mob/living/proc/remove_trait(trait, list/sources, force)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!status_traits[trait])
 		return
 
@@ -180,6 +184,7 @@
 	else
 		status_traits[trait] = list()
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	if(!LAZYLEN(status_traits[trait]))
 		status_traits -= trait
@@ -195,13 +200,22 @@
 	if(!LAZYLEN(status_traits[trait]))
 		status_traits -= trait
 
+=======
+
+	if(!LAZYLEN(status_traits[trait]))
+		status_traits -= trait
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /mob/living/proc/remove_trait_datum(trait)
 	var/datum/trait/T = roundstart_traits[trait]
 	if(T)
 		qdel(T)
 		return TRUE
 
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /mob/living/proc/has_trait(trait, list/sources)
 	if(!status_traits[trait])
 		return FALSE
@@ -216,6 +230,7 @@
 				return TRUE
 	else if(LAZYLEN(status_traits[trait]))
 		return TRUE
+<<<<<<< HEAD
 
 /mob/living/proc/has_trait_datum(trait)
 	return roundstart_traits[trait]
@@ -223,6 +238,15 @@
 /mob/living/proc/remove_all_traits()
 	status_traits = list()
 
+=======
+
+/mob/living/proc/has_trait_datum(trait)
+	return roundstart_traits[trait]
+
+/mob/living/proc/remove_all_traits()
+	status_traits = list()
+
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /////////////////////////////////// TRAIT PROCS ////////////////////////////////////
 
 /mob/living/proc/cure_blind(list/sources)

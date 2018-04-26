@@ -65,6 +65,7 @@
 	return ..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/clothing/AltClick(mob/user)
 	if(istype(user) && user.canUseTopic(src, BE_CLOSE, ismonkey(user)) && pockets && pockets.quickdraw && pockets.contents.len)
 		var/obj/item/I = pockets.contents[1]
@@ -83,6 +84,8 @@
 
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/clothing/Destroy()
 	user_vars_remembered = null //Oh god somebody put REFERENCES in here? not to worry, we'll clean it up
 	return ..()

@@ -71,10 +71,14 @@
 
 /obj/item/integrated_circuit/input/textpad/ask_for_input(mob/user)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/new_input = stripped_input(user, "Enter some words, please.",displayed_name)
 =======
 	var/new_input = stripped_multiline_input(user, "Enter some words, please.",displayed_name)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/new_input = stripped_multiline_input(user, "Enter some words, please.",displayed_name)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(istext(new_input) && user.IsAdvancedToolUser())
 		set_pin_data(IC_OUTPUT, 1, new_input)
 		push_data()
@@ -221,13 +225,19 @@
 		"harvest"			= IC_PINTYPE_NUMBER,
 		"dead"			= IC_PINTYPE_NUMBER,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"plant health"			= IC_PINTYPE_NUMBER
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		"plant health"			= IC_PINTYPE_NUMBER,
 		"self sustaining"		= IC_PINTYPE_NUMBER,
 		"using irrigation" 		= IC_PINTYPE_NUMBER,
 		"connected trays"		= IC_PINTYPE_LIST
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	)
 	activators = list("scan" = IC_PINTYPE_PULSE_IN, "on scanned" = IC_PINTYPE_PULSE_OUT)
 	spawn_flags = IC_SPAWN_RESEARCH
@@ -323,9 +333,13 @@
 		"density"				= IC_PINTYPE_BOOLEAN,
 		"opacity"				= IC_PINTYPE_BOOLEAN,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		"occupied turf"			= IC_PINTYPE_REF
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		"occupied turf"			= IC_PINTYPE_REF
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		)
 	activators = list(
 		"scan" = IC_PINTYPE_PULSE_IN,
@@ -440,6 +454,7 @@
 			St.Add(I.icon_state)
 		if(St.len)
 			set_pin_data(IC_OUTPUT, 2, jointext(St, ",", 1, 0))
+<<<<<<< HEAD
 		push_data()
 		activate_pin(2)
 
@@ -513,6 +528,8 @@
 			St.Add(I.icon_state)
 		if(St.len)
 			set_pin_data(IC_OUTPUT, 2, jointext(St, ",", 1, 0))
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		push_data()
 		activate_pin(2)
 	else
@@ -1076,6 +1093,7 @@
 
 /obj/item/integrated_circuit/input/matscan
 <<<<<<< HEAD
+<<<<<<< HEAD
 	name = "material scaner"
 	desc = "It's special module, designed to get information about material containers of different machinery.\
 			Like ORM, lathes, etc."
@@ -1084,6 +1102,11 @@
 	desc = "This special module is designed to get information about material containers of different machinery, \
 			like ORM, lathes, etc."
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	name = "material scanner"
+	desc = "This special module is designed to get information about material containers of different machinery, \
+			like ORM, lathes, etc."
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	icon_state = "video_camera"
 	complexity = 6
 	inputs = list(

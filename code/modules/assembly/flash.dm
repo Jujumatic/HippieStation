@@ -16,10 +16,14 @@
 	var/last_trigger = 0 //Last time it was successfully triggered.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/suicide_act(mob/living/user)
 =======
 /obj/item/assembly/flash/suicide_act(mob/living/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/suicide_act(mob/living/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if (crit_fail)
 		user.visible_message("<span class='suicide'>[user] raises \the [src] up to [user.p_their()] eyes and activates it ... but its burnt out!</span>")
 		return SHAME
@@ -31,10 +35,14 @@
 	return FIRELOSS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/update_icon(flash = FALSE)
 =======
 /obj/item/assembly/flash/update_icon(flash = FALSE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/update_icon(flash = FALSE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	cut_overlays()
 	attached_overlays = list()
 	if(crit_fail)
@@ -48,10 +56,14 @@
 		holder.update_icon()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/proc/clown_check(mob/living/carbon/human/user)
 =======
 /obj/item/assembly/flash/proc/clown_check(mob/living/carbon/human/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/proc/clown_check(mob/living/carbon/human/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(user.has_trait(TRAIT_CLUMSY) && prob(50))
 		flash_carbon(user, user, 15, 0)
 		return FALSE
@@ -69,10 +81,14 @@
 		T.visible_message("<span class='danger'>[src] burns out!</span>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/proc/flash_recharge(interval = 10)
 =======
 /obj/item/assembly/flash/proc/flash_recharge(interval = 10)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/proc/flash_recharge(interval = 10)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/deciseconds_passed = world.time - last_used
 	for(var/seconds = deciseconds_passed / 10, seconds >= interval, seconds -= interval) //get 1 charge every interval
 		times_used--
@@ -82,6 +98,7 @@
 		burn_out()
 		return FALSE
 	return TRUE
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 //BYPASS CHECKS ALSO PREVENTS BURNOUT!
@@ -131,6 +148,31 @@
 
 /obj/item/assembly/flash/proc/try_use_flash(mob/user = null)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+
+//BYPASS CHECKS ALSO PREVENTS BURNOUT!
+/obj/item/assembly/flash/proc/AOE_flash(bypass_checks = FALSE, range = 3, power = 5, targeted = FALSE, mob/user)
+	if(!bypass_checks && !try_use_flash())
+		return FALSE
+	var/list/mob/targets = get_flash_targets(get_turf(src), range, FALSE)
+	if(user)
+		targets -= user
+	for(var/mob/living/carbon/C in targets)
+		flash_carbon(C, user, power, targeted, TRUE)
+	return TRUE
+
+/obj/item/assembly/flash/proc/get_flash_targets(atom/target_loc, range = 3, override_vision_checks = FALSE)
+	if(!target_loc)
+		target_loc = loc
+	if(override_vision_checks)
+		return get_hearers_in_view(range, get_turf(target_loc))
+	if(isturf(target_loc) || (ismob(target_loc) && isturf(target_loc.loc)))
+		return viewers(range, get_turf(target_loc))
+	else
+		return typecache_filter_list(target_loc.GetAllContents(), typecacheof(list(/mob/living)))
+
+/obj/item/assembly/flash/proc/try_use_flash(mob/user = null)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(crit_fail || (world.time < last_trigger + cooldown))
 		return FALSE
 	last_trigger = world.time
@@ -143,10 +185,14 @@
 	return TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/proc/flash_carbon(mob/living/carbon/M, mob/user, power = 15, targeted = TRUE, generic_message = FALSE)
 =======
 /obj/item/assembly/flash/proc/flash_carbon(mob/living/carbon/M, mob/user, power = 15, targeted = TRUE, generic_message = FALSE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/proc/flash_carbon(mob/living/carbon/M, mob/user, power = 15, targeted = TRUE, generic_message = FALSE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!istype(M))
 		return
 	add_logs(user, M, "[targeted? "flashed(targeted)" : "flashed(AOE)"]", src)
@@ -192,10 +238,14 @@
 	user.visible_message("<span class='disarm'>[user] fails to blind [M] with the flash!</span>", "<span class='warning'>You fail to blind [M] with the flash!</span>")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/attack_self(mob/living/carbon/user, flag = 0, emp = 0)
 =======
 /obj/item/assembly/flash/attack_self(mob/living/carbon/user, flag = 0, emp = 0)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/attack_self(mob/living/carbon/user, flag = 0, emp = 0)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(holder)
 		return FALSE
 	if(!AOE_flash(FALSE, 3, 5, FALSE, user))
@@ -210,10 +260,14 @@
 	. = ..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/activate()//AOE flash on signal recieved
 =======
 /obj/item/assembly/flash/activate()//AOE flash on signal recieved
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/activate()//AOE flash on signal recieved
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!..())
 		return
 	AOE_flash()
@@ -333,10 +387,14 @@
 	..()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/flash/shield/update_icon(flash = FALSE)
 =======
 /obj/item/assembly/flash/shield/update_icon(flash = FALSE)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/flash/shield/update_icon(flash = FALSE)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	icon_state = "flashshield"
 	item_state = "flashshield"
 

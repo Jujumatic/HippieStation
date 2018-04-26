@@ -235,6 +235,7 @@
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/shower/attack_hand(mob/M)
 	. = ..()
 	if(.)
@@ -242,6 +243,9 @@
 =======
 /obj/machinery/shower/interact(mob/M)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/machinery/shower/interact(mob/M)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	on = !on
 	update_icon()
 	add_fingerprint(M)

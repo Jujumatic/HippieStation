@@ -107,16 +107,22 @@ effective or pretty fucking useless.
 	return round(max(10, (stealth*30 + intensity*5 - wavelength/4)))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/healthanalyzer/rad_laser/interact(mob/user)
 	ui_interact(user)
 
 /obj/item/device/healthanalyzer/rad_laser/ui_interact(mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/healthanalyzer/rad_laser/interact(mob/user)
 	ui_interact(user)
 
 /obj/item/healthanalyzer/rad_laser/ui_interact(mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 
 	var/dat = "Irradiation: <A href='?src=[REF(src)];rad=1'>[irradiate ? "On" : "Off"]</A><br>"

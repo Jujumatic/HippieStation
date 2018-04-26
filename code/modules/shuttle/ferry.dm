@@ -7,10 +7,14 @@
 	req_access = list(ACCESS_CENT_GENERAL)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/aiControlDisabled = TRUE
 =======
 	var/allow_silicons = FALSE
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/allow_silicons = FALSE
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/allow_emag = FALSE
 
 /obj/machinery/computer/shuttle/ferry/emag_act(mob/user)
@@ -21,13 +25,19 @@
 
 /obj/machinery/computer/shuttle/ferry/attack_ai()
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return aiControlDisabled? FALSE : ..()
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	return allow_silicons ? ..() : FALSE
 
 /obj/machinery/computer/shuttle/ferry/attack_robot()
 	return allow_silicons ? ..() : FALSE
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /obj/machinery/computer/shuttle/ferry/request
 	name = "ferry console"

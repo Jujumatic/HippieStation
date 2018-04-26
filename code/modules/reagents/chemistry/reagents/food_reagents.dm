@@ -687,7 +687,11 @@
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#eef442" // rgb: 238, 244, 66
 <<<<<<< HEAD
+<<<<<<< HEAD
 	taste_description = "mournful honking"
 =======
 	taste_description = "mournful honking"
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	taste_description = "mournful honking"
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516

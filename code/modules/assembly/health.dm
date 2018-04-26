@@ -74,10 +74,14 @@
 	return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/assembly/health/ui_interact(mob/user as mob)//TODO: Change this to the wires thingy
 =======
 /obj/item/assembly/health/ui_interact(mob/user as mob)//TODO: Change this to the wires thingy
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/assembly/health/ui_interact(mob/user as mob)//TODO: Change this to the wires thingy
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	if(!secured)
 		user.show_message("<span class='warning'>The [name] is unsecured!</span>")

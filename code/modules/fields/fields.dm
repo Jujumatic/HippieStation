@@ -286,10 +286,14 @@
 	var/datum/component/mobhook
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool/field_debug/Initialize()
 =======
 /obj/item/multitool/field_debug/Initialize()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/multitool/field_debug/Initialize()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	. = ..()
 	START_PROCESSING(SSobj, src)
 
@@ -315,18 +319,24 @@
 		QDEL_NULL(current)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool/field_debug/dropped()
 	. = ..()
 	QDEL_NULL(mobhook)
 
 /obj/item/device/multitool/field_debug/proc/on_mob_move()
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/multitool/field_debug/dropped()
 	. = ..()
 	QDEL_NULL(mobhook)
 
 /obj/item/multitool/field_debug/proc/on_mob_move()
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	check_turf(get_turf(src))
 
 /obj/item/multitool/field_debug/process()

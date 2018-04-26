@@ -584,10 +584,14 @@
 /area/mine/production)
 "bO" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/beacon,
 =======
 /obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /turf/open/floor/plasteel/purple/corner{
 	dir = 8
 	},
@@ -1215,11 +1219,14 @@
 	dir = 8;
 	network = list("mine")
 <<<<<<< HEAD
+<<<<<<< HEAD
 	},
 /obj/effect/baseturf_helper/picky/lava_land/basalt{
 	whitelist = /turf/open/floor
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	},
 /turf/open/floor/circuit,
 /area/mine/maintenance)
@@ -3341,6 +3348,7 @@
 	name = "Mining Shuttle Airlock";
 	opacity = 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 	},
 /turf/open/floor/plasteel,
 /area/mine/production)
@@ -3353,6 +3361,8 @@
 	whitelist = /turf/open/floor
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	},
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
@@ -3394,6 +3404,21 @@
 /obj/effect/baseturf_helper/lava_land/surface,
 /turf/closed/wall,
 /area/mine/production)
+<<<<<<< HEAD
+=======
+"WF" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall,
+/area/mine/laborcamp)
+"WH" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall,
+/area/mine/eva)
+"WI" = (
+/obj/effect/baseturf_helper/lava_land/surface,
+/turf/closed/wall,
+/area/mine/production)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 "WJ" = (
 /obj/effect/baseturf_helper/lava_land/surface,
 /turf/closed/wall/r_wall,
@@ -3402,7 +3427,10 @@
 /obj/effect/baseturf_helper/lava_land/surface,
 /turf/closed/wall,
 /area/mine/living_quarters)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 (1,1,1) = {"
 aa

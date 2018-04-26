@@ -330,7 +330,10 @@
 	category = list ("Misc. Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/design/board/soda_dispenser
 	name = "Machine Design (Portable Soda Dispenser Board)"
@@ -347,7 +350,10 @@
 	build_path = /obj/item/circuitboard/machine/chem_dispenser/drinks/beer
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 	category = list ("Misc. Machinery")
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/design/board/slimeprocessor
 	name = "Machine Design (Slime Processor Board)"
@@ -422,7 +428,10 @@
 	category = list ("Misc. Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/design/board/rad_collector
 	name = "Machine Design (Radiation Collector Board)"
@@ -431,7 +440,10 @@
 	build_path = /obj/item/circuitboard/machine/rad_collector
 	category = list ("Misc. Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 /datum/design/board/grounding_rod
 	name = "Machine Design (Grounding Rod Board)"

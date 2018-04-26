@@ -37,22 +37,29 @@
 	var/mode = MINEDRONE_COLLECT
 	var/light_on = 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	var/datum/action/innate/minedrone/toggle_light/toggle_light_action
 	var/datum/action/innate/minedrone/toggle_mode/toggle_mode_action
 	var/datum/action/innate/minedrone/dump_ore/dump_ore_action
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/obj/item/gun/energy/kinetic_accelerator/minebot/stored_gun
 
 /mob/living/simple_animal/hostile/mining_drone/Initialize()
 	. = ..()
 	stored_gun = new(src)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	toggle_light_action = new()
 =======
 	var/datum/action/innate/minedrone/toggle_light/toggle_light_action = new()
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/datum/action/innate/minedrone/toggle_light/toggle_light_action = new()
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	toggle_light_action.Grant(src)
 	var/datum/action/innate/minedrone/toggle_meson_vision/toggle_meson_vision_action = new()
 	toggle_meson_vision_action.Grant(src)
@@ -112,10 +119,14 @@
 
 /mob/living/simple_animal/hostile/mining_drone/attackby(obj/item/I, mob/user, params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(istype(I, /obj/item/device/mining_scanner) || istype(I, /obj/item/device/t_scanner/adv_mining_scanner))
 =======
 	if(istype(I, /obj/item/mining_scanner) || istype(I, /obj/item/t_scanner/adv_mining_scanner))
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	if(istype(I, /obj/item/mining_scanner) || istype(I, /obj/item/t_scanner/adv_mining_scanner))
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		to_chat(user, "<span class='info'>You instruct [src] to drop any collected ore.</span>")
 		DropOre()
 		return
@@ -279,29 +290,41 @@
 //Melee
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/mine_bot_upgrade
 =======
 /obj/item/mine_bot_upgrade
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/mine_bot_upgrade
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	name = "minebot melee upgrade"
 	desc = "A minebot upgrade."
 	icon_state = "door_electronics"
 	icon = 'icons/obj/module.dmi'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/mine_bot_upgrade/afterattack(mob/living/simple_animal/hostile/mining_drone/M, mob/user, proximity)
 =======
 /obj/item/mine_bot_upgrade/afterattack(mob/living/simple_animal/hostile/mining_drone/M, mob/user, proximity)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/mine_bot_upgrade/afterattack(mob/living/simple_animal/hostile/mining_drone/M, mob/user, proximity)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(!istype(M) || !proximity)
 		return
 	upgrade_bot(M, user)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/mine_bot_upgrade/proc/upgrade_bot(mob/living/simple_animal/hostile/mining_drone/M, mob/user)
 =======
 /obj/item/mine_bot_upgrade/proc/upgrade_bot(mob/living/simple_animal/hostile/mining_drone/M, mob/user)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/mine_bot_upgrade/proc/upgrade_bot(mob/living/simple_animal/hostile/mining_drone/M, mob/user)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(M.melee_damage_upper != initial(M.melee_damage_upper))
 		to_chat(user, "[src] already has a combat upgrade installed!")
 		return
@@ -312,16 +335,22 @@
 //Health
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/mine_bot_upgrade/health
 	name = "minebot armor upgrade"
 
 /obj/item/device/mine_bot_upgrade/health/upgrade_bot(mob/living/simple_animal/hostile/mining_drone/M, mob/user)
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/item/mine_bot_upgrade/health
 	name = "minebot armor upgrade"
 
 /obj/item/mine_bot_upgrade/health/upgrade_bot(mob/living/simple_animal/hostile/mining_drone/M, mob/user)
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	if(M.maxHealth != initial(M.maxHealth))
 		to_chat(user, "[src] already has reinforced armor!")
 		return

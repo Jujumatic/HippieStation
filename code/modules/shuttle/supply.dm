@@ -6,10 +6,14 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 		/obj/item/disk/nuclear,
 		/obj/machinery/nuclearbomb,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/beacon,
 =======
 		/obj/item/beacon,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/beacon,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/singularity,
 		/obj/machinery/teleport/station,
 		/obj/machinery/teleport/hub,
@@ -21,19 +25,27 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 		/obj/effect/clockwork/spatial_gateway,
 		/obj/structure/destructible/clockwork/powered/clockwork_obelisk,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/warp_cube,
 =======
 		/obj/item/warp_cube,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/warp_cube,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/machinery/rnd/production/protolathe, //print tracking beacons, send shuttle
 		/obj/machinery/autolathe, //same
 		/obj/item/projectile/beam/wormhole,
 		/obj/effect/portal,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/obj/item/device/shared_storage,
 =======
 		/obj/item/shared_storage,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		/obj/item/shared_storage,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		/obj/structure/extraction_point
 	)))
 

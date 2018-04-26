@@ -8,12 +8,17 @@
 	products = list(/obj/item/reagent_containers/syringe = 12, 
 					/obj/item/reagent_containers/dropper = 3, 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					/obj/item/device/healthanalyzer = 4, 
 					/obj/item/device/sensor_device = 2, 
 =======
 					/obj/item/healthanalyzer = 4, 
 					/obj/item/sensor_device = 2, 
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+					/obj/item/healthanalyzer = 4, 
+					/obj/item/sensor_device = 2, 
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 					/obj/item/pinpointer/crew = 2,
 					/obj/item/reagent_containers/medspray/sterilizine = 1,
 					/obj/item/stack/medical/gauze = 8, 

@@ -407,10 +407,14 @@ Auto Patrol: []"},
 	Sa.add_overlay("hs_hole")
 	Sa.created_name = name
 <<<<<<< HEAD
+<<<<<<< HEAD
 	new /obj/item/device/assembly/prox_sensor(Tsec)
 =======
 	new /obj/item/assembly/prox_sensor(Tsec)
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	new /obj/item/assembly/prox_sensor(Tsec)
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	drop_part(baton_type, Tsec)
 
 	if(prob(50))

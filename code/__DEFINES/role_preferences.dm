@@ -26,10 +26,13 @@
 #define ROLE_SERVANT_OF_RATVAR	"servant of Ratvar"
 #define ROLE_BROTHER			"blood brother"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define ROLE_SHADOWLING			"shadowling"
 #define ROLE_VAMPIRE			"vampire"
 =======
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 #define ROLE_BRAINWASHED		"brainwashed victim"
 
 //Missing assignment means it's not a gamemode specific role, IT'S NOT A BUG OR ERROR.

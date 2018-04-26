@@ -11,10 +11,14 @@
 	if(Initialize(arglist(arguments)) == COMPONENT_INCOMPATIBLE)
 		qdel(src, TRUE, TRUE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		CRASH("Incompatible [type] assigned to a [P]!")
 =======
 		CRASH("Incompatible [type] assigned to a [P.type]!")
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+		CRASH("Incompatible [type] assigned to a [P.type]!")
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 	_JoinParent(P)
 

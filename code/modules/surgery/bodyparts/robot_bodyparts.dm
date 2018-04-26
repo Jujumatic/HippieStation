@@ -155,12 +155,17 @@
 	heavy_burn_msg = ROBOTIC_HEAVY_BURN_MSG
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/obj/item/device/assembly/flash/handheld/flash1 = null
 	var/obj/item/device/assembly/flash/handheld/flash2 = null
 =======
 	var/obj/item/assembly/flash/handheld/flash1 = null
 	var/obj/item/assembly/flash/handheld/flash2 = null
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+	var/obj/item/assembly/flash/handheld/flash1 = null
+	var/obj/item/assembly/flash/handheld/flash2 = null
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 
 
 

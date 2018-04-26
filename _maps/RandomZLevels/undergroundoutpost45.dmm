@@ -5231,10 +5231,14 @@
 	pixel_y = -1
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/item/device/multitool,
 =======
 /obj/item/multitool,
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+/obj/item/multitool,
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 /obj/structure/sign/warning/nosmoking{
 	pixel_x = -32
 	},

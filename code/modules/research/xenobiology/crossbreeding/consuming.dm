@@ -213,6 +213,7 @@ Consuming extracts:
 
 /obj/item/slime_cookie/bluespace/do_effect(mob/living/M, mob/user)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var/list/L = list()
 	for(var/turf/T in get_area_turfs(get_area(get_turf(M))))
 		if(!T.density)
@@ -226,6 +227,8 @@ Consuming extracts:
 	if(length(L))
 		do_teleport(M, pick(L), 0, asoundin = 'sound/effects/phasein.ogg')
 =======
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 	var/list/L = get_area_turfs(get_area(get_turf(M)))
 	var/turf/target
 	while (L.len && !target)
@@ -247,7 +250,10 @@ Consuming extracts:
 
 	if(target)
 		do_teleport(M, target, 0, asoundin = 'sound/effects/phasein.ogg')
+<<<<<<< HEAD
 >>>>>>> e21815eb30cc2da3bac71509167772e91a39fa45
+=======
+>>>>>>> b9d276e1ef401fa41078832fee131d756106b516
 		new /obj/effect/particle_effect/sparks(get_turf(M))
 		playsound(get_turf(M), "sparks", 50, 1)
 
