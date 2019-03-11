@@ -5,6 +5,7 @@ CREATE TABLE `curator_languages` (
   `language_description` VARCHAR(64) NOT NULL,
   'language_words' VARCHAR(64) NOT NULL,
   'language_default_rule' VARCHAR(64) NOT NULL,
+  `language_ckey` VARCHAR(32) NOT NULL,
   
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=LATIN1;
